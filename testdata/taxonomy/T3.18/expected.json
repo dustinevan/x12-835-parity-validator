@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T3.18",
+  "title": "Quality-program and incentive adjustments differ",
+  "representable": true,
+  "notes": "MAC applies a MIPS negative adjustment CO-237 1.85 with LQ N807; vendor applies neither, so its sequestration base and payment are higher (94.08 versus 92.27). Follows the missing provider-specific factor input cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3XH8E17YM34",
+        "date_of_service": "20260619",
+        "total_charge": "200.00",
+        "tax_id": "933184417",
+        "npi": "1318456732",
+        "workload": "31817"
+      },
+      "patient_control_number": "SYN318A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "92.27",
+          "vendor": "94.08"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "92.27",
+          "vendor": "94.08"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.88",
+          "vendor": "1.92"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "237",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.85",
+          "vendor": null
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "LQ*HE*N807",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "92.27",
+      "vendor": "94.08"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "24",
+      "vendor": "23"
+    }
+  ]
+}

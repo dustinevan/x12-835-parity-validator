@@ -1,0 +1,173 @@
+{
+  "taxonomy_id": "T5.33",
+  "title": "Periodic interim payment adjustment differs",
+  "representable": true,
+  "notes": "Illustrative (the entry marks legacy PIP reporting as unverified). The MAC side processes the 52000.00 inpatient claim for a PIP provider and offsets it with PLB PI 52000.00 and TS323/TS324, paying 0; the vendor side pays 52000.00. Follows the input-or-environment cause (PIP status unknown).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7R13A31MY34",
+        "date_of_service": "20260301",
+        "total_charge": "61875.40",
+        "tax_id": "853311221",
+        "npi": "1330037999",
+        "workload": "53301"
+      },
+      "patient_control_number": "SYN53301",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "H",
+      "vendor": "I"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "0",
+      "vendor": "52000.00"
+    },
+    {
+      "segment": "BPR",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "NON",
+      "vendor": "ACH"
+    },
+    {
+      "segment": "BPR",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "CCP"
+    },
+    {
+      "segment": "BPR",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 7,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "990000001"
+    },
+    {
+      "segment": "BPR",
+      "element": 8,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 9,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "000123456"
+    },
+    {
+      "segment": "BPR",
+      "element": 10,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "1999999999"
+    },
+    {
+      "segment": "BPR",
+      "element": 12,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "990001033"
+    },
+    {
+      "segment": "BPR",
+      "element": 14,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 15,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "40000863"
+    },
+    {
+      "segment": "TS3",
+      "element": 23,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "1",
+      "vendor": null
+    },
+    {
+      "segment": "TS3",
+      "element": 24,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "52000.00",
+      "vendor": null
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "PLB*1330037999*20261231*PI:PIP202603*52000.00",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "25",
+      "vendor": "24"
+    }
+  ]
+}

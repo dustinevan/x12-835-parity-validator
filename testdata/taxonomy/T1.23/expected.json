@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T1.23",
+  "title": "Claim reported under a different payment, payee, or transaction",
+  "representable": true,
+  "notes": "The claim content is identical, but the vendor-processed file pays it under a different payee NPI (same tax ID). Payee NPI is a key field, so the MAC claim is missing and the vendor claim is extra, and the payee loop differs at provider level. Follows the cause where pay-to or reassignment data differs between the environments' provider records.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "6NN0E93TX23",
+        "date_of_service": "20260302",
+        "total_charge": "145.00",
+        "tax_id": "970230001",
+        "npi": "1902300015",
+        "workload": "90230"
+      },
+      "patient_control_number": "PL8840323",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "6NN0E93TX23",
+        "date_of_service": "20260302",
+        "total_charge": "145.00",
+        "tax_id": "970230001",
+        "npi": "1902301013",
+        "workload": "90230"
+      },
+      "patient_control_number": "PL8840323",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "N1",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "SYNTHETIC CLINIC T1-23",
+      "vendor": "SYNTHETIC GROUP PRACTICE T1-23"
+    },
+    {
+      "segment": "N1",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "1902300015",
+      "vendor": "1902301013"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "taxonomy_id": "T1.32",
+  "title": "Many unrelated fields differ at once on one pair",
+  "representable": true,
+  "notes": "Two different submitted claims for the same patient, date, payee, and total charge 150.00: the MAC-processed file contains only SA7710025 and the vendor-processed file only SB7710026, so they share a key and pair. The pair differs in CLP01, every line, and every amount, which a correct pairing would not show. Follows the matching-artifact cause (the key omits a distinguishing field).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "6WY0H62EE32",
+        "date_of_service": "20260302",
+        "total_charge": "150.00",
+        "tax_id": "970320001",
+        "npi": "1903200016",
+        "workload": "90320"
+      },
+      "patient_control_number": "SA7710025",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "SA7710025",
+          "vendor": "SB7710026"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "81.85",
+          "vendor": "24.62"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "20.88",
+          "vendor": "6.28"
+        },
+        {
+          "segment": "DTM",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "20260305",
+          "vendor": "20260306"
+        },
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HC:99213",
+          "vendor": "HC:97110"
+        },
+        {
+          "segment": "SVC",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "110.00",
+          "vendor": "150.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "75.58",
+          "vendor": "24.62"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "13.60",
+          "vendor": "118.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.54",
+          "vendor": "0.50"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "19.28",
+          "vendor": "6.28"
+        },
+        {
+          "segment": "REF",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "T132L01",
+          "vendor": "T132L03"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "96.40",
+          "vendor": "31.40"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "SVC*HC:36415*40.00*6.27**1",
+          "vendor": null
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "DTM*472*20260302",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "CAS*CO*45*32.00**253*0.13",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "mac": "CAS*PR*2*1.60",
+          "vendor": null
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "REF*6R*T132L02",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "AMT*B6*8.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "81.85",
+      "vendor": "24.62"
+    }
+  ]
+}

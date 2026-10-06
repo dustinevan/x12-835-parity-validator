@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T2.30",
+  "title": "Nonpayable professional component differs",
+  "representable": true,
+  "notes": "The billed professional component (85.00, adjusted CO-97 on line 2 on both sides) is reported in MOA09 on the MAC side and only through the adjustment on the vendor side; CLP04 agrees. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW3Y90XK01",
+        "date_of_service": "20260812",
+        "total_charge": "325.00",
+        "tax_id": "920304417",
+        "npi": "1920300716",
+        "workload": "92030"
+      },
+      "patient_control_number": "PCN23001",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "MOA",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "85.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

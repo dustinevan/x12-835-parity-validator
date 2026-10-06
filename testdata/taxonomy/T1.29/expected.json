@@ -1,0 +1,59 @@
+{
+  "taxonomy_id": "T1.29",
+  "title": "Service lines in a different order",
+  "representable": true,
+  "notes": "Both sides report the same three lines; the vendor lists L2 before L1. Paired by REF*6R, the only differences are line positions; a positional comparison would instead report procedure, charge, and payment differences on lines 1 and 2. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3KV0G79AK29",
+        "date_of_service": "20260302",
+        "total_charge": "172.00",
+        "tax_id": "970290001",
+        "npi": "1902900012",
+        "workload": "90290"
+      },
+      "patient_control_number": "OR9910429",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 2,
+          "kind": "order",
+          "mac": "position 1",
+          "vendor": "position 2"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 1,
+          "kind": "order",
+          "mac": "position 2",
+          "vendor": "position 1"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

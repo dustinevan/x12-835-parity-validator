@@ -1,0 +1,57 @@
+{
+  "taxonomy_id": "T3.20",
+  "title": "Correct-coding and unit-limit edits are reported differently",
+  "representable": true,
+  "notes": "NCCI procedure-pair denial of line 2: MAC CO-97 85.00 with LQ N20; vendor CO-236 85.00 with LQ M15. Money agrees; follows the representation cause (same denial, different codes).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3AA0F27GP30",
+        "date_of_service": "20260621",
+        "total_charge": "265.00",
+        "tax_id": "933204417",
+        "npi": "1320456738",
+        "workload": "32017"
+      },
+      "patient_control_number": "SYN320A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "97",
+          "vendor": "236"
+        },
+        {
+          "segment": "LQ",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "N20",
+          "vendor": "M15"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

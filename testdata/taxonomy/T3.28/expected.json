@@ -1,0 +1,77 @@
+{
+  "taxonomy_id": "T3.28",
+  "title": "A zero-amount adjustment appears on one side only",
+  "representable": true,
+  "notes": "Deductible already met: MAC writes a zero-amount PR-1 0.00 triplet before PR-2 16.00; vendor writes only PR-2 16.00. No money differs; follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3KV8F27MY34",
+        "date_of_service": "20260602",
+        "total_charge": "120.00",
+        "tax_id": "933284417",
+        "npi": "1328456730",
+        "workload": "32817"
+      },
+      "patient_control_number": "SYN328A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.00",
+          "vendor": "16.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "16.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

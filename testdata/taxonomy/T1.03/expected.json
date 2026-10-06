@@ -1,0 +1,9 @@
+{
+  "taxonomy_id": "T1.03",
+  "title": "Submitted claim with no 835 on either side",
+  "representable": false,
+  "reason": "Neither side produces an 835 for the claim, so the case is visible only by reconciling the submitted 837 set and non-835 status outputs, not as a pair of 835 files.",
+  "notes": "Neither side produces an 835 for the claim, so the case is visible only by reconciling the submitted 837 set and non-835 status outputs, not as a pair of 835 files.",
+  "claims": [],
+  "file_differences": []
+}

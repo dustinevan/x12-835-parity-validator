@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T1.01",
+  "title": "Claim finalized by legacy, absent from vendor output",
+  "representable": true,
+  "notes": "The MAC-processed file pays claim HK4820193 (CLP04 88.08); the vendor-processed file has only the companion claim, so HK4820193 is missing and BPR02 differs by 88.08. Follows the cause where the vendor suspended the claim for review, which produces no 835.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2FK5T86QR01",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970010001",
+        "npi": "1900100011",
+        "workload": "90010"
+      },
+      "patient_control_number": "CP0010001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2FK0M31QK01",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970010001",
+        "npi": "1900100011",
+        "workload": "90010"
+      },
+      "patient_control_number": "HK4820193",
+      "outcome": "missing",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "163.66",
+      "vendor": "75.58"
+    }
+  ]
+}

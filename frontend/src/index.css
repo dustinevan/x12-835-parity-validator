@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* page tokens (light/dark via the :root vars below) */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-2);
+  --color-line: var(--border);
+  --color-accent: var(--accent);
+  --color-link: var(--link);
+  --color-warn: var(--warn);
+  --color-danger: var(--error);
+  --color-ok: var(--success);
+
+  /* chart marks. `mark-off` is the recessive fill for a value that is
+     present but not selected; its contrast against the page is deliberately
+     low, so every bar using it carries a direct value label. `flag` marks a
+     consequential judgment call — not an error, so never the danger red. */
+  --color-mark-off: var(--mark-off);
+  --color-flag: var(--flag);
+
+  /* Categorical series, fixed order, never cycled. Validated for colour-vision
+     deficiency separation against each surface (worst adjacent pair ΔE 13.2
+     light / 15.7 dark, both well above the ΔE 8 target). Three is the ceiling
+     here — a fourth series folds into "other" or becomes small multiples. */
+  --color-series-1: var(--series-1);
+  --color-series-2: var(--series-2);
+  --color-series-3: var(--series-3);
+
+  /* code panels are dark in both themes, Stripe-style */
+  --color-panel: #11131a;
+  --color-panel-line: #2a2f3a;
+  --color-panel-ink: #e6e8eb;
+  --color-panel-key: #78a9ff;
+  --color-panel-str: #42be65;
+  --color-panel-num: #be95ff;
+  --color-panel-kw: #ff7eb6;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --surface: #f4f4f4;
+  --text: #161616;
+  --text-2: #525252;
+  --border: #e0e0e0;
+  --accent: #0f62fe;
+  --link: #0f62fe;
+  --error: #da1e28;
+  --success: #24a148;
+  --mark-off: #a8a8a8;
+  --warn: #f1c21b;
+  --flag: #d02670;
+  --series-1: #0f62fe;
+  --series-2: #b28600;
+  --series-3: #d02670;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #161616;
+    --surface: #262626;
+    --text: #f4f4f4;
+    --text-2: #a8a8a8;
+    --border: #393939;
+    --accent: #4589ff;
+    --link: #78a9ff;
+    --error: #fa4d56;
+    --success: #42be65;
+    --mark-off: #6f6f6f;
+    --warn: #d2a106;
+    --flag: #ff7eb6;
+    --series-1: #4589ff;
+    --series-2: #c09405;
+    --series-3: #ee5396;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #161616;
+  --surface: #262626;
+  --text: #f4f4f4;
+  --text-2: #a8a8a8;
+  --border: #393939;
+  --accent: #4589ff;
+  --link: #78a9ff;
+  --error: #fa4d56;
+  --success: #42be65;
+  --mark-off: #6f6f6f;
+  --warn: #d2a106;
+  --flag: #ff7eb6;
+  --series-1: #4589ff;
+  --series-2: #c09405;
+  --series-3: #ee5396;
+}
+
+/* CAS group OA marker/bar fill (docs/pages/Viewer835.tsx, via
+   frontend/src/docs/viewer835/colors.ts): a diagonal-stripe pattern in the
+   page's own ink color, standing in for a fourth opacity step so the CO/OA/PR
+   markers stay distinguishable at a glance. Built from `--text` so it stays
+   subtle and correctly inked in both light and dark mode without its own
+   media query. */
+.cas-pattern-oa {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    color-mix(in srgb, var(--text) 70%, transparent) 0,
+    color-mix(in srgb, var(--text) 70%, transparent) 2px,
+    transparent 2px,
+    transparent 5px
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

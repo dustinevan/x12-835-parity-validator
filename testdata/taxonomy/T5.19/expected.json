@@ -1,0 +1,113 @@
+{
+  "taxonomy_id": "T5.19",
+  "title": "A matched claim sits in a different payment",
+  "representable": true,
+  "notes": "Both claims match exactly. The MAC side pays both in one payment dated 2026-03-16; the vendor side pays the first claim on 2026-03-03 and the second in a separate transaction on 2026-03-16. Payment-context differences are attached to each claim. Follows the history-or-timing cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2Y11X91MG90",
+        "date_of_service": "20260225",
+        "total_charge": "2619.00",
+        "tax_id": "851910703",
+        "npi": "1190037576",
+        "workload": "51901"
+      },
+      "patient_control_number": "SYN51901",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2Y21Y92VN91",
+        "date_of_service": "20260226",
+        "total_charge": "363.80",
+        "tax_id": "851910703",
+        "npi": "1190037576",
+        "workload": "51901"
+      },
+      "patient_control_number": "SYN51902",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "transaction": 1,
+      "mac": "39",
+      "vendor": "24"
+    },
+    {
+      "segment": "SE",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "envelope",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "SE*30*007191"
+    },
+    {
+      "segment": "GE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "1",
+      "vendor": "2"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 1,
+      "mac": "924.45",
+      "vendor": "803.97"
+    },
+    {
+      "segment": "BPR",
+      "element": 16,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 1,
+      "mac": "20260316",
+      "vendor": "20260303"
+    },
+    {
+      "segment": "DTM",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 1,
+      "mac": "20260313",
+      "vendor": "20260302"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 1,
+      "vendor_transaction": 2,
+      "mac": "924.45",
+      "vendor": "120.48"
+    }
+  ]
+}

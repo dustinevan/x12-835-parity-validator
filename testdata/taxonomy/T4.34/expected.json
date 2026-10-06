@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T4.34",
+  "title": "Facility or non-facility rate chosen differently",
+  "representable": true,
+  "notes": "99214 at place of service 22 (outpatient hospital): the MAC side allows the facility rate 97.10, the vendor side the non-facility rate 131.40. Follows the rule-gap cause (place-of-service grouping).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4DT3Y40VY58",
+        "date_of_service": "20260413",
+        "total_charge": "180.00",
+        "tax_id": "940434017",
+        "npi": "1940341237",
+        "workload": "94034"
+      },
+      "patient_control_number": "SYN434A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "76.13",
+          "vendor": "103.02"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "19.42",
+          "vendor": "26.28"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "76.13",
+          "vendor": "103.02"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "82.90",
+          "vendor": "48.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.55",
+          "vendor": "2.10"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "19.42",
+          "vendor": "26.28"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "97.10",
+          "vendor": "131.40"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "76.13",
+      "vendor": "103.02"
+    }
+  ]
+}

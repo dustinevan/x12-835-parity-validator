@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "T5.07",
+  "title": "Trace originator identifier differs",
+  "representable": true,
+  "notes": "TRN03 and BPR10 carry a different originating company identifier on each side, and only the MAC side sends TRN04. Follows the input-or-environment cause (different disbursement arrangement).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8J10D71MR78",
+        "date_of_service": "20260225",
+        "total_charge": "2607.00",
+        "tax_id": "850710259",
+        "npi": "1070037217",
+        "workload": "50701"
+      },
+      "patient_control_number": "SYN50701",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8J20E72VX79",
+        "date_of_service": "20260226",
+        "total_charge": "361.40",
+        "tax_id": "850710259",
+        "npi": "1070037217",
+        "workload": "50701"
+      },
+      "patient_control_number": "SYN50702",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "TRN",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "1999999999",
+      "vendor": "1888888888"
+    },
+    {
+      "segment": "TRN",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "12345",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 10,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "1999999999",
+      "vendor": "1888888888"
+    }
+  ]
+}

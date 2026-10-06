@@ -1,0 +1,132 @@
+{
+  "taxonomy_id": "T1.26",
+  "title": "Service line on one side only (missing or extra)",
+  "representable": true,
+  "notes": "The MAC-processed file reports lines L1-L3; the vendor-processed file drops L2 (81003, charge 35.00, paid 22.40 by the MAC) and adjusts its charge at claim level (CO*A1 with M51, illustrative codes) so the claim still balances, which lowers CLP04 by 22.40. Follows the rule-gap cause where the vendor dropped a line.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9YR0F86WR26",
+        "date_of_service": "20260302",
+        "total_charge": "205.00",
+        "tax_id": "970260001",
+        "npi": "1902600018",
+        "workload": "90260"
+      },
+      "patient_control_number": "LM5560126",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "116.75",
+          "vendor": "94.35"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "29.78",
+          "vendor": "24.07"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "CAS*CO*A1*35.00"
+        },
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "MOA***M51"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "SVC*HC:81003*35.00*22.40**1",
+          "vendor": null
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "DTM*472*20260302",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "CAS*CO*45*6.43**253*0.46",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "mac": "CAS*PR*2*5.71",
+          "vendor": null
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "REF*6R*T126L02",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "AMT*B6*28.57",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "116.75",
+      "vendor": "94.35"
+    }
+  ]
+}

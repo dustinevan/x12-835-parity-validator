@@ -1,0 +1,79 @@
+{
+  "taxonomy_id": "T4.05",
+  "title": "Line paired to a different claim occurrence",
+  "representable": true,
+  "notes": "Two claims share CLP01 SYN405-PCN77 on the vendor side: a reversal (CLP02 22, 97110 paying -28.00) followed by the reissued claim paying 28.00; the MAC side has only the 28.00 claim. Key matching pairs the reissued claim (no differences) and leaves the reversal as an extra claim; a positional comparison would pair the MAC line with the reversal line. Follows the matching-artifact cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4UT0V50JA85",
+        "date_of_service": "20260502",
+        "total_charge": "60.00",
+        "tax_id": "940405017",
+        "npi": "1940051232",
+        "workload": "94005"
+      },
+      "patient_control_number": "SYN405-PCN77",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4UT0V50JA85",
+        "date_of_service": "20260509",
+        "total_charge": "55.00",
+        "tax_id": "940405017",
+        "npi": "1940051232",
+        "workload": "94005"
+      },
+      "patient_control_number": "SYN405-PCN78",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4UT0V50JA85",
+        "date_of_service": "20260502",
+        "total_charge": "-60.00",
+        "tax_id": "940405017",
+        "npi": "1940051232",
+        "workload": "94005"
+      },
+      "patient_control_number": "SYN405-PCN77",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "51.52",
+      "vendor": "23.52"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "30",
+      "vendor": "38"
+    }
+  ]
+}

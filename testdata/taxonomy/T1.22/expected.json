@@ -1,0 +1,156 @@
+{
+  "taxonomy_id": "T1.22",
+  "title": "Claim routed to a different contractor or payer",
+  "representable": true,
+  "notes": "The MAC-processed file denies the claim as not its claim (CLP02 4, CO*109 312.00); the vendor-processed file pays 201.44. BPR02 differs by 201.44. Follows the rule-gap cause where a single-instance vendor has no step that returns a claim filed with the wrong contractor.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5JM0V62RR22",
+        "date_of_service": "20260302",
+        "total_charge": "312.00",
+        "tax_id": "970220001",
+        "npi": "1902200017",
+        "workload": "90220"
+      },
+      "patient_control_number": "JR6610222",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "4",
+          "vendor": "1"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "201.44"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "51.39"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.00",
+          "vendor": "201.44"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "109",
+          "vendor": "45"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "312.00",
+          "vendor": "55.06"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "4.11"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PR*2*51.39"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.00",
+          "vendor": "256.94"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "H",
+      "vendor": "I"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "0.00",
+      "vendor": "201.44"
+    },
+    {
+      "segment": "BPR",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "NON",
+      "vendor": "CHK"
+    }
+  ]
+}

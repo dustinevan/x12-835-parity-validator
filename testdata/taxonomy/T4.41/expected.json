@@ -1,0 +1,114 @@
+{
+  "taxonomy_id": "T4.41",
+  "title": "HIPPS or case-mix code on the line differs",
+  "representable": true,
+  "notes": "Home health period line 0023: the MAC side pays the submitted HIPPS 2CA21 (allowed 2,105.40), the vendor side regroups to 2CA11 (allowed 1,987.65) and reports 2CA21 in SVC06. Follows the rule-gap cause (grouper logic); rates are synthetic.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4ET4K10EV17",
+        "date_of_service": "20260601",
+        "total_charge": "3200.00",
+        "tax_id": "940441017",
+        "npi": "1940411238",
+        "workload": "94041"
+      },
+      "patient_control_number": "SYN441A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "2063.29",
+          "vendor": "1947.90"
+        },
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HP:2CA21",
+          "vendor": "HP:2CA11"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2063.29",
+          "vendor": "1947.90"
+        },
+        {
+          "segment": "SVC",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "HP:2CA21"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1094.60",
+          "vendor": "1212.35"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "42.11",
+          "vendor": "39.75"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2105.40",
+          "vendor": "1987.65"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "2063.29",
+      "vendor": "1947.90"
+    }
+  ]
+}

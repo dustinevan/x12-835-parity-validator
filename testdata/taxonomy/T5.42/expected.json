@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T5.42",
+  "title": "Usage indicator differs",
+  "representable": true,
+  "notes": "The MAC file is marked production (ISA15 = P) and the vendor file test (T). Follows the input-or-environment cause (PoC environment).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7D14J21MK23",
+        "date_of_service": "20260225",
+        "total_charge": "2642.00",
+        "tax_id": "854211554",
+        "npi": "1420038261",
+        "workload": "54201"
+      },
+      "patient_control_number": "SYN54201",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "7D24K22VR24",
+        "date_of_service": "20260226",
+        "total_charge": "368.40",
+        "tax_id": "854211554",
+        "npi": "1420038261",
+        "workload": "54201"
+      },
+      "patient_control_number": "SYN54202",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "ISA",
+      "element": 15,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "P",
+      "vendor": "T"
+    }
+  ]
+}

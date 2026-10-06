@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T1.02",
+  "title": "Claim finalized by vendor, absent from legacy output",
+  "representable": true,
+  "notes": "The vendor-processed file pays claim NP5510338 (CLP04 117.60) that the MAC-processed file does not contain, so it is extra and BPR02 differs by 117.60. Follows the cause where the MAC held the claim under a local edit.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3JM5C17RX02",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970020001",
+        "npi": "1900200019",
+        "workload": "90020"
+      },
+      "patient_control_number": "CP0020001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "3JM0V62RR02",
+        "date_of_service": "20260302",
+        "total_charge": "210.00",
+        "tax_id": "970020001",
+        "npi": "1900200019",
+        "workload": "90020"
+      },
+      "patient_control_number": "NP5510338",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "75.58",
+      "vendor": "193.18"
+    }
+  ]
+}

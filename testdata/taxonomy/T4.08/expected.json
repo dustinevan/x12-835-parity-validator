@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T4.08",
+  "title": "Modifiers in a different order",
+  "representable": true,
+  "notes": "The same modifiers RT and GA appear in submitted order on the MAC side and reversed on the vendor side; payment is equal. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4FT0W80NR96",
+        "date_of_service": "20260313",
+        "total_charge": "2400.00",
+        "tax_id": "940408017",
+        "npi": "1940081239",
+        "workload": "94008"
+      },
+      "patient_control_number": "SYN408A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HC:27447:RT:GA",
+          "vendor": "HC:27447:GA:RT"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

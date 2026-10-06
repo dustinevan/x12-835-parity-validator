@@ -1,0 +1,19 @@
+services:
+  validator:
+    build: .
+    image: ${IMAGE:-x12-835-validator:local}
+    ports:
+      - "127.0.0.1:${PORT:-8089}:8089"
+    volumes:
+      - validator-data:/data
+    stop_grace_period: 35s
+    # The service needs Postgres at startup; by default the host's (make db),
+    # which runs without TLS. The image defaults to verify-full for RDS.
+    environment:
+      APP_SERVER_DB_HOST: ${APP_SERVER_DB_HOST:-host.docker.internal:5432}
+      APP_SERVER_DB_TLS_MODE: ${APP_SERVER_DB_TLS_MODE:-disable}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  validator-data:

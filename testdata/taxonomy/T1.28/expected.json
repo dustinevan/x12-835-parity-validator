@@ -1,0 +1,121 @@
+{
+  "taxonomy_id": "T1.28",
+  "title": "Several submitted lines reported as one (bundling), or one as several (unbundling)",
+  "representable": true,
+  "notes": "The MAC-processed file keeps 99214 and 36415 as separate lines with 36415 paid 0 (CO*97, N20); the vendor-processed file reports one 99214 line carrying both charges (175.00) and the CO*97 amount. Payment (88.08) agrees. Follows the representation cause; SVC06 holds one procedure, so the combined line cannot list both codes as the entry's example suggests.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2GU0X48YE28",
+        "date_of_service": "20260302",
+        "total_charge": "175.00",
+        "tax_id": "970280001",
+        "npi": "1902800014",
+        "workload": "90280"
+      },
+      "patient_control_number": "BU8890328",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "150.00",
+          "vendor": "175.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "97"
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "25.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "SVC*HC:36415*25.00*0.00**1",
+          "vendor": null
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "DTM*472*20260302",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "CAS*CO*97*25.00",
+          "vendor": null
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "REF*6R*T128L02",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "AMT*B6*0.00",
+          "vendor": null
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "mac": "LQ*HE*N20",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

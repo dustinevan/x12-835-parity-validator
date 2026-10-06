@@ -1,0 +1,40 @@
+{
+  "taxonomy_id": "T1.20",
+  "title": "Two different claims share one match key",
+  "representable": true,
+  "notes": "Two distinct ambulance trips on the same day (to and from dialysis) share CLP01 AMB0042, patient, date, charge 450.00, and payee, so the key occurs twice on the MAC side and is set aside. The MAC pays the first and denies the second for medical necessity (CO*50); the vendor does the reverse, which only REF*6R and the 837 trip locations reveal. Follows the cause where the key omits a distinguishing field.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3CJ0D00PE20",
+        "date_of_service": "20260302",
+        "total_charge": "450.00",
+        "tax_id": "970200001",
+        "npi": "1902000011",
+        "workload": "90200"
+      },
+      "patient_control_number": "AMB0042",
+      "outcome": "set_aside",
+      "occurrences": {
+        "mac": 2,
+        "vendor": 2
+      },
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

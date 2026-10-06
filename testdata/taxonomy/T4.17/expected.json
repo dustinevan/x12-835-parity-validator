@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T4.17",
+  "title": "SVC07 original units present on one side only or differ",
+  "representable": true,
+  "notes": "Paid units equal submitted units (2); the vendor side writes SVC07 2 and the MAC side omits it. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4PT1A70YQ29",
+        "date_of_service": "20260326",
+        "total_charge": "120.00",
+        "tax_id": "940417017",
+        "npi": "1940171238",
+        "workload": "94017"
+      },
+      "patient_control_number": "SYN417A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 7,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "2"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

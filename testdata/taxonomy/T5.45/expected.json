@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "T5.45",
+  "title": "Interest or late charge assessed against the provider differs",
+  "representable": true,
+  "notes": "Both sides recover a 40.00 overpayment (WO); the MAC side also charges 3.12 interest on that debt (PLB 51, same reference). Follows the input-or-environment cause (receivable determination date and rate not furnished).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1G14V51MP56",
+        "date_of_service": "20260225",
+        "total_charge": "2645.00",
+        "tax_id": "854511665",
+        "npi": "1450038355",
+        "workload": "54501"
+      },
+      "patient_control_number": "SYN54501",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1G24W52VV57",
+        "date_of_service": "20260226",
+        "total_charge": "369.00",
+        "tax_id": "854511665",
+        "npi": "1450038355",
+        "workload": "54501"
+      },
+      "patient_control_number": "SYN54502",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "884.19",
+      "vendor": "887.31"
+    },
+    {
+      "segment": "PLB",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "51:FCN0000045001",
+      "vendor": null
+    },
+    {
+      "segment": "PLB",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "3.12",
+      "vendor": null
+    }
+  ]
+}

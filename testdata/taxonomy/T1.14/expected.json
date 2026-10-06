@@ -1,0 +1,175 @@
+{
+  "taxonomy_id": "T1.14",
+  "title": "Provider replacement or void whose original one side cannot find",
+  "representable": true,
+  "notes": "The 837 is a frequency-7 replacement citing the MAC control number of the original. The MAC applies it (reversal -88.08, correction 75.58); the vendor cannot find that control number and denies the replacement with CO*129 and M47. The correction pairs with the vendor denial; the reversal is missing. Follows the cause where the original is outside the vendor's migrated history.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02",
+    "REF02 (qualifier F8): cites each system's own CLP07"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "6EC0A24GR14",
+        "date_of_service": "20260302",
+        "total_charge": "-184.60",
+        "tax_id": "970140001",
+        "npi": "1901400014",
+        "workload": "90140"
+      },
+      "patient_control_number": "RO2250814",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "6EC0A24GR14",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970140001",
+        "npi": "1901400014",
+        "workload": "90140"
+      },
+      "patient_control_number": "RO2250814",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "1",
+          "vendor": "4"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "75.58",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "19.28",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "MOA",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MA67",
+          "vendor": "M47"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "75.58",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "45",
+          "vendor": "129"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "88.20",
+          "vendor": "184.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.54",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "CAS*PR*2*19.28",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "96.40",
+          "vendor": "0.00"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "6EC5G79GX14",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970140001",
+        "npi": "1901400014",
+        "workload": "90140"
+      },
+      "patient_control_number": "CP0140001",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "63.08",
+      "vendor": "75.58"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T3.37",
+  "title": "Coverage-policy remarks or policy identifiers differ",
+  "representable": true,
+  "notes": "Medical-necessity denial CO-50 120.00 on both sides. MAC cites a local coverage determination (LQ N115, REF*0K synthetic policy L00000); vendor cites a national one (LQ N386) with no policy identifier. Follows the LCD-versus-NCD rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3WY7F37VK31",
+        "date_of_service": "20260611",
+        "total_charge": "120.00",
+        "tax_id": "933374417",
+        "npi": "1337456739",
+        "workload": "33717"
+      },
+      "patient_control_number": "SYN337A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "REF*0K*L00000",
+          "vendor": null
+        },
+        {
+          "segment": "LQ",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "N115",
+          "vendor": "N386"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "22"
+    }
+  ]
+}

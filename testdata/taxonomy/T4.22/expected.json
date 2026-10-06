@@ -1,0 +1,91 @@
+{
+  "taxonomy_id": "T4.22",
+  "title": "Line balance does not hold on one side",
+  "representable": true,
+  "notes": "Both sides pay 20.00; the MAC line balances with CO-45 30.00, PR-1 4.49, PR-2 5.10, and CO-253 0.41, while the vendor line reports only CO-45 30.00 (60.00 - 30.00 is not 20.00) and a CLP05 of zero. This fixture is intentionally out of balance on the vendor side; follows the rule-gap cause (adjustments not reported).",
+  "imbalance": [
+    {
+      "side": "vendor",
+      "level": "line and claim",
+      "detail": "line 1: SVC02 60.00 - SVC03 20.00 = 40.00, line CAS total 30.00; claim SYN422A: CLP03 60.00 - CLP04 20.00 = 40.00, claim and line CAS total 30.00"
+    }
+  ],
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4HT2U20FJ14",
+        "date_of_service": "20260401",
+        "total_charge": "60.00",
+        "tax_id": "940422017",
+        "npi": "1940221231",
+        "workload": "94022"
+      },
+      "patient_control_number": "SYN422A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "9.59",
+          "vendor": "0"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.41",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "CAS*PR*1*4.49**2*5.10",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "22",
+      "vendor": "21"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "taxonomy_id": "T4.13",
+  "title": "SVC02 line charge differs",
+  "representable": true,
+  "notes": "The 837 line charge is 250.00; the vendor side reports two lines of 125.00 with the same REF*6R, so positional comparison shows SVC02 125.00 against 250.00 and an extra line. Claim charge and payment agree. Follows the matching-artifact cause (split line).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4YT1Q30UK81",
+        "date_of_service": "20260320",
+        "total_charge": "250.00",
+        "tax_id": "940413017",
+        "npi": "1940131232",
+        "workload": "94013"
+      },
+      "patient_control_number": "SYN413A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "250.00",
+          "vendor": "125.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "133.28",
+          "vendor": "66.64"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "80.00",
+          "vendor": "40.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2.72",
+          "vendor": "1.36"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "34.00",
+          "vendor": "17.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "170.00",
+          "vendor": "85.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "SVC*HC:99204*125.00*66.64**1"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "DTM*472*20260320"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*CO*45*40.00**253*1.36"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*PR*2*17.00"
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "REF*6R*L1"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "AMT*B6*85.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "29"
+    }
+  ]
+}

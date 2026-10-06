@@ -1,0 +1,224 @@
+{
+  "taxonomy_id": "T3.48",
+  "title": "Provider enrollment or eligibility denial codes differ",
+  "representable": true,
+  "notes": "MAC pays 62.72 (the example's 64.00 omits sequestration); vendor denies CO-B7 80.00 because its enrollment record starts one month after the date of service. Follows the provider-enrollment input cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3KV8G47MY34",
+        "date_of_service": "20260622",
+        "total_charge": "80.00",
+        "tax_id": "933484417",
+        "npi": "1348456736",
+        "workload": "34817"
+      },
+      "patient_control_number": "SYN348A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "1",
+          "vendor": "4"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "62.72",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "16.00",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "62.72",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": "B7"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.28",
+          "vendor": "80.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "CAS*PR*2*16.00",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "AMT*B6*80.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "I",
+      "vendor": "H"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "62.72",
+      "vendor": "0.00"
+    },
+    {
+      "segment": "BPR",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "ACH",
+      "vendor": "NON"
+    },
+    {
+      "segment": "BPR",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "CCP",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "01",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 7,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "011000015",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 8,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "DA",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 9,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "3480000001",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 10,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "1999999991",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 12,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "01",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "021000021",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 14,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "DA",
+      "vendor": null
+    },
+    {
+      "segment": "BPR",
+      "element": 15,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "9480000002",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "21"
+    }
+  ]
+}

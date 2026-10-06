@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T3.12",
+  "title": "Coinsurance code on one side, copayment code on the other",
+  "representable": true,
+  "notes": "Hospital outpatient line (TOB 13x): the same 42.00 patient amount is PR-2 on the MAC side and PR-3 on the vendor side. Money agrees; follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3QF2E17CE36",
+        "date_of_service": "20260613",
+        "total_charge": "900.00",
+        "tax_id": "933124417",
+        "npi": "1312456738",
+        "workload": "31217"
+      },
+      "patient_control_number": "SYN312A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2",
+          "vendor": "3"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

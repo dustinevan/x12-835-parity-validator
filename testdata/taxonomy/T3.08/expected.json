@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T3.08",
+  "title": "A code is used outside its published usage restrictions",
+  "representable": true,
+  "notes": "Vendor denies a 60.00 line as CO-45 60.00, which CARC 45's usage note forbids (amount equals the full charge); MAC uses CO-96 with LQ N130. Follows the rule-gap cause (usage notes not enforced).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3KV8E07MY34",
+        "date_of_service": "20260609",
+        "total_charge": "60.00",
+        "tax_id": "933084417",
+        "npi": "1308456734",
+        "workload": "30817"
+      },
+      "patient_control_number": "SYN308A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "96",
+          "vendor": "45"
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "LQ*HE*N130",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "22",
+      "vendor": "21"
+    }
+  ]
+}

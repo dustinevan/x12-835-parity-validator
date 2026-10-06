@@ -1,0 +1,78 @@
+{
+  "taxonomy_id": "T2.51",
+  "title": "Claim spans a cutover date or a rate-year boundary",
+  "representable": true,
+  "notes": "A stay from 20250928 to 20251003 crosses the federal fiscal year: the MAC side prices with fiscal 2026 rates (discharge date) and the vendor side with fiscal 2025 rates (admission date); MIA04, CLP04, and the adjustments differ. Follows the rule-gap cause (governing date).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW5Y91XK01",
+        "date_of_service": "20250928",
+        "total_charge": "44000.00",
+        "tax_id": "920514417",
+        "npi": "1920510710",
+        "workload": "92051"
+      },
+      "patient_control_number": "PCN25101",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "11215.12",
+          "vendor": "10944.64"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "30880.00",
+          "vendor": "31156.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "228.88",
+          "vendor": "223.36"
+        },
+        {
+          "segment": "MIA",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "13120.00",
+          "vendor": "12844.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "11215.12",
+      "vendor": "10944.64"
+    }
+  ]
+}

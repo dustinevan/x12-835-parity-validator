@@ -1,0 +1,119 @@
+{
+  "taxonomy_id": "T4.42",
+  "title": "Claim-level priced claim reported with different line amounts",
+  "representable": true,
+  "notes": "Inpatient DRG claim paying 9,812.40 on both sides: the MAC side reports zero on every line with the adjustments at claim level (so its lines alone do not balance, though the claim does), the vendor side spreads payment and adjustments across lines 0120 and 0250. The MAC-side line imbalance is intended; follows the representation cause.",
+  "imbalance": [
+    {
+      "side": "mac",
+      "level": "line",
+      "detail": "line 1: SVC02 12000.00 - SVC03 0.00 = 12000.00, line CAS total 0.00; line 2: SVC02 3000.00 - SVC03 0.00 = 3000.00, line CAS total 0.00"
+    }
+  ],
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4HT4U20FJ54",
+        "date_of_service": "20260601",
+        "total_charge": "15000.00",
+        "tax_id": "940442017",
+        "npi": "1940421237",
+        "workload": "94042"
+      },
+      "patient_control_number": "SYN442A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "CAS*CO*45*3511.60",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "CAS*PR*1*1676.00",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0",
+          "vendor": "7200.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*CO*45*3124.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PR*1*1676.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "0",
+          "vendor": "2612.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*CO*45*387.60"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "24"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "T3.14",
+  "title": "Sequestration amount differs",
+  "representable": true,
+  "notes": "Allowed 100.00, PR-2 20.00, 80.00 before sequestration. MAC CO-253 1.60 (2% of 80.00), paid 78.40; vendor CO-253 2.00 (2% of allowed), paid 78.00. Follows the wrong-base rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3TX4E17JG32",
+        "date_of_service": "20260615",
+        "total_charge": "140.00",
+        "tax_id": "933144417",
+        "npi": "1314456736",
+        "workload": "31417"
+      },
+      "patient_control_number": "SYN314A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "78.40",
+          "vendor": "78.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "78.40",
+          "vendor": "78.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.60",
+          "vendor": "2.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "78.40",
+      "vendor": "78.00"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "taxonomy_id": "T4.24",
+  "title": "Other line AMT amounts (KH, ZK-ZO, 2K) differ or are present on one side",
+  "representable": true,
+  "notes": "The MAC line carries AMT*ZK*12.00 (federal mandate category 1) beside AMT*B6; the vendor line has only AMT*B6; payments are equal. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4QT2M40HM88",
+        "date_of_service": "20260403",
+        "total_charge": "150.00",
+        "tax_id": "940424017",
+        "npi": "1940241239",
+        "workload": "94024"
+      },
+      "patient_control_number": "SYN424A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "AMT*ZK*12.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "22"
+    }
+  ]
+}

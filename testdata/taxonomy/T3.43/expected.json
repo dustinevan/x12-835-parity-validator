@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T3.43",
+  "title": "Same group and reason, different amount (general case)",
+  "representable": true,
+  "notes": "Same groups and reasons, different amounts: MAC CO-45 42.10/PR-2 15.58, vendor CO-45 43.00/PR-2 15.40, because the vendor allowed amount is 0.90 lower. General-case tag before a specific cause is shown. Sequestration (CO-253, 2%) is added on paid lines for realism where the example omits it.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3EC3G47TT39",
+        "date_of_service": "20260617",
+        "total_charge": "120.00",
+        "tax_id": "933434417",
+        "npi": "1343456731",
+        "workload": "34317"
+      },
+      "patient_control_number": "SYN343A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "61.07",
+          "vendor": "60.37"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "15.58",
+          "vendor": "15.40"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "61.07",
+          "vendor": "60.37"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "42.10",
+          "vendor": "43.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.25",
+          "vendor": "1.23"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "15.58",
+          "vendor": "15.40"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "77.90",
+          "vendor": "77.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "61.07",
+      "vendor": "60.37"
+    }
+  ]
+}

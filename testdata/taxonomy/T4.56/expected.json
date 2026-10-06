@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T4.56",
+  "title": "Ambulance line priced with a different origin or rural adjustment",
+  "representable": true,
+  "notes": "Ground mileage A0425, 14 miles from a pickup ZIP the MAC side classes as rural: the MAC side allows 169.40 (synthetic 12.10 per mile), the vendor side the urban 112.70 (8.05 per mile); the base-rate line agrees. Follows the input-or-environment cause (pickup ZIP classification).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4KT5R60XC72",
+        "date_of_service": "20260507",
+        "total_charge": "1180.00",
+        "tax_id": "940456017",
+        "npi": "1940561230",
+        "workload": "94056"
+      },
+      "patient_control_number": "SYN456A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "603.21",
+          "vendor": "558.76"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "153.88",
+          "vendor": "142.54"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "132.81",
+          "vendor": "88.36"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "110.60",
+          "vendor": "167.30"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "2.71",
+          "vendor": "1.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "33.88",
+          "vendor": "22.54"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "169.40",
+          "vendor": "112.70"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "603.21",
+      "vendor": "558.76"
+    }
+  ]
+}

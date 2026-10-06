@@ -1,0 +1,258 @@
+{
+  "taxonomy_id": "T5.35",
+  "title": "Bonus, incentive, or other provider-level addition differs",
+  "representable": true,
+  "notes": "The MAC side includes a 10% HPSA bonus in the paid lines (4538.60); the vendor side pays the lines without it (4126.00) and adds PLB BN -412.60 in a separate, claim-free transaction dated 2026-03-30. That second transaction has no MAC counterpart, so each of its elements is recorded as present on the vendor side only (system-assigned ST02, SE02, TRN02 excluded). Follows the rule-gap cause (bonus paid at claim level on one side and provider level on the other).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9U13H51MC56",
+        "date_of_service": "20260225",
+        "total_charge": "8300.00",
+        "tax_id": "853511295",
+        "npi": "1350038059",
+        "workload": "53501"
+      },
+      "patient_control_number": "SYN53501",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "4538.60",
+          "vendor": "4126.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2860.00",
+          "vendor": "2600.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1690.00",
+          "vendor": "1950.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "3510.00",
+          "vendor": "3250.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "1678.60",
+          "vendor": "1526.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "1039.90",
+          "vendor": "1192.50"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "2060.10",
+          "vendor": "1907.50"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 1,
+      "mac": "4538.60",
+      "vendor": "4126.00"
+    },
+    {
+      "segment": "GE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "1",
+      "vendor": "2"
+    },
+    {
+      "segment": "ST",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "envelope",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "ST*835*007351"
+    },
+    {
+      "segment": "BPR",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "BPR*I*412.60*C*ACH*CCP*01*990000001*DA*000123456*1999999999**01*990001035*DA*40000885*20260330"
+    },
+    {
+      "segment": "TRN",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "TRN*1*N2026031600351*1999999999"
+    },
+    {
+      "segment": "DTM",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "DTM*405*20260327"
+    },
+    {
+      "segment": "N1",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N1*PR*SYNTHETIC MAC*PI*53501"
+    },
+    {
+      "segment": "N3",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N3*PO BOX 1035"
+    },
+    {
+      "segment": "N4",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N4*SYNTHETIC CITY*TN*372350000"
+    },
+    {
+      "segment": "REF",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "REF*2U*53501"
+    },
+    {
+      "segment": "PER",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "PER*BL*SYNTHETIC EDI HELP DESK*TE*8005550100"
+    },
+    {
+      "segment": "N1",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N1*PE*SYNTHETIC RURAL SURGERY*XX*1350038059"
+    },
+    {
+      "segment": "N3",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N3*135 SYNTHETIC AVE"
+    },
+    {
+      "segment": "N4",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "N4*SPRINGFIELD*IL*627010001"
+    },
+    {
+      "segment": "REF",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "REF*TJ*853511295"
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "PLB*1350038059*20261231*BN:HPSA2026Q1*-412.60"
+    },
+    {
+      "segment": "SE",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "envelope",
+      "vendor_transaction": 2,
+      "mac": null,
+      "vendor": "SE*15*007351"
+    }
+  ]
+}

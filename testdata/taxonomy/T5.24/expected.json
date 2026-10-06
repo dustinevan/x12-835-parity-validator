@@ -1,0 +1,78 @@
+{
+  "taxonomy_id": "T5.24",
+  "title": "Interest reported at a different level",
+  "representable": true,
+  "notes": "The MAC side reports CLP04 250.00 with AMT*I 1.37 and PLB L6 -1.37; the vendor side adds the interest into CLP04 (251.37) with no AMT or PLB, and keeps the claim balanced with a negative claim-level CAS*OA*225*-1.37 (a synthetic convention). BPR02 agrees at 251.37. Follows the rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7F12R41MN45",
+        "date_of_service": "20251230",
+        "total_charge": "520.00",
+        "tax_id": "852410888",
+        "npi": "1240037725",
+        "workload": "52401"
+      },
+      "patient_control_number": "SYN52401",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "250.00",
+          "vendor": "251.37"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "AMT*I*1.37",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "CAS*OA*225*-1.37"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "PLB*1240037725*20261231*L6:SYN52401*-1.37",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "26",
+      "vendor": "25"
+    }
+  ]
+}

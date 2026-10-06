@@ -1,0 +1,157 @@
+{
+  "taxonomy_id": "T4.18",
+  "title": "SVC03 line payment differs while allowed amount agrees",
+  "representable": true,
+  "notes": "With 30.00 of Part B deductible left, the MAC side applies it to line 1 (pays 39.20 and 39.20) and the vendor side to line 2 (pays 62.72 and 15.68); allowed amounts and the claim total 78.40 agree. Follows the history-or-timing cause (deductible applied in a different order).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4TT1J80AE66",
+        "date_of_service": "20260105",
+        "total_charge": "190.00",
+        "tax_id": "940418017",
+        "npi": "1940181237",
+        "workload": "94018"
+      },
+      "patient_control_number": "SYN418A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "39.20",
+          "vendor": "62.72"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.80",
+          "vendor": "1.28"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "30.00",
+          "vendor": "16.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "10.00",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "39.20",
+          "vendor": "15.68"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "0.80",
+          "vendor": "0.32"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "2",
+          "vendor": "1"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "10.00",
+          "vendor": "30.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "4.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

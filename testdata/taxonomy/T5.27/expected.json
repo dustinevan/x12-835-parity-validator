@@ -1,0 +1,87 @@
+{
+  "taxonomy_id": "T5.27",
+  "title": "Overpayment recovery differs",
+  "representable": true,
+  "notes": "Claims total 4220.22 on both sides. The MAC side recovers 40.00 (PLB WO FCN0000012345), paying 4180.22; the vendor side has no receivable and pays 4220.22. Follows the history-or-timing cause (overpayment established before the test window).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1J12D71MR78",
+        "date_of_service": "20260226",
+        "total_charge": "4227.00",
+        "tax_id": "852710999",
+        "npi": "1270037819",
+        "workload": "52701"
+      },
+      "patient_control_number": "SYN52701",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1J22E72VX79",
+        "date_of_service": "20260227",
+        "total_charge": "2627.00",
+        "tax_id": "852710999",
+        "npi": "1270037819",
+        "workload": "52701"
+      },
+      "patient_control_number": "SYN52702",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1J32F73EE70",
+        "date_of_service": "20260225",
+        "total_charge": "5227.00",
+        "tax_id": "852710999",
+        "npi": "1270037819",
+        "workload": "52701"
+      },
+      "patient_control_number": "SYN52703",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "4180.22",
+      "vendor": "4220.22"
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "PLB*1270037819*20261231*WO:FCN0000012345*40.00",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "43",
+      "vendor": "42"
+    }
+  ]
+}

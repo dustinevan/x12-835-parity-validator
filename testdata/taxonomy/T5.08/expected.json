@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T5.08",
+  "title": "Currency segment present on one side",
+  "representable": true,
+  "notes": "The vendor side adds CUR*PR*USD, which Medicare does not use; everything else matches. Follows the representation cause (generic generator default).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9K10G81MT89",
+        "date_of_service": "20260225",
+        "total_charge": "2608.00",
+        "tax_id": "850810296",
+        "npi": "1080037249",
+        "workload": "50801"
+      },
+      "patient_control_number": "SYN50801",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "9K20H82VY80",
+        "date_of_service": "20260226",
+        "total_charge": "361.60",
+        "tax_id": "850810296",
+        "npi": "1080037249",
+        "workload": "50801"
+      },
+      "patient_control_number": "SYN50802",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "CUR",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "CUR*PR*USD"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "39",
+      "vendor": "40"
+    }
+  ]
+}

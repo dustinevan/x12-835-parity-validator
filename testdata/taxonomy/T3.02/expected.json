@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T3.02",
+  "title": "A contractual adjustment differs only because the allowed amount differs",
+  "representable": true,
+  "notes": "Charge 200.00; MAC allowed 120.00 (CO-45 80.00), vendor allowed 118.50 (CO-45 81.50). The 1.50 pricing difference carries through AMT*B6, PR-2, CO-253, SVC03, CLP04, CLP05 and BPR02; follows the rule-gap/rate-table pricing cause. Sequestration (CO-253, 2%) is added on paid lines for realism where the example omits it.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3DT2E07PR36",
+        "date_of_service": "20260603",
+        "total_charge": "200.00",
+        "tax_id": "933024417",
+        "npi": "1302456730",
+        "workload": "30217"
+      },
+      "patient_control_number": "SYN302A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "94.08",
+          "vendor": "92.90"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "24.00",
+          "vendor": "23.70"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "94.08",
+          "vendor": "92.90"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "80.00",
+          "vendor": "81.50"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.92",
+          "vendor": "1.90"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "24.00",
+          "vendor": "23.70"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "120.00",
+          "vendor": "118.50"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "94.08",
+      "vendor": "92.90"
+    }
+  ]
+}

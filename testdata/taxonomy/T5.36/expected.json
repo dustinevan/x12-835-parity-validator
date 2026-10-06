@@ -1,0 +1,98 @@
+{
+  "taxonomy_id": "T5.36",
+  "title": "PLB layout differs for the same adjustments",
+  "representable": true,
+  "notes": "The same WO 40.00 and L6 -1.37 adjustments: one PLB with WO first on the MAC side, two PLB segments with L6 first on the vendor side. Positional differences are recorded; the (reason, reference, amount) collections are equal. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1V13M61MD67",
+        "date_of_service": "20260225",
+        "total_charge": "2636.00",
+        "tax_id": "853611332",
+        "npi": "1360038081",
+        "workload": "53601"
+      },
+      "patient_control_number": "SYN53601",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1V23N62VJ68",
+        "date_of_service": "20260226",
+        "total_charge": "367.20",
+        "tax_id": "853611332",
+        "npi": "1360038081",
+        "workload": "53601"
+      },
+      "patient_control_number": "SYN53602",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "PLB",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "WO:FCN0000036001",
+      "vendor": "L6:SYN53601"
+    },
+    {
+      "segment": "PLB",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "40.00",
+      "vendor": "-1.37"
+    },
+    {
+      "segment": "PLB",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "L6:SYN53601",
+      "vendor": null
+    },
+    {
+      "segment": "PLB",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "-1.37",
+      "vendor": null
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 2,
+      "scope": "provider",
+      "mac": null,
+      "vendor": "PLB*1360038081*20261231*WO:FCN0000036001*40.00"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "41",
+      "vendor": "42"
+    }
+  ]
+}

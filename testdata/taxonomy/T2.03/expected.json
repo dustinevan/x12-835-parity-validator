@@ -1,0 +1,260 @@
+{
+  "taxonomy_id": "T2.03",
+  "title": "Unprocessable claim versus denied or processed claim",
+  "representable": true,
+  "notes": "The MAC side returns the claim as unprocessable (CO-16 with MA130 and N823 for an invalid modifier) and the vendor side processes and pays it. Follows the input-or-environment cause: the modifier code-set tables differed.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW0Y93XK01",
+        "date_of_service": "20260812",
+        "total_charge": "300.00",
+        "tax_id": "920034417",
+        "npi": "1920030719",
+        "workload": "92003"
+      },
+      "patient_control_number": "PCN20301",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "4",
+          "vendor": "1"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "211.68"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "54.00"
+        },
+        {
+          "segment": "MOA",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MA130",
+          "vendor": "MA01"
+        },
+        {
+          "segment": "MOA",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "N823",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.00",
+          "vendor": "211.68"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "16",
+          "vendor": "45"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "300.00",
+          "vendor": "30.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "4.32"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PR*2*54.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "AMT*B6*270.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "H",
+      "vendor": "I"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "0.00",
+      "vendor": "211.68"
+    },
+    {
+      "segment": "BPR",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "NON",
+      "vendor": "ACH"
+    },
+    {
+      "segment": "BPR",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "CCP"
+    },
+    {
+      "segment": "BPR",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 7,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "999999992"
+    },
+    {
+      "segment": "BPR",
+      "element": 8,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 9,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "000123456"
+    },
+    {
+      "segment": "BPR",
+      "element": 10,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "1990000002"
+    },
+    {
+      "segment": "BPR",
+      "element": 12,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "999999993"
+    },
+    {
+      "segment": "BPR",
+      "element": 14,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 15,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "000654321"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "22",
+      "vendor": "24"
+    }
+  ]
+}

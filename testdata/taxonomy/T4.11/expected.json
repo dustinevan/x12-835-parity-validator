@@ -1,0 +1,57 @@
+{
+  "taxonomy_id": "T4.11",
+  "title": "Procedure description differs or is placed differently",
+  "representable": true,
+  "notes": "The 837 description ONDANSETRON 4MG for unlisted drug J3490 appears in SVC06-7 on the MAC side and in SVC01-7 (marked not used in the CMS layout) on the vendor side, which omits SVC06. Follows the rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4RT1X10RH07",
+        "date_of_service": "20260318",
+        "total_charge": "25.00",
+        "tax_id": "940411017",
+        "npi": "1940111234",
+        "workload": "94011"
+      },
+      "patient_control_number": "SYN411A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HC:J3490",
+          "vendor": "HC:J3490:::::ONDANSETRON 4MG"
+        },
+        {
+          "segment": "SVC",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HC:J3490:::::ONDANSETRON 4MG",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

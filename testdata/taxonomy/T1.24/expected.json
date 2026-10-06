@@ -1,0 +1,49 @@
+{
+  "taxonomy_id": "T1.24",
+  "title": "Informational remittance for an unassigned claim on one side only",
+  "representable": true,
+  "notes": "The provider did not accept assignment (837 CLM07 C). The MAC-processed file reports the claim under LX*0 with MA28 and CLP04 0 (OA*100 for the amount paid to the beneficiary; the adjustment coding is illustrative); the vendor-processed file has no informational claim. Follows the rule-gap cause where one side does not produce the informational remittance.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7RP5U79UK24",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970240001",
+        "npi": "1902400013",
+        "workload": "90240"
+      },
+      "patient_control_number": "CP0240001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "7RP0N24UE24",
+        "date_of_service": "20260302",
+        "total_charge": "95.00",
+        "tax_id": "970240001",
+        "npi": "1902400013",
+        "workload": "90240"
+      },
+      "patient_control_number": "NA3350424",
+      "outcome": "missing",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

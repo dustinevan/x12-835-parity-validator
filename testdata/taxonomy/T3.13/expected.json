@@ -1,0 +1,94 @@
+{
+  "taxonomy_id": "T3.13",
+  "title": "Part A day-based cost sharing differs (inpatient deductible, coinsurance days, lifetime reserve, SNF days, blood deductible)",
+  "representable": true,
+  "notes": "Inpatient stay (DRG payment 14,200.00 on 42,000.00 charges). MAC treats the last two days as days 61-62 of an existing benefit period: PR-2 868.00 with quantity 2 (2 x 434.00). Vendor starts a new benefit period: PR-1 1736.00, the 2026 inpatient deductible. Follows the benefit-period history cause; sequestration moves with it.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3RP3E17FF39",
+        "date_of_service": "20260601",
+        "total_charge": "42000.00",
+        "tax_id": "933134417",
+        "npi": "1313456737",
+        "workload": "31317"
+      },
+      "patient_control_number": "SYN313A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "13065.36",
+          "vendor": "12214.72"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "868.00",
+          "vendor": "1736.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "266.64",
+          "vendor": "249.28"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "2",
+          "vendor": "1"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "868.00",
+          "vendor": "1736.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 4,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "2",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "13065.36",
+      "vendor": "12214.72"
+    }
+  ]
+}

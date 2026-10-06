@@ -1,0 +1,59 @@
+{
+  "taxonomy_id": "T5.06",
+  "title": "Payment trace number differs",
+  "representable": true,
+  "notes": "Content is identical; only the system-assigned trace number differs (10-digit numeric versus a 15-character vendor format). A comparison that ignores system-assigned fields reports no difference. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7H10Y61MQ67",
+        "date_of_service": "20260225",
+        "total_charge": "2606.00",
+        "tax_id": "850610222",
+        "npi": "1060037185",
+        "workload": "50601"
+      },
+      "patient_control_number": "SYN50601",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "7H20A62VW68",
+        "date_of_service": "20260226",
+        "total_charge": "361.20",
+        "tax_id": "850610222",
+        "npi": "1060037185",
+        "workload": "50601"
+      },
+      "patient_control_number": "SYN50602",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "TRN",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "system_assigned": true,
+      "mac": "0012345678",
+      "vendor": "CC2026031600017"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "taxonomy_id": "T4.45",
+  "title": "DME competitive bidding pricing applied on one side only",
+  "representable": true,
+  "notes": "E0601 rental: the MAC side allows the competitive bidding amount 58.00 with RARC M114, the vendor side the fee schedule 71.30 with no remark. Follows the input-or-environment cause (beneficiary ZIP or contract status differs); amounts are synthetic.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4UT4V50JA65",
+        "date_of_service": "20260422",
+        "total_charge": "150.00",
+        "tax_id": "940445017",
+        "npi": "1940451234",
+        "workload": "94045"
+      },
+      "patient_control_number": "SYN445A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "45.47",
+          "vendor": "55.90"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "11.60",
+          "vendor": "14.26"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "45.47",
+          "vendor": "55.90"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "92.00",
+          "vendor": "78.70"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.93",
+          "vendor": "1.14"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "11.60",
+          "vendor": "14.26"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "58.00",
+          "vendor": "71.30"
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "LQ*HE*M114",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "45.47",
+      "vendor": "55.90"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "22"
+    }
+  ]
+}

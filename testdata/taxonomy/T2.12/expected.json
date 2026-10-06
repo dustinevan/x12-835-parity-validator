@@ -1,0 +1,55 @@
+{
+  "taxonomy_id": "T2.12",
+  "title": "Patient responsibility differs, payment equal",
+  "representable": true,
+  "notes": "Both sides deny the GA-modified line as not medically necessary and pay zero; the MAC side assigns liability to the beneficiary (PR-50, CLP05 150.00) and the vendor side to the provider (CO-50, CLP05 0.00). Follows the rule-gap cause for Advance Beneficiary Notice liability.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW1Y92XK01",
+        "date_of_service": "20260812",
+        "total_charge": "150.00",
+        "tax_id": "920124417",
+        "npi": "1920120718",
+        "workload": "92012"
+      },
+      "patient_control_number": "PCN21201",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "150.00",
+          "vendor": "0.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "PR",
+          "vendor": "CO"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

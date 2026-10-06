@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T4.54",
+  "title": "Reporting-only line handled differently",
+  "representable": true,
+  "notes": "Quality-reporting line G8427 at 0.01 pays zero on both sides; the MAC side uses CO-246 with RARC N620, the vendor side CO-96 with no remark (CARC 96 requires a remark, a separate 835-generation finding). Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4DT5Y40VY98",
+        "date_of_service": "20260505",
+        "total_charge": "150.01",
+        "tax_id": "940454017",
+        "npi": "1940541232",
+        "workload": "94054"
+      },
+      "patient_control_number": "SYN454A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "246",
+          "vendor": "96"
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "LQ*HE*N620",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "26",
+      "vendor": "25"
+    }
+  ]
+}

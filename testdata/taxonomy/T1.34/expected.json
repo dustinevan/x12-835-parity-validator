@@ -1,0 +1,49 @@
+{
+  "taxonomy_id": "T1.34",
+  "title": "Legacy output echoes claim data changed after submission",
+  "representable": true,
+  "notes": "The submitted 837 totals 1250.00; the vendor-processed file echoes it, while the MAC-processed file echoes 1180.00 (line 3 charge 130.00 instead of 200.00) with a received date nine days after submission. Total charge is a key field, so the MAC claim is missing and the vendor claim is extra. Follows the cause of a correction made in the legacy system's online entry screens after a return to provider.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8EC0A24GR34",
+        "date_of_service": "20260302",
+        "total_charge": "1180.00",
+        "tax_id": "970340001",
+        "npi": "1903400012",
+        "workload": "90340"
+      },
+      "patient_control_number": "RB7418209",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8EC0A24GR34",
+        "date_of_service": "20260302",
+        "total_charge": "1250.00",
+        "tax_id": "970340001",
+        "npi": "1903400012",
+        "workload": "90340"
+      },
+      "patient_control_number": "RB7418209",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

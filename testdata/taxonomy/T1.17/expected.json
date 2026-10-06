@@ -1,0 +1,49 @@
+{
+  "taxonomy_id": "T1.17",
+  "title": "Echoed key field differs, so the pair fails (near-miss)",
+  "representable": true,
+  "notes": "The MAC-processed file echoes the submitted total charge 192.00 with all three lines (the third denied CO*204); the vendor-processed file reports only the two adjudicated lines and CLP03 132.00. Total charge is a key field, so the MAC claim is missing and the vendor claim is extra although patient, date, and payee agree. Follows the rule-gap cause (echoing the adjudicated total); the entry's CLP01 truncation example is not a key field under the matching key and would pair.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9QF0C17KK17",
+        "date_of_service": "20260302",
+        "total_charge": "192.00",
+        "tax_id": "970170001",
+        "npi": "1901700017",
+        "workload": "90170"
+      },
+      "patient_control_number": "HK4820193-0001-A7",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "9QF0C17KK17",
+        "date_of_service": "20260302",
+        "total_charge": "132.00",
+        "tax_id": "970170001",
+        "npi": "1901700017",
+        "workload": "90170"
+      },
+      "patient_control_number": "HK4820193-0001-A7",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

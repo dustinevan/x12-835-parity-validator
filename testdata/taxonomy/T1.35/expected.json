@@ -1,0 +1,49 @@
+{
+  "taxonomy_id": "T1.35",
+  "title": "No-payment bill or notice reported on one side only",
+  "representable": true,
+  "notes": "An inpatient no-payment bill (type of bill frequency 0) appears in the MAC-processed file with CLP02 1, CLP04 0, CLP09 0 (CO*119 on the full charge, illustrative); the vendor-processed file reports only the companion outpatient claim. The no-pay bill is missing and BPR02 agrees. Follows the representation cause (one side records the bill only in history or a status response).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9HD5Q00HE35",
+        "date_of_service": "20260303",
+        "total_charge": "610.00",
+        "tax_id": "970350001",
+        "npi": "1903500019",
+        "workload": "90350"
+      },
+      "patient_control_number": "CP0350001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "9HD0J55HX35",
+        "date_of_service": "20260210",
+        "total_charge": "21500.00",
+        "tax_id": "970350001",
+        "npi": "1903500019",
+        "workload": "90350"
+      },
+      "patient_control_number": "NB6650135",
+      "outcome": "missing",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

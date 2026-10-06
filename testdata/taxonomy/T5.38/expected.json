@@ -1,0 +1,21 @@
+{
+  "taxonomy_id": "T5.38",
+  "title": "Recovery taken in the transition period from the other system's receivable",
+  "representable": false,
+  "reason": "The defect is a receivable recovered in both environments during production split history; which environment is the system of record for the receivable is not visible in an 835, and a paired comparison of the same claims does not arise in that state.",
+  "notes": "Needs cross-environment receivable records keyed by PLB reference and source-claim date of service relative to cutover.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05"
+  ],
+  "claims": [],
+  "file_differences": []
+}

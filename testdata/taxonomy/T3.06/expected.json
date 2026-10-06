@@ -1,0 +1,76 @@
+{
+  "taxonomy_id": "T3.06",
+  "title": "Group code PI appears on one side",
+  "representable": true,
+  "notes": "Sequestration 1.60 is CO-253 on the MAC side and a separate PI-253 segment on the vendor side; amount and payment agree. Follows the commercial-default rule-gap cause (Medicare uses only CO, OA, PR).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3HD6E07EW38",
+        "date_of_service": "20260607",
+        "total_charge": "150.00",
+        "tax_id": "933064417",
+        "npi": "1306456736",
+        "workload": "30617"
+      },
+      "patient_control_number": "SYN306A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.60",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 3,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PI*253*1.60"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "24"
+    }
+  ]
+}

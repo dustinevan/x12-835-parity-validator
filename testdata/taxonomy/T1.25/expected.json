@@ -1,0 +1,197 @@
+{
+  "taxonomy_id": "T1.25",
+  "title": "Service-line detail reported on one side only",
+  "representable": true,
+  "notes": "An inpatient claim paid by diagnosis-related group 470. The MAC-processed file reports claim-level adjustments only (MIA, no SVC); the vendor-processed file reports three revenue-code lines whose adjustments add up to the same totals. CLP04 (13547.52) agrees. Follows the representation cause (claim-level payment with or without line detail).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8VQ0W55VK25",
+        "date_of_service": "20260302",
+        "total_charge": "40000.00",
+        "tax_id": "970250001",
+        "npi": "1902500010",
+        "workload": "90250"
+      },
+      "patient_control_number": "DR4470525",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "CAS*CO*45*24500.00**253*276.48",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "CAS*PR*1*1676.00",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "SVC*NU:0120*6000.00*1787.52**3"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "DTM*472*20260302"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*CO*45*2500.00**253*36.48"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PR*1*1676.00"
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "REF*6R*T125L01"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "AMT*B6*3500.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "SVC*NU:0360*18000.00*6370.00**1"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "DTM*472*20260302"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*CO*45*11500.00**253*130.00"
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "REF*6R*T125L02"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "AMT*B6*6500.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 3,
+          "mac": null,
+          "vendor": "SVC*NU:0278*16000.00*5390.00**1"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 3,
+          "mac": null,
+          "vendor": "DTM*472*20260302"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 3,
+          "mac": null,
+          "vendor": "CAS*CO*45*10500.00**253*110.00"
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 3,
+          "mac": null,
+          "vendor": "REF*6R*T125L03"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 3,
+          "mac": null,
+          "vendor": "AMT*B6*5500.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,82 @@
+{
+  "taxonomy_id": "T3.16",
+  "title": "Adjustments differ by a few cents from rounding",
+  "representable": true,
+  "notes": "Three lines allowed 33.33 each at 20% coinsurance. MAC rounds per line (6.67 x 3 = 20.01); vendor rounds at claim level (19.998 -> 20.00) and puts the remainder on line 3 (6.66). PR-2, SVC03, CLP04 and CLP05 differ by 0.01; follows the representation (rounding step) cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3VQ6E17RJ38",
+        "date_of_service": "20260617",
+        "total_charge": "150.00",
+        "tax_id": "933164417",
+        "npi": "1316456734",
+        "workload": "31617"
+      },
+      "patient_control_number": "SYN316A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "78.39",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "20.01",
+          "vendor": "20.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 3,
+          "vendor_line": 3,
+          "mac": "26.13",
+          "vendor": "26.14"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 3,
+          "vendor_line": 3,
+          "mac": "6.67",
+          "vendor": "6.66"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "78.39",
+      "vendor": "78.40"
+    }
+  ]
+}

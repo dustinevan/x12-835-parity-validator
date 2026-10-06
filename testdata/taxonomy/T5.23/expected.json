@@ -1,0 +1,78 @@
+{
+  "taxonomy_id": "T5.23",
+  "title": "Interest amount differs",
+  "representable": true,
+  "notes": "Net payment 1000.00, received 2026-01-02, ceiling date 2026-02-01, synthetic rate 4.625%. MAC pays 12 days late (1000.00 x 0.04625 x 12 / 365 = 1.52); vendor pays 10 days late (1.27). Follows the history-or-timing cause (different days late).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "6E12N31MM34",
+        "date_of_service": "20251229",
+        "total_charge": "1400.00",
+        "tax_id": "852310851",
+        "npi": "1230037693",
+        "workload": "52301"
+      },
+      "patient_control_number": "SYN52301",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "1.52",
+          "vendor": "1.27"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "1001.52",
+      "vendor": "1001.27"
+    },
+    {
+      "segment": "BPR",
+      "element": 16,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "20260213",
+      "vendor": "20260211"
+    },
+    {
+      "segment": "DTM",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "20260212",
+      "vendor": "20260210"
+    },
+    {
+      "segment": "PLB",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "-1.52",
+      "vendor": "-1.27"
+    }
+  ]
+}

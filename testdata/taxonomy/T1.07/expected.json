@@ -1,0 +1,40 @@
+{
+  "taxonomy_id": "T1.07",
+  "title": "Duplicate determination lands on a different occurrence",
+  "representable": true,
+  "notes": "Both sides report two occurrences of the same submission; the MAC pays the first (received 2026-03-05) and denies the second with OA*18, the vendor denies the first and pays the second. The key occurs twice on the MAC side, so it is set aside and not compared; BPR02 agrees. Follows the processing-order cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8DT0P17XX07",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970070001",
+        "npi": "1900700018",
+        "workload": "90070"
+      },
+      "patient_control_number": "DP2240187",
+      "outcome": "set_aside",
+      "occurrences": {
+        "mac": 2,
+        "vendor": 2
+      },
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,93 @@
+{
+  "taxonomy_id": "T5.10",
+  "title": "Payer name, identifier, or address differs",
+  "representable": true,
+  "notes": "A DME claim. The vendor side reports a single national payer name and address and omits REF*2U (contractor number); the payer identifier N104 (workload) is kept equal so the claim still matches. Follows the representation cause (single national instance).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2N11P01MV01",
+        "date_of_service": "20260220",
+        "total_charge": "426.00",
+        "tax_id": "851010370",
+        "npi": "1100037302",
+        "workload": "51001"
+      },
+      "patient_control_number": "SYN51001",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "N1",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "SYNTHETIC MAC",
+      "vendor": "SYNTHETIC MEDICARE"
+    },
+    {
+      "segment": "N3",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "PO BOX 1010",
+      "vendor": "PO BOX 9000"
+    },
+    {
+      "segment": "N4",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "SYNTHETIC CITY",
+      "vendor": "SYNTHETIC CAPITAL"
+    },
+    {
+      "segment": "N4",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "TN",
+      "vendor": "MD"
+    },
+    {
+      "segment": "N4",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "372100000",
+      "vendor": "212440000"
+    },
+    {
+      "segment": "REF",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "REF*2U*51001",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "30",
+      "vendor": "29"
+    }
+  ]
+}

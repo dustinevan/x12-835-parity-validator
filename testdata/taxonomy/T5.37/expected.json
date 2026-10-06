@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T5.37",
+  "title": "PLB uses a reason not used by Medicare",
+  "representable": true,
+  "notes": "The vendor side adds a net-zero PLB pairing CS 10.00 with CT (capitation, not used by Medicare) -10.00; BPR02 agrees. Follows the rule-gap cause (full X12 reason list instead of the Medicare subset).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2W13Q71ME78",
+        "date_of_service": "20260225",
+        "total_charge": "2637.00",
+        "tax_id": "853711369",
+        "npi": "1370038113",
+        "workload": "53701"
+      },
+      "patient_control_number": "SYN53701",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2W23R72VK79",
+        "date_of_service": "20260226",
+        "total_charge": "367.40",
+        "tax_id": "853711369",
+        "npi": "1370038113",
+        "workload": "53701"
+      },
+      "patient_control_number": "SYN53702",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": null,
+      "vendor": "PLB*1370038113*20261231*CS:ADJ0000370001*10.00*CT:CAP0000370001*-10.00"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "39",
+      "vendor": "40"
+    }
+  ]
+}

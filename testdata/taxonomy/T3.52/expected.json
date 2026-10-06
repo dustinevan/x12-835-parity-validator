@@ -1,0 +1,130 @@
+{
+  "taxonomy_id": "T3.52",
+  "title": "A line is reported as pending on one side and finalized on the other",
+  "representable": true,
+  "notes": "MAC reports line 2 as pending (OA-133 90.00, paid 0.00); vendor finalizes and pays it 70.56. Follows the hold rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3QF2G57CE36",
+        "date_of_service": "20260626",
+        "total_charge": "190.00",
+        "tax_id": "933524417",
+        "npi": "1352456739",
+        "workload": "35217"
+      },
+      "patient_control_number": "SYN352A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "54.88",
+          "vendor": "125.44"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "14.00",
+          "vendor": "32.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "0.00",
+          "vendor": "70.56"
+        },
+        {
+          "segment": "CAS",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "OA",
+          "vendor": "CO"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "133",
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "90.00",
+          "vendor": "1.44"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*PR*2*18.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "AMT*B6*90.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "54.88",
+      "vendor": "125.44"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "27",
+      "vendor": "29"
+    }
+  ]
+}

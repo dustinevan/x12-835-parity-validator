@@ -1,0 +1,55 @@
+{
+  "taxonomy_id": "T4.25",
+  "title": "Line QTY differs or is present on one side only",
+  "representable": true,
+  "notes": "The MAC side reports QTY*ZL*1 at claim level; the vendor side reports the same QTY at line level, where the CMS layout marks line QTY not used by Medicare. Follows the rule-gap cause (claim-level QTY written at line level).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4UT2V50JA25",
+        "date_of_service": "20260406",
+        "total_charge": "45.00",
+        "tax_id": "940425017",
+        "npi": "1940251238",
+        "workload": "94025"
+      },
+      "patient_control_number": "SYN425A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "QTY",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "QTY*ZL*1",
+          "vendor": null
+        },
+        {
+          "segment": "QTY",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "QTY*ZL*1"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T3.23",
+  "title": "Adjustment signs differ",
+  "representable": true,
+  "notes": "Inpatient DRG payment 8,400.00 exceeds charges of 7,000.00. MAC writes the increase as CO-45 -1400.00; vendor as CO-94 -1400.00. Both sides balance and pay 6,530.72; follows the representation cause (payment above charge).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3EC3F27TT39",
+        "date_of_service": "20260608",
+        "total_charge": "7000.00",
+        "tax_id": "933234417",
+        "npi": "1323456735",
+        "workload": "32317"
+      },
+      "patient_control_number": "SYN323A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "45",
+          "vendor": "94"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

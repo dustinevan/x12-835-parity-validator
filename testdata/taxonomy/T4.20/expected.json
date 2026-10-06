@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T4.20",
+  "title": "AMT*B6 line allowed amount differs",
+  "representable": true,
+  "notes": "Same code and date; the MAC side allows 92.40 and the vendor side 87.78 (95 percent of 92.40), with CO-45, coinsurance, sequestration, and payment following. Follows the input-or-environment cause (participation status read differently).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4AT2C00DG40",
+        "date_of_service": "20260330",
+        "total_charge": "110.00",
+        "tax_id": "940420017",
+        "npi": "1940201233",
+        "workload": "94020"
+      },
+      "patient_control_number": "SYN420A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "72.44",
+          "vendor": "68.82"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "18.48",
+          "vendor": "17.56"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "72.44",
+          "vendor": "68.82"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "17.60",
+          "vendor": "22.22"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.48",
+          "vendor": "1.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "18.48",
+          "vendor": "17.56"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "92.40",
+          "vendor": "87.78"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "72.44",
+      "vendor": "68.82"
+    }
+  ]
+}

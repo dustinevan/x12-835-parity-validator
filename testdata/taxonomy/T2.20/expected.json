@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T2.20",
+  "title": "DRG weight differs with the same DRG",
+  "representable": true,
+  "notes": "Same DRG 0470 and same payment; CLP12 is 1.9000 on the MAC side and 1.8994 on the vendor side (not equal as exact decimals). Follows the history-or-timing cause: a different fiscal year's weight table.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW2Y90XK01",
+        "date_of_service": "20260803",
+        "total_charge": "48000.00",
+        "tax_id": "920204417",
+        "npi": "1920200718",
+        "workload": "92020"
+      },
+      "patient_control_number": "PCN22001",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 12,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "1.9000",
+          "vendor": "1.8994"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

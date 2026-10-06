@@ -1,0 +1,139 @@
+{
+  "submission": { "prefix": "vendor-2/2026-10-01", "side": "vendor", "label": "Vendor 2", "submitted_on": "2026-10-01", "status": "summarized", "claim_count": 965 },
+  "totals": { "claims": 995, "mac_claims": 970, "mac_paid": "116400.00", "vendor_paid": "109600.00", "billed": "149250.00", "net_difference": "-1200.00", "gross_difference": "3900.00", "same_status": 860 },
+  "outcomes": [
+    { "outcome": "equal", "claims": 650, "mac_claims": 650, "mac_paid": "78000.00", "vendor_paid": "78000.00", "billed": "97500.00", "net_difference": "0", "gross_difference": "0", "same_status": 650 },
+    { "outcome": "different", "claims": 240, "mac_claims": 240, "mac_paid": "28800.00", "vendor_paid": "27600.00", "billed": "36000.00", "net_difference": "-1200.00", "gross_difference": "3900.00", "same_status": 210 },
+    { "outcome": "missing", "claims": 55, "mac_claims": 55, "mac_paid": "6600.00", "vendor_paid": "0", "billed": "8250.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+    { "outcome": "extra", "claims": 25, "mac_claims": 0, "mac_paid": "0", "vendor_paid": "4000.00", "billed": "3750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+    { "outcome": "set_aside", "claims": 20, "mac_claims": 20, "mac_paid": "2400.00", "vendor_paid": "0", "billed": "3000.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+    { "outcome": "duplicated", "claims": 5, "mac_claims": 5, "mac_paid": "600.00", "vendor_paid": "0", "billed": "750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 }
+  ],
+  "dimensions": [
+    { "name": "jurisdiction", "values": [
+      { "value": "JE", "claims": 597, "mac_claims": 582, "mac_paid": "70000.00", "vendor_paid": "65800.00", "billed": "89550.00", "net_difference": "-700.00", "gross_difference": "2300.00", "same_status": 516 },
+      { "value": "JF", "claims": 398, "mac_claims": 388, "mac_paid": "46400.00", "vendor_paid": "43800.00", "billed": "59700.00", "net_difference": "-500.00", "gross_difference": "1600.00", "same_status": 344 } ] },
+    { "name": "part", "values": [
+      { "value": "A", "claims": 447, "mac_claims": 436, "mac_paid": "52400.00", "vendor_paid": "49300.00", "billed": "67050.00", "net_difference": "-540.00", "gross_difference": "1755.00", "same_status": 387 },
+      { "value": "B", "claims": 548, "mac_claims": 534, "mac_paid": "64000.00", "vendor_paid": "60300.00", "billed": "82200.00", "net_difference": "-660.00", "gross_difference": "2145.00", "same_status": 473 } ] },
+    { "name": "workload", "values": [
+      { "value": "01111", "claims": 123, "mac_claims": 120, "mac_paid": "14400.00", "vendor_paid": "13600.00", "billed": "18450.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 106 },
+      { "value": "01112", "claims": 113, "mac_claims": 110, "mac_paid": "13200.00", "vendor_paid": "12400.00", "billed": "16950.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 98 },
+      { "value": "01182", "claims": 103, "mac_claims": 100, "mac_paid": "12000.00", "vendor_paid": "11300.00", "billed": "15450.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 88 },
+      { "value": "01212", "claims": 103, "mac_claims": 100, "mac_paid": "12000.00", "vendor_paid": "11300.00", "billed": "15450.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 88 },
+      { "value": "01312", "claims": 97, "mac_claims": 95, "mac_paid": "11400.00", "vendor_paid": "10750.00", "billed": "14550.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 84 },
+      { "value": "01412", "claims": 97, "mac_claims": 95, "mac_paid": "11400.00", "vendor_paid": "10700.00", "billed": "14550.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 84 },
+      { "value": "01912", "claims": 92, "mac_claims": 90, "mac_paid": "10800.00", "vendor_paid": "10200.00", "billed": "13800.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 79 },
+      { "value": "02202", "claims": 93, "mac_claims": 90, "mac_paid": "10800.00", "vendor_paid": "10150.00", "billed": "13950.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 79 },
+      { "value": "02302", "claims": 87, "mac_claims": 85, "mac_paid": "10200.00", "vendor_paid": "9600.00", "billed": "13050.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 77 },
+      { "value": "02402", "claims": 87, "mac_claims": 85, "mac_paid": "10200.00", "vendor_paid": "9600.00", "billed": "13050.00", "net_difference": "-120.00", "gross_difference": "390.00", "same_status": 77 } ] },
+    { "name": "claim_type", "values": [
+      { "value": "dme", "claims": 149, "mac_claims": 145, "mac_paid": "17460.00", "vendor_paid": "16440.00", "billed": "22350.00", "net_difference": "-180.00", "gross_difference": "585.00", "same_status": 129 },
+      { "value": "institutional", "claims": 447, "mac_claims": 436, "mac_paid": "52380.00", "vendor_paid": "49320.00", "billed": "67050.00", "net_difference": "-540.00", "gross_difference": "1755.00", "same_status": 387 },
+      { "value": "professional", "claims": 399, "mac_claims": 389, "mac_paid": "46560.00", "vendor_paid": "43840.00", "billed": "59850.00", "net_difference": "-480.00", "gross_difference": "1560.00", "same_status": 344 } ] },
+    { "name": "adjudication", "values": [
+      { "value": "", "claims": 548, "mac_claims": 534, "mac_paid": "64000.00", "vendor_paid": "60300.00", "billed": "82200.00", "net_difference": "-660.00", "gross_difference": "2145.00", "same_status": 473 },
+      { "value": "inpatient", "claims": 199, "mac_claims": 194, "mac_paid": "23280.00", "vendor_paid": "21920.00", "billed": "29850.00", "net_difference": "-240.00", "gross_difference": "780.00", "same_status": 172 },
+      { "value": "outpatient", "claims": 248, "mac_claims": 242, "mac_paid": "29120.00", "vendor_paid": "27380.00", "billed": "37200.00", "net_difference": "-300.00", "gross_difference": "975.00", "same_status": 215 } ] },
+    { "name": "mac_status", "values": [
+      { "value": "", "claims": 25, "mac_claims": 0, "mac_paid": "0", "vendor_paid": "4000.00", "billed": "3750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "1", "claims": 920, "mac_claims": 920, "mac_paid": "116400.00", "vendor_paid": "105000.00", "billed": "138000.00", "net_difference": "-1800.00", "gross_difference": "3300.00", "same_status": 830 },
+      { "value": "22", "claims": 15, "mac_claims": 15, "mac_paid": "0", "vendor_paid": "0", "billed": "2250.00", "net_difference": "0", "gross_difference": "0", "same_status": 5 },
+      { "value": "4", "claims": 35, "mac_claims": 35, "mac_paid": "0", "vendor_paid": "600.00", "billed": "5250.00", "net_difference": "600.00", "gross_difference": "600.00", "same_status": 25 } ] },
+    { "name": "vendor_status", "values": [
+      { "value": "", "claims": 80, "mac_claims": 80, "mac_paid": "9600.00", "vendor_paid": "0", "billed": "12000.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "1", "claims": 860, "mac_claims": 835, "mac_paid": "106000.00", "vendor_paid": "109600.00", "billed": "129000.00", "net_difference": "-400.00", "gross_difference": "3100.00", "same_status": 830 },
+      { "value": "22", "claims": 5, "mac_claims": 5, "mac_paid": "0", "vendor_paid": "0", "billed": "750.00", "net_difference": "0", "gross_difference": "0", "same_status": 5 },
+      { "value": "4", "claims": 50, "mac_claims": 50, "mac_paid": "800.00", "vendor_paid": "0", "billed": "7500.00", "net_difference": "-800.00", "gross_difference": "800.00", "same_status": 25 } ] },
+    { "name": "frequency", "values": [
+      { "value": "1", "claims": 945, "mac_claims": 921, "mac_paid": "110580.00", "vendor_paid": "104120.00", "billed": "141750.00", "net_difference": "-1140.00", "gross_difference": "3705.00", "same_status": 817 },
+      { "value": "7", "claims": 40, "mac_claims": 39, "mac_paid": "4656.00", "vendor_paid": "4384.00", "billed": "6000.00", "net_difference": "-48.00", "gross_difference": "156.00", "same_status": 34 },
+      { "value": "8", "claims": 10, "mac_claims": 10, "mac_paid": "1164.00", "vendor_paid": "1096.00", "billed": "1500.00", "net_difference": "-12.00", "gross_difference": "39.00", "same_status": 9 } ] },
+    { "name": "paid_band", "values": [
+      { "value": "10000 and more", "claims": 1, "mac_claims": 1, "mac_paid": "10000.00", "vendor_paid": "9900.00", "billed": "12000.00", "net_difference": "-100.00", "gross_difference": "100.00", "same_status": 1 },
+      { "value": "under 100", "claims": 529, "mac_claims": 520, "mac_paid": "26000.00", "vendor_paid": "24600.00", "billed": "49600.00", "net_difference": "-700.00", "gross_difference": "1200.00", "same_status": 448 },
+      { "value": "under 1000", "claims": 355, "mac_claims": 340, "mac_paid": "68000.00", "vendor_paid": "64500.00", "billed": "58500.00", "net_difference": "-900.00", "gross_difference": "1800.00", "same_status": 317 },
+      { "value": "under 10000", "claims": 9, "mac_claims": 9, "mac_paid": "12400.00", "vendor_paid": "10000.00", "billed": "14000.00", "net_difference": "-100.00", "gross_difference": "200.00", "same_status": 8 },
+      { "value": "zero", "claims": 101, "mac_claims": 100, "mac_paid": "0", "vendor_paid": "600.00", "billed": "15150.00", "net_difference": "600.00", "gross_difference": "600.00", "same_status": 86 } ] },
+    { "name": "service_month", "values": [
+      { "value": "2025-10", "claims": 478, "mac_claims": 466, "mac_paid": "55920.00", "vendor_paid": "52608.00", "billed": "71700.00", "net_difference": "-576.00", "gross_difference": "1872.00", "same_status": 413 },
+      { "value": "2025-11", "claims": 517, "mac_claims": 504, "mac_paid": "60480.00", "vendor_paid": "56992.00", "billed": "77550.00", "net_difference": "-624.00", "gross_difference": "2028.00", "same_status": 447 } ] },
+    { "name": "payment_band", "values": [
+      { "value": "", "claims": 105, "mac_claims": 80, "mac_paid": "9600.00", "vendor_paid": "4000.00", "billed": "15750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "match", "claims": 790, "mac_claims": 790, "mac_paid": "94800.00", "vendor_paid": "94798.00", "billed": "118500.00", "net_difference": "-2.00", "gross_difference": "2.70", "same_status": 771 },
+      { "value": "over 5%", "claims": 5, "mac_claims": 5, "mac_paid": "600.00", "vendor_paid": "-503.00", "billed": "750.00", "net_difference": "-1103.00", "gross_difference": "3777.00", "same_status": 3 },
+      { "value": "up to 1%", "claims": 30, "mac_claims": 30, "mac_paid": "3600.00", "vendor_paid": "3580.00", "billed": "4500.00", "net_difference": "-20.00", "gross_difference": "33.00", "same_status": 27 },
+      { "value": "up to 1.00", "claims": 50, "mac_claims": 50, "mac_paid": "6000.00", "vendor_paid": "5985.00", "billed": "7500.00", "net_difference": "-15.00", "gross_difference": "27.30", "same_status": 47 },
+      { "value": "up to 5%", "claims": 15, "mac_claims": 15, "mac_paid": "1800.00", "vendor_paid": "1740.00", "billed": "2250.00", "net_difference": "-60.00", "gross_difference": "60.00", "same_status": 12 } ] },
+    { "name": "outcome", "values": [
+      { "value": "different", "claims": 240, "mac_claims": 240, "mac_paid": "28800.00", "vendor_paid": "27600.00", "billed": "36000.00", "net_difference": "-1200.00", "gross_difference": "3900.00", "same_status": 210 },
+      { "value": "duplicated", "claims": 5, "mac_claims": 5, "mac_paid": "600.00", "vendor_paid": "0", "billed": "750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "equal", "claims": 650, "mac_claims": 650, "mac_paid": "78000.00", "vendor_paid": "78000.00", "billed": "97500.00", "net_difference": "0", "gross_difference": "0", "same_status": 650 },
+      { "value": "extra", "claims": 25, "mac_claims": 0, "mac_paid": "0", "vendor_paid": "4000.00", "billed": "3750.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "missing", "claims": 55, "mac_claims": 55, "mac_paid": "6600.00", "vendor_paid": "0", "billed": "8250.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 },
+      { "value": "set_aside", "claims": 20, "mac_claims": 20, "mac_paid": "2400.00", "vendor_paid": "0", "billed": "3000.00", "net_difference": "0", "gross_difference": "0", "same_status": 0 } ] }
+  ],
+  "status_matrix": [
+    { "mac_status": "1", "vendor_status": "1", "claims": 830, "mac_paid": "106000.00", "vendor_paid": "105000.00" },
+    { "mac_status": "1", "vendor_status": "4", "claims": 25, "mac_paid": "800.00", "vendor_paid": "0" },
+    { "mac_status": "22", "vendor_status": "22", "claims": 5, "mac_paid": "0", "vendor_paid": "0" },
+    { "mac_status": "4", "vendor_status": "1", "claims": 5, "mac_paid": "0", "vendor_paid": "600.00" },
+    { "mac_status": "4", "vendor_status": "4", "claims": 25, "mac_paid": "0", "vendor_paid": "0" }
+  ],
+  "tags": [
+    { "tag": "CLP04", "label": "Claim payment", "claims": 150, "dollars": "3900.00" },
+    { "tag": "SVC03", "label": "Line payment", "claims": 140, "dollars": "3700.00" },
+    { "tag": "CAS*CO*45", "label": "Charge above the fee schedule", "claims": 95, "dollars": "3100.00" },
+    { "tag": "CAS*CO*253", "label": "Sequestration adjustment", "claims": 70, "dollars": "210.00" },
+    { "tag": "AMT*B6", "label": "Line allowed amount", "claims": 40, "dollars": "3000.00" },
+    { "tag": "CLP02", "label": "Claim status", "claims": 30, "dollars": "0" },
+    { "tag": "NM1*82", "label": "Rendering provider", "claims": 12, "dollars": "0" }
+  ],
+  "legacy": {
+    "totals": { "claims": 990, "paid": "118800.00", "billed": "148500.00" },
+    "dimensions": [
+      { "name": "jurisdiction", "values": [
+        { "value": "JE", "claims": 602, "paid": "72400.00", "billed": "90300.00" },
+        { "value": "JF", "claims": 388, "paid": "46400.00", "billed": "58200.00" } ] },
+      { "name": "part", "values": [
+        { "value": "A", "claims": 436, "paid": "52400.00", "billed": "65400.00" },
+        { "value": "B", "claims": 554, "paid": "66400.00", "billed": "83100.00" } ] },
+      { "name": "workload", "values": [
+        { "value": "01111", "claims": 140, "paid": "16800.00", "billed": "21000.00" },
+        { "value": "01112", "claims": 110, "paid": "13200.00", "billed": "16500.00" },
+        { "value": "01182", "claims": 100, "paid": "12000.00", "billed": "15000.00" },
+        { "value": "01212", "claims": 100, "paid": "12000.00", "billed": "15000.00" },
+        { "value": "01312", "claims": 95, "paid": "11400.00", "billed": "14250.00" },
+        { "value": "01412", "claims": 95, "paid": "11400.00", "billed": "14250.00" },
+        { "value": "01912", "claims": 90, "paid": "10800.00", "billed": "13500.00" },
+        { "value": "02202", "claims": 90, "paid": "10800.00", "billed": "13500.00" },
+        { "value": "02302", "claims": 85, "paid": "10200.00", "billed": "12750.00" },
+        { "value": "02402", "claims": 85, "paid": "10200.00", "billed": "12750.00" } ] },
+      { "name": "claim_type", "values": [
+        { "value": "dme", "claims": 145, "paid": "17460.00", "billed": "21750.00" },
+        { "value": "institutional", "claims": 436, "paid": "52380.00", "billed": "65400.00" },
+        { "value": "professional", "claims": 409, "paid": "48960.00", "billed": "61350.00" } ] },
+      { "name": "adjudication", "values": [
+        { "value": "", "claims": 554, "paid": "66400.00", "billed": "83100.00" },
+        { "value": "inpatient", "claims": 194, "paid": "23280.00", "billed": "29100.00" },
+        { "value": "outpatient", "claims": 242, "paid": "29120.00", "billed": "36300.00" } ] },
+      { "name": "mac_status", "values": [
+        { "value": "1", "claims": 940, "paid": "118800.00", "billed": "141000.00" },
+        { "value": "22", "claims": 15, "paid": "0", "billed": "2250.00" },
+        { "value": "4", "claims": 35, "paid": "0", "billed": "5250.00" } ] },
+      { "name": "frequency", "values": [
+        { "value": "1", "claims": 941, "paid": "112980.00", "billed": "141150.00" },
+        { "value": "7", "claims": 39, "paid": "4656.00", "billed": "5850.00" },
+        { "value": "8", "claims": 10, "paid": "1164.00", "billed": "1500.00" } ] },
+      { "name": "paid_band", "values": [
+        { "value": "10000 and more", "claims": 1, "paid": "10000.00", "billed": "150.00" },
+        { "value": "under 100", "claims": 520, "paid": "26000.00", "billed": "78000.00" },
+        { "value": "under 1000", "claims": 360, "paid": "70400.00", "billed": "54000.00" },
+        { "value": "under 10000", "claims": 9, "paid": "12400.00", "billed": "1350.00" },
+        { "value": "zero", "claims": 100, "paid": "0", "billed": "15000.00" } ] },
+      { "name": "service_month", "values": [
+        { "value": "2025-10", "claims": 466, "paid": "55920.00", "billed": "69900.00" },
+        { "value": "2025-11", "claims": 524, "paid": "62880.00", "billed": "78600.00" } ] }
+    ]
+  }
+}

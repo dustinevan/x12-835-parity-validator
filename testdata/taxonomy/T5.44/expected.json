@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T5.44",
+  "title": "Trailer counts differ",
+  "representable": true,
+  "notes": "The vendor side omits the situational AMT*B6 (allowed amount) on both service lines, so its SE01 is two lower; both counts are correct for their own files. The SE01 difference is derived from the two omitted segments.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9F14R41MN45",
+        "date_of_service": "20260224",
+        "total_charge": "295.80",
+        "tax_id": "854411628",
+        "npi": "1440038325",
+        "workload": "54401"
+      },
+      "patient_control_number": "SYN54401",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "AMT*B6*133.65",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "AMT*B6*17.52",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "30",
+      "vendor": "28"
+    }
+  ]
+}

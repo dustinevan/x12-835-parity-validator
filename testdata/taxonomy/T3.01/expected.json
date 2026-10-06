@@ -1,0 +1,61 @@
+{
+  "taxonomy_id": "T3.01",
+  "title": "One side's adjustments do not balance its own amounts",
+  "representable": true,
+  "notes": "Follows the entry's example: the vendor-processed side balances (500.00 - 108.00 = 392.00); the MAC-processed CLP04 and BPR02 are 390.00 with the same CAS, so 2.00 is unexplained on the MAC side (a legacy-side imbalance, e.g. a manual payment change without a matching adjustment). The line itself balances on both sides; only the claim-level identity fails on the MAC side.",
+  "imbalance": [
+    {
+      "side": "mac",
+      "level": "claim",
+      "detail": "claim 1 (SYN301A): CLP03 500.00 minus adjustments 108.00 = 392.00 but CLP04 is 390.00 (unexplained 2.00)"
+    }
+  ],
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3CJ1E07KQ33",
+        "date_of_service": "20260602",
+        "total_charge": "500.00",
+        "tax_id": "933014417",
+        "npi": "1301456731",
+        "workload": "30117"
+      },
+      "patient_control_number": "SYN301A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "390.00",
+          "vendor": "392.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "390.00",
+      "vendor": "392.00"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "taxonomy_id": "T5.30",
+  "title": "Forwarding balance differs",
+  "representable": true,
+  "notes": "Two consecutive payments per side. Payment 1: a 500.00 WO exceeds claim payments, so the balance is carried forward (FB) and BPR02 is 0 on both sides; one claim is paid 50.00 more on the vendor side (allowed 250.00 versus 187.50), so FB is -150.00 versus -200.00. Payment 2 takes the carry back (FB 150.00 versus 200.00). The upstream cause is the claim difference in payment 1.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4N13P01MV01",
+        "date_of_service": "20260224",
+        "total_charge": "230.00",
+        "tax_id": "853011110",
+        "npi": "1300037904",
+        "workload": "53001"
+      },
+      "patient_control_number": "SYN53001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4N23Q02VC02",
+        "date_of_service": "20260225",
+        "total_charge": "260.00",
+        "tax_id": "853011110",
+        "npi": "1300037904",
+        "workload": "53001"
+      },
+      "patient_control_number": "SYN53002",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "150.00",
+          "vendor": "200.00"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "37.50",
+          "vendor": "50.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "150.00",
+          "vendor": "200.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "72.50",
+          "vendor": "10.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "37.50",
+          "vendor": "50.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "187.50",
+          "vendor": "250.00"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "4N33R03EH03",
+        "date_of_service": "20260309",
+        "total_charge": "2600.00",
+        "tax_id": "853011110",
+        "npi": "1300037904",
+        "workload": "53001"
+      },
+      "patient_control_number": "SYN53003",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "PLB",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "provider",
+      "transaction": 1,
+      "mac": "-200.00",
+      "vendor": "-150.00"
+    },
+    {
+      "segment": "PLB",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "transaction": 2,
+      "mac": "200.00",
+      "vendor": "150.00"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "transaction": 2,
+      "mac": "600.00",
+      "vendor": "650.00"
+    }
+  ]
+}

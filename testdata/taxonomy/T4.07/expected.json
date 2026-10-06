@@ -1,0 +1,57 @@
+{
+  "taxonomy_id": "T4.07",
+  "title": "SVC01 product or service qualifier differs",
+  "representable": true,
+  "notes": "An outpatient pharmacy line submitted with revenue code 0250 and no HCPCS is reported as NU:0250 on the MAC side and as HC:J3490 with 0250 in SVC04 on the vendor side; both pay zero (packaged, CO-97). Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4CT0N70MD59",
+        "date_of_service": "20260312",
+        "total_charge": "225.00",
+        "tax_id": "940407017",
+        "npi": "1940071230",
+        "workload": "94007"
+      },
+      "patient_control_number": "SYN407A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "NU:0250",
+          "vendor": "HC:J3490"
+        },
+        {
+          "segment": "SVC",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "0250"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

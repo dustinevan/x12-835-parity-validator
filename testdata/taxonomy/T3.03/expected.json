@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T3.03",
+  "title": "The same money is split differently across reason codes in one group",
+  "representable": true,
+  "notes": "Line 2 (modifier 51) is reduced to 150.00 allowed on both sides; MAC reports the whole gap as CO-45 150.00, vendor as CO-59 150.00. Group total, allowed, and payment agree; only the CARC differs (representation cause).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3EC3E07TT39",
+        "date_of_service": "20260604",
+        "total_charge": "700.00",
+        "tax_id": "933034417",
+        "npi": "1303456739",
+        "workload": "30317"
+      },
+      "patient_control_number": "SYN303A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "45",
+          "vendor": "59"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

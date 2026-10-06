@@ -1,0 +1,76 @@
+{
+  "taxonomy_id": "T1.16",
+  "title": "Interim bills handled as separate claims on one side, as a chain on the other",
+  "representable": true,
+  "notes": "An inpatient stay was billed as a first interim claim (frequency 2, 02-01 to 02-15) and a last interim claim (frequency 4, 02-16 to 03-03). The MAC-processed file reverses the first piece and reports a frequency-7 claim for the whole stay; the vendor-processed file reports the two pieces separately. The first piece pairs; the reversal and whole-stay claim are missing and the second piece is extra. Follows the cause of a different interim-billing convention.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02",
+    "REF02 (qualifier F8): cites each system's own CLP07"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8ME0T86JE16",
+        "date_of_service": "20260201",
+        "total_charge": "18000.00",
+        "tax_id": "970160001",
+        "npi": "1901600019",
+        "workload": "90160"
+      },
+      "patient_control_number": "IS9010616",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8ME0T86JE16",
+        "date_of_service": "20260201",
+        "total_charge": "-18000.00",
+        "tax_id": "970160001",
+        "npi": "1901600019",
+        "workload": "90160"
+      },
+      "patient_control_number": "IS9010616",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8ME0T86JE16",
+        "date_of_service": "20260201",
+        "total_charge": "34000.00",
+        "tax_id": "970160001",
+        "npi": "1901600019",
+        "workload": "90160"
+      },
+      "patient_control_number": "IS9010616",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8ME0T86JE16",
+        "date_of_service": "20260216",
+        "total_charge": "16000.00",
+        "tax_id": "970160001",
+        "npi": "1901600019",
+        "workload": "90160"
+      },
+      "patient_control_number": "IS9010616",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

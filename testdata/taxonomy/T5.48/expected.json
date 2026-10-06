@@ -1,0 +1,62 @@
+{
+  "taxonomy_id": "T5.48",
+  "title": "Claim order within a payment differs",
+  "representable": true,
+  "notes": "Same three claims in the same payment, ordered K1, K2, K3 on the MAC side and K3, K1, K2 on the vendor side. Matched by key, every claim agrees; a positional comparison would record every shifted claim as different. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4K14G81MT89",
+        "date_of_service": "20260224",
+        "total_charge": "300.20",
+        "tax_id": "854811776",
+        "npi": "1480038441",
+        "workload": "54801"
+      },
+      "patient_control_number": "SYN54801",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4K24H82VY80",
+        "date_of_service": "20260224",
+        "total_charge": "300.60",
+        "tax_id": "854811776",
+        "npi": "1480038441",
+        "workload": "54801"
+      },
+      "patient_control_number": "SYN54802",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4K34J83EF81",
+        "date_of_service": "20260224",
+        "total_charge": "301.00",
+        "tax_id": "854811776",
+        "npi": "1480038441",
+        "workload": "54801"
+      },
+      "patient_control_number": "SYN54803",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

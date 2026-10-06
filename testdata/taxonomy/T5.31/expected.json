@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "T5.31",
+  "title": "Offset from an affiliated provider differs",
+  "representable": true,
+  "notes": "The MAC side offsets 75.00 (PLB OB) for a debt owed by an affiliated provider; the vendor side has no affiliation data and takes no offset. Follows the input-or-environment cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5P13T11MW12",
+        "date_of_service": "20260225",
+        "total_charge": "2631.00",
+        "tax_id": "853111147",
+        "npi": "1310037936",
+        "workload": "53101"
+      },
+      "patient_control_number": "SYN53101",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5P23U12VD13",
+        "date_of_service": "20260226",
+        "total_charge": "366.20",
+        "tax_id": "853111147",
+        "npi": "1310037936",
+        "workload": "53101"
+      },
+      "patient_control_number": "SYN53102",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "850.77",
+      "vendor": "925.77"
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "PLB*1310037936*20261231*OB:FCN0000055555*75.00",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "40",
+      "vendor": "39"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "taxonomy_id": "T5.18",
+  "title": "Provider summary totals differ",
+  "representable": true,
+  "notes": "Two outpatient claims totalling 18450.00 in charges. One claim's MOA02 (HCPCS payable) differs by 13.25, and TS318 differs by the same 13.25; both sides' TS3 equal their own claims. The TS3 difference is derived from the claim difference and should not be counted twice.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1X11U81MF89",
+        "date_of_service": "20260305",
+        "total_charge": "9800.00",
+        "tax_id": "851810666",
+        "npi": "1180037545",
+        "workload": "51801"
+      },
+      "patient_control_number": "SYN51801",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1X21V82VM80",
+        "date_of_service": "20260306",
+        "total_charge": "8650.00",
+        "tax_id": "851810666",
+        "npi": "1180037545",
+        "workload": "51801"
+      },
+      "patient_control_number": "SYN51802",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "MOA",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "4553.55",
+          "vendor": "4566.80"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "TS3",
+      "element": 18,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "9107.15",
+      "vendor": "9120.40"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "taxonomy_id": "T5.13",
+  "title": "Payee additional identifier differs or is missing",
+  "representable": true,
+  "notes": "The MAC side identifies the payee by NPI with REF*TJ tax ID; the vendor side puts the tax ID in N104 (N103 = FI) and omits REF*TJ. The vendor key therefore has no payee NPI or REF*TJ tax ID, so the claims do not match. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5R11A31MY34",
+        "date_of_service": "20260225",
+        "total_charge": "2613.00",
+        "tax_id": "851310481",
+        "npi": "1130037397",
+        "workload": "51301"
+      },
+      "patient_control_number": "SYN51301",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5R21C32VF35",
+        "date_of_service": "20260226",
+        "total_charge": "362.60",
+        "tax_id": "851310481",
+        "npi": "1130037397",
+        "workload": "51301"
+      },
+      "patient_control_number": "SYN51302",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5R11A31MY34",
+        "date_of_service": "20260225",
+        "total_charge": "2613.00",
+        "tax_id": null,
+        "npi": null,
+        "workload": "51301"
+      },
+      "patient_control_number": "SYN51301",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5R21C32VF35",
+        "date_of_service": "20260226",
+        "total_charge": "362.60",
+        "tax_id": null,
+        "npi": null,
+        "workload": "51301"
+      },
+      "patient_control_number": "SYN51302",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "N1",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "XX",
+      "vendor": "FI"
+    },
+    {
+      "segment": "N1",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "1130037397",
+      "vendor": "851310481"
+    },
+    {
+      "segment": "REF",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "REF*TJ*851310481",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "39",
+      "vendor": "38"
+    }
+  ]
+}

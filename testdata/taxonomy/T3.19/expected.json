@@ -1,0 +1,202 @@
+{
+  "taxonomy_id": "T3.19",
+  "title": "Multiple-procedure and other modifier-based reductions differ",
+  "representable": true,
+  "notes": "Two procedures with fee schedule amounts 400.00 and 300.00. MAC pays the 400.00 procedure in full and cuts the second by 50% (CO-59 150.00); vendor ranks the 300.00 procedure first and cuts the 400.00 one (CO-59 200.00). Paid before cost sharing 550.00 versus 500.00; follows the ranking rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3YR9E17DN37",
+        "date_of_service": "20260620",
+        "total_charge": "1050.00",
+        "tax_id": "933194417",
+        "npi": "1319456731",
+        "workload": "31917"
+      },
+      "patient_control_number": "SYN319A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "431.20",
+          "vendor": "392.00"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "110.00",
+          "vendor": "100.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "313.60",
+          "vendor": "156.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": "59"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "6.40",
+          "vendor": "200.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "3.20"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "80.00",
+          "vendor": "40.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "400.00",
+          "vendor": "200.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "117.60",
+          "vendor": "235.20"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "59",
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "150.00",
+          "vendor": "4.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "2.40",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "30.00",
+          "vendor": "60.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "150.00",
+          "vendor": "300.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "431.20",
+      "vendor": "392.00"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T2.49",
+  "title": "Absent element versus zero value",
+  "representable": true,
+  "notes": "A laboratory claim with no patient responsibility: CLP05 is absent on the MAC side and 0 on the vendor side. Follows the representation cause (absent versus zero).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW4Y99XK01",
+        "date_of_service": "20260812",
+        "total_charge": "80.00",
+        "tax_id": "920494417",
+        "npi": "1920490715",
+        "workload": "92049"
+      },
+      "patient_control_number": "PCN24901",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "0"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

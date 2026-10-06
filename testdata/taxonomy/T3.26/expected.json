@@ -1,0 +1,114 @@
+{
+  "taxonomy_id": "T3.26",
+  "title": "The same adjustment is at claim level on one side and line level on the other",
+  "representable": true,
+  "notes": "Sequestration is per line on the MAC side (0.80 and 0.60) and one claim-level CO-253 1.40 on the vendor side. CLP04 68.60 agrees; line SVC03 amounts differ because the vendor lines exclude the reduction. Follows the representation (placement) cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3HD6F27EW38",
+        "date_of_service": "20260627",
+        "total_charge": "140.00",
+        "tax_id": "933264417",
+        "npi": "1326456732",
+        "workload": "32617"
+      },
+      "patient_control_number": "SYN326A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "CAS*CO*253*1.40"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "39.20",
+          "vendor": "40.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.80",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "29.40",
+          "vendor": "30.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "253",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "0.60",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "29",
+      "vendor": "30"
+    }
+  ]
+}

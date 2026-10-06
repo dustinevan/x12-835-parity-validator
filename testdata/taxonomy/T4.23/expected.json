@@ -1,0 +1,92 @@
+{
+  "taxonomy_id": "T4.23",
+  "title": "Line payment or allowed exceeds line charge on one side",
+  "representable": true,
+  "notes": "Outpatient line 96372 charged 50.00: the MAC side pays 71.20 with CAS*CO*45*-21.20, the vendor side caps payment and allowed at 50.00. Follows the rule-gap cause (lower-of-charge cap applied on one side); cost sharing is omitted on this line to keep the arithmetic to the entry's example.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4MT2D30GX51",
+        "date_of_service": "20260402",
+        "total_charge": "190.00",
+        "tax_id": "940423017",
+        "npi": "1940231230",
+        "workload": "94023"
+      },
+      "patient_control_number": "SYN423A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "146.46",
+          "vendor": "125.26"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "71.20",
+          "vendor": "50.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "CAS*CO*45*-21.20",
+          "vendor": null
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "71.20",
+          "vendor": "50.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "146.46",
+      "vendor": "125.26"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "28",
+      "vendor": "27"
+    }
+  ]
+}

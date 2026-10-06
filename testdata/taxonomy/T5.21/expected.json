@@ -1,0 +1,78 @@
+{
+  "taxonomy_id": "T5.21",
+  "title": "A file does not balance internally",
+  "representable": true,
+  "notes": "Intentional imbalance: the vendor file's BPR02 is 4260.22 while its claims total 4220.22 less a 40.00 WO, which should give 4180.22 (imbalance 80.00, twice the PLB: added instead of subtracted). The MAC file balances. Follows the rule-gap cause (PLB sign error).",
+  "imbalance": [
+    {
+      "side": "vendor",
+      "level": "payment",
+      "detail": "BPR02 is 4260.22; the claims total 4220.22 less the 40.00 WO PLB, which gives 4180.22 (80.00 apart: the PLB amount was added instead of subtracted)"
+    }
+  ],
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4C12F11MJ12",
+        "date_of_service": "20260226",
+        "total_charge": "4221.00",
+        "tax_id": "852110777",
+        "npi": "1210037630",
+        "workload": "52101"
+      },
+      "patient_control_number": "SYN52101",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4C22G12VQ13",
+        "date_of_service": "20260227",
+        "total_charge": "2621.00",
+        "tax_id": "852110777",
+        "npi": "1210037630",
+        "workload": "52101"
+      },
+      "patient_control_number": "SYN52102",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4C32H13EW14",
+        "date_of_service": "20260225",
+        "total_charge": "5221.00",
+        "tax_id": "852110777",
+        "npi": "1210037630",
+        "workload": "52101"
+      },
+      "patient_control_number": "SYN52103",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "4180.22",
+      "vendor": "4260.22"
+    }
+  ]
+}

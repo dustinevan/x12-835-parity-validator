@@ -1,0 +1,128 @@
+{
+  "taxonomy_id": "T1.15",
+  "title": "Legacy reference and vendor output capture different points in a claim's history",
+  "representable": true,
+  "notes": "The MAC reference is a later correction (CLP04 75.58, MA67, REF*F8 to the original); the vendor output is the first adjudication (88.08, the amount the MAC originally paid). The claims pair and differ in payment, adjustments, MOA, and REF*F8 presence. Follows the cause where the supplied legacy outcome is a later version of the claim.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7HD0J55HX15",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970150001",
+        "npi": "1901500011",
+        "workload": "90150"
+      },
+      "patient_control_number": "SN6640915",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "75.58",
+          "vendor": "88.08"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "19.28",
+          "vendor": "22.47"
+        },
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MOA***MA67",
+          "vendor": null
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "REF*F8*26100150000042",
+          "vendor": null
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "75.58",
+          "vendor": "88.08"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "88.20",
+          "vendor": "72.25"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.54",
+          "vendor": "1.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "19.28",
+          "vendor": "22.47"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "96.40",
+          "vendor": "112.35"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "75.58",
+      "vendor": "88.08"
+    }
+  ]
+}

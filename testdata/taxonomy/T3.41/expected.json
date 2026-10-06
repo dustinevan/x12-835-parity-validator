@@ -1,0 +1,84 @@
+{
+  "taxonomy_id": "T3.41",
+  "title": "Demonstration or model adjustments appear on one side only",
+  "representable": true,
+  "notes": "MAC applies a demonstration-project reduction CO-132 12.50; vendor does not and pays exactly 12.50 more (117.60 versus 105.10). Sequestration is the same on both sides. Follows the missing model-alignment input cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3CJ1G47KQ33",
+        "date_of_service": "20260615",
+        "total_charge": "200.00",
+        "tax_id": "933414417",
+        "npi": "1341456733",
+        "workload": "34117"
+      },
+      "patient_control_number": "SYN341A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "105.10",
+          "vendor": "117.60"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "105.10",
+          "vendor": "117.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "132",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "12.50",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "105.10",
+      "vendor": "117.60"
+    }
+  ]
+}

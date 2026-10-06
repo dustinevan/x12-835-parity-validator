@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T5.04",
+  "title": "Banking fields differ",
+  "representable": true,
+  "notes": "Receiving-bank routing number BPR13 is a synthetic value on the MAC side and a 000000000 placeholder on the vendor side. Follows the input-or-environment cause (test environment without payee banking data). Bank fields are sensitive financial data.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5F10R41MN45",
+        "date_of_service": "20260225",
+        "total_charge": "2604.00",
+        "tax_id": "850410148",
+        "npi": "1040037123",
+        "workload": "50401"
+      },
+      "patient_control_number": "SYN50401",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5F20T42VU46",
+        "date_of_service": "20260226",
+        "total_charge": "360.80",
+        "tax_id": "850410148",
+        "npi": "1040037123",
+        "workload": "50401"
+      },
+      "patient_control_number": "SYN50402",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "990001004",
+      "vendor": "000000000"
+    }
+  ]
+}

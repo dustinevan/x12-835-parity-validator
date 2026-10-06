@@ -1,0 +1,102 @@
+{
+  "taxonomy_id": "T4.44",
+  "title": "Program payment adjustment applied at line level on one side only",
+  "representable": true,
+  "notes": "The MAC line pays 72.10 after a negative MIPS adjustment (CO-237 1.44, RARC N807); the vendor line pays 73.54 with no adjustment. Follows the input-or-environment cause (provider adjustment factor missing).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4QT4M40HM28",
+        "date_of_service": "20260421",
+        "total_charge": "150.00",
+        "tax_id": "940444017",
+        "npi": "1940441235",
+        "workload": "94044"
+      },
+      "patient_control_number": "SYN444A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "72.10",
+          "vendor": "73.54"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "72.10",
+          "vendor": "73.54"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "237",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.44",
+          "vendor": null
+        },
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "LQ*HE*N807",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "72.10",
+      "vendor": "73.54"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "23",
+      "vendor": "22"
+    }
+  ]
+}

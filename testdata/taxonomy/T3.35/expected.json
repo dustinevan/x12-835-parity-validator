@@ -1,0 +1,53 @@
+{
+  "taxonomy_id": "T3.35",
+  "title": "Remarks are carried in MIA on one side and MOA on the other",
+  "representable": true,
+  "notes": "Outpatient institutional claim (TOB 13x): MAC carries remark MA01 in MOA03; vendor carries it in MIA05 with MIA01 covered days 0. Follows the segment-choice rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3UG5F37NH35",
+        "date_of_service": "20260609",
+        "total_charge": "640.00",
+        "tax_id": "933354417",
+        "npi": "1335456731",
+        "workload": "33517"
+      },
+      "patient_control_number": "SYN335A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MOA***MA01",
+          "vendor": null
+        },
+        {
+          "segment": "MIA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": null,
+          "vendor": "MIA*0****MA01"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

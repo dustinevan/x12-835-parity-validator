@@ -1,0 +1,179 @@
+{
+  "taxonomy_id": "T4.03",
+  "title": "One submitted line reported as several, or several as one",
+  "representable": true,
+  "notes": "A DME rental line (E0431-RR, 2026-03-15 to 2026-04-14, charge 60.00) is one line on the MAC side and two lines sharing REF*6R L1 split at 2026-04-01 on the vendor side; the parts add to the same charge and payment (23.52). Follows the representation cause (span reported per month). The line reports a date range (DTM*150/151, no DTM*472), so the key date of service is the DTM*150 start date 20260315, identical on both sides.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4MT0D30GX11",
+        "date_of_service": "20260315",
+        "total_charge": "60.00",
+        "tax_id": "940403017",
+        "npi": "1940031234",
+        "workload": "94003"
+      },
+      "patient_control_number": "SYN403A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "60.00",
+          "vendor": "30.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "23.52",
+          "vendor": "11.76"
+        },
+        {
+          "segment": "DTM",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "20260414",
+          "vendor": "20260331"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "30.00",
+          "vendor": "15.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.48",
+          "vendor": "0.24"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "6.00",
+          "vendor": "3.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "30.00",
+          "vendor": "15.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "SVC*HC:E0431:RR*30.00*11.76**1"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "DTM*150*20260401"
+        },
+        {
+          "segment": "DTM",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "DTM*151*20260414"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*CO*45*15.00**253*0.24"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "CAS*PR*2*3.00"
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "REF*6R*L1"
+        },
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "vendor_line": 2,
+          "mac": null,
+          "vendor": "AMT*B6*15.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "24",
+      "vendor": "31"
+    }
+  ]
+}

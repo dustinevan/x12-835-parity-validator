@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T1.18",
+  "title": "Patient identity corrected by the payer on one side",
+  "representable": true,
+  "notes": "Both sides echo the submitted MBI in NM1*QC, so the claims pair; the MAC-processed file adds NM1*74 (corrected insured) with a different MBI. Follows the input-or-environment cause (the systems hold different beneficiary records across an identifier change).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1UG0K48MR18",
+        "date_of_service": "20260302",
+        "total_charge": "135.00",
+        "tax_id": "970180001",
+        "npi": "1901800015",
+        "workload": "90180"
+      },
+      "patient_control_number": "PI7730118",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "NM1",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "NM1*74*1*SYNTHETIC*KATSURA****C*1UG1M59MT18",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

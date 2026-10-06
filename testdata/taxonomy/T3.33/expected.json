@@ -1,0 +1,62 @@
+{
+  "taxonomy_id": "T3.33",
+  "title": "Crossover remarks differ",
+  "representable": true,
+  "notes": "MAC reports a crossover (MOA MA18 and NM1*TT naming a supplemental insurer); vendor reports neither. Follows the missing supplemental-coverage input cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3RP3F37FF39",
+        "date_of_service": "20260607",
+        "total_charge": "170.00",
+        "tax_id": "933334417",
+        "npi": "1333456733",
+        "workload": "33317"
+      },
+      "patient_control_number": "SYN333A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "NM1",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "NM1*TT*2*SYNTHETIC SUPPLEMENTAL INSURER*****PI*SYNSUP33",
+          "vendor": null
+        },
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MOA***MA18",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "25",
+      "vendor": "23"
+    }
+  ]
+}

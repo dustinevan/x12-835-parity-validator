@@ -1,0 +1,62 @@
+{
+  "taxonomy_id": "T1.08",
+  "title": "One claim on one side, several claims on the other (split)",
+  "representable": true,
+  "notes": "The MAC-processed file reports one claim (CLP03 240.00, three lines); the vendor-processed file reports two claims with the same CLP01 (180.00 with MA15, and 60.00). Total charge is in the key, so the MAC claim is missing and both vendor pieces are extra, while BPR02 agrees. Follows the representation cause (separated to expedite handling).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9GU0X48YE08",
+        "date_of_service": "20260302",
+        "total_charge": "240.00",
+        "tax_id": "970080001",
+        "npi": "1900800016",
+        "workload": "90080"
+      },
+      "patient_control_number": "SP6620417",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "9GU0X48YE08",
+        "date_of_service": "20260302",
+        "total_charge": "180.00",
+        "tax_id": "970080001",
+        "npi": "1900800016",
+        "workload": "90080"
+      },
+      "patient_control_number": "SP6620417",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "9GU0X48YE08",
+        "date_of_service": "20260302",
+        "total_charge": "60.00",
+        "tax_id": "970080001",
+        "npi": "1900800016",
+        "workload": "90080"
+      },
+      "patient_control_number": "SP6620417",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

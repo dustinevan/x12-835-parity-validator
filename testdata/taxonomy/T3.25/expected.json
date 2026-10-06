@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T3.25",
+  "title": "Adjustment quantity differs",
+  "representable": true,
+  "notes": "Three units billed, two denied for frequency: MAC CO-151 60.00 with quantity 2; vendor CO-151 60.00 with no quantity. Money agrees; follows the representation cause (optional quantity omitted).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3GU5F27AV35",
+        "date_of_service": "20260626",
+        "total_charge": "90.00",
+        "tax_id": "933254417",
+        "npi": "1325456733",
+        "workload": "32517"
+      },
+      "patient_control_number": "SYN325A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

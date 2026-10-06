@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "T5.16",
+  "title": "Header number or claim grouping differs",
+  "representable": true,
+  "notes": "Part A: an outpatient (13x) and an inpatient (11x) claim. The MAC side groups them under FISS-style LX*132603 and LX*112603; the vendor side puts both under LX*1. Claims match. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "8V11M61MD67",
+        "date_of_service": "20260303",
+        "total_charge": "1276.00",
+        "tax_id": "851610592",
+        "npi": "1160037481",
+        "workload": "51601"
+      },
+      "patient_control_number": "SYN51601",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "8V21N62VJ68",
+        "date_of_service": "20260301",
+        "total_charge": "64122.50",
+        "tax_id": "851610592",
+        "npi": "1160037481",
+        "workload": "51601"
+      },
+      "patient_control_number": "SYN51602",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "LX",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "132603",
+      "vendor": "1"
+    },
+    {
+      "segment": "LX",
+      "element": 0,
+      "occurrence": 2,
+      "scope": "provider",
+      "mac": "LX*112603",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "41",
+      "vendor": "40"
+    }
+  ]
+}

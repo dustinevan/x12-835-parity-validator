@@ -1,0 +1,62 @@
+{
+  "taxonomy_id": "T1.09",
+  "title": "Several claims on one side, one claim on the other (combination)",
+  "representable": true,
+  "notes": "The MAC-processed file reports the original outpatient claim (9000.00) and a late-charge claim (450.00, CLP09 5) separately; the vendor-processed file reports one claim for 9450.00 with CLP09 7. No key matches, so both MAC claims are missing and the combined claim is extra; BPR02 agrees. Follows the cause where one side requires late charges through an adjustment of the original.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "1KV0G79AK09",
+        "date_of_service": "20260305",
+        "total_charge": "9000.00",
+        "tax_id": "970090001",
+        "npi": "1900900014",
+        "workload": "90090"
+      },
+      "patient_control_number": "LC8830021",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1KV0G79AK09",
+        "date_of_service": "20260305",
+        "total_charge": "450.00",
+        "tax_id": "970090001",
+        "npi": "1900900014",
+        "workload": "90090"
+      },
+      "patient_control_number": "LC8830022",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "1KV0G79AK09",
+        "date_of_service": "20260305",
+        "total_charge": "9450.00",
+        "tax_id": "970090001",
+        "npi": "1900900014",
+        "workload": "90090"
+      },
+      "patient_control_number": "LC8830021",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

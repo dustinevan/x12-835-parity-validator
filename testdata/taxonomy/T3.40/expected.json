@@ -1,0 +1,65 @@
+{
+  "taxonomy_id": "T3.40",
+  "title": "Unprocessable-claim coding differs from denial coding",
+  "representable": true,
+  "notes": "MAC returns the claim as unprocessable (CO-16 70.00, MOA MA130, LQ M20); vendor denies it with appeal rights (CO-96 70.00, LQ N425, MOA MA01). Follows the unprocessable-versus-denial rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3AA0G47GP30",
+        "date_of_service": "20260614",
+        "total_charge": "70.00",
+        "tax_id": "933404417",
+        "npi": "1340456734",
+        "workload": "34017"
+      },
+      "patient_control_number": "SYN340A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "MOA",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MA130",
+          "vendor": "MA01"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "16",
+          "vendor": "96"
+        },
+        {
+          "segment": "LQ",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "M20",
+          "vendor": "N425"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

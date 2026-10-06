@@ -1,0 +1,28 @@
+# Only the source the image build needs enters the build context: the root
+# Go module (go.mod, go.sum, the vendored dependencies in vendor/), the
+# backend tree (Go files, migrations, CARC/RARC lists, and the batch tool
+# under backend/app/vdb), and the validator app's frontend sources. Docs,
+# Markdown files, test data, tools/, local data, node_modules, and build
+# output stay out; the image carries no sample data.
+#
+# The backend tree is included whole, less its non-source files. Docker's
+# context walker enters an excluded directory only when an exception names
+# its path literally, so "!backend/**/*.go" would miss nested packages.
+# The build reads no Markdown file, so the last line keeps every one out,
+# including those inside the directories the exceptions let in.
+**
+!Dockerfile
+!.dockerignore
+!go.mod
+!go.sum
+!vendor/
+!backend/
+backend/app/site/dist/
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/index.html
+!frontend/tsconfig*.json
+!frontend/vite.config.ts
+!frontend/vite.docs.config.ts
+!frontend/src/**
+**/*.md

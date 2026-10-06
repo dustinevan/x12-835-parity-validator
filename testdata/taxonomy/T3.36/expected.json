@@ -1,0 +1,53 @@
+{
+  "taxonomy_id": "T3.36",
+  "title": "Remarks are ordered or counted differently",
+  "representable": true,
+  "notes": "Same claim remarks in a different order: MAC MOA MA01, N130; vendor MOA N130, MA01. Follows the representation cause (order carries no defined meaning, verify).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3VQ6F37RJ38",
+        "date_of_service": "20260610",
+        "total_charge": "175.00",
+        "tax_id": "933364417",
+        "npi": "1336456730",
+        "workload": "33617"
+      },
+      "patient_control_number": "SYN336A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "MOA",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MA01",
+          "vendor": "N130"
+        },
+        {
+          "segment": "MOA",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "N130",
+          "vendor": "MA01"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

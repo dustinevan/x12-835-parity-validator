@@ -1,0 +1,56 @@
+{
+  "taxonomy_id": "T4.48",
+  "title": "REF*0K policy identifier differs or is present on one side only",
+  "representable": true,
+  "notes": "Both sides deny line 2 (95251) with CO-50 and RARC N115; the MAC side names the synthetic local coverage determination L99901 in REF*0K and the vendor side omits it. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4FT4W80NR76",
+        "date_of_service": "20260423",
+        "total_charge": "270.00",
+        "tax_id": "940448017",
+        "npi": "1940481231",
+        "workload": "94048"
+      },
+      "patient_control_number": "SYN448A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "REF*0K*L99901",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "27",
+      "vendor": "26"
+    }
+  ]
+}

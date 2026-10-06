@@ -1,0 +1,61 @@
+{
+  "taxonomy_id": "T1.21",
+  "title": "Crossover to a supplemental payer reported on one side only",
+  "representable": true,
+  "notes": "The MAC-processed file reports CLP02 19 with an NM1*TT crossover carrier and MA18; the vendor-processed file reports CLP02 1 with neither. Payment (88.08) agrees. Follows the cause where the vendor lacks the supplemental-coverage eligibility records.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4FK0M31QK21",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970210001",
+        "npi": "1902100019",
+        "workload": "90210"
+      },
+      "patient_control_number": "XO5520121",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "19",
+          "vendor": "1"
+        },
+        {
+          "segment": "NM1",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "claim",
+          "mac": "NM1*TT*2*SYNTHETIC SUPPLEMENTAL PLAN*****PI*SYN77021",
+          "vendor": null
+        },
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MOA***MA18",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

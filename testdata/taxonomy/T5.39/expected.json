@@ -1,0 +1,66 @@
+{
+  "taxonomy_id": "T5.39",
+  "title": "Interchange sender or receiver differs",
+  "representable": true,
+  "notes": "The MAC side sends its contractor workload number as interchange and group sender; the vendor side sends a national sender identifier. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4Y13X91MG90",
+        "date_of_service": "20260225",
+        "total_charge": "2639.00",
+        "tax_id": "853911443",
+        "npi": "1390038176",
+        "workload": "53901"
+      },
+      "patient_control_number": "SYN53901",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4Y23Y92VN91",
+        "date_of_service": "20260226",
+        "total_charge": "367.80",
+        "tax_id": "853911443",
+        "npi": "1390038176",
+        "workload": "53901"
+      },
+      "patient_control_number": "SYN53902",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "ISA",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "53901          ",
+      "vendor": "NEWSYSTEMTEST  "
+    },
+    {
+      "segment": "GS",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "53901",
+      "vendor": "NEWSYSTEMTEST"
+    }
+  ]
+}

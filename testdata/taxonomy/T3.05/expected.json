@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T3.05",
+  "title": "OA on one side, CO or PR on the other",
+  "representable": true,
+  "notes": "Exact-duplicate denial of a 90.00 claim: MAC uses OA-18 as CARC 18's usage note requires; vendor uses CO-18. Follows the rule-gap cause (group restriction not enforced).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3GU5E07AV35",
+        "date_of_service": "20260606",
+        "total_charge": "90.00",
+        "tax_id": "933054417",
+        "npi": "1305456737",
+        "workload": "30517"
+      },
+      "patient_control_number": "SYN305A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CAS",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "OA",
+          "vendor": "CO"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

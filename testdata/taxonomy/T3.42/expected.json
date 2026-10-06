@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T3.42",
+  "title": "An adjustment reflects a payment policy that one side treats as retired",
+  "representable": true,
+  "notes": "MAC applies the retired psychiatric reduction CO-122 30.00 on a 2026 claim, lowering coinsurance and payment; vendor applies none. Follows the legacy-specific cause (retired rule still applied).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3DT2G47PR36",
+        "date_of_service": "20260616",
+        "total_charge": "200.00",
+        "tax_id": "933424417",
+        "npi": "1342456732",
+        "workload": "34217"
+      },
+      "patient_control_number": "SYN342A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "94.08",
+          "vendor": "117.60"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "24.00",
+          "vendor": "30.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "94.08",
+          "vendor": "117.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.92",
+          "vendor": "2.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 8,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "122",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 9,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "30.00",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "24.00",
+          "vendor": "30.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "94.08",
+      "vendor": "117.60"
+    }
+  ]
+}

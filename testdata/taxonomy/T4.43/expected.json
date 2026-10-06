@@ -1,0 +1,120 @@
+{
+  "taxonomy_id": "T4.43",
+  "title": "Medicare secondary payer amount applied to a line on one side only",
+  "representable": true,
+  "notes": "The 837 shows a primary payer paid 60.00 on a line allowed 100.00: the MAC side pays as secondary (CLP02 2, OA-23 60.00, pays 39.20), the vendor side pays as primary (CLP02 1, coinsurance 20.00, pays 78.40). Follows the input-or-environment cause (MSP record not available); the secondary formula is illustrative.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4MT4D30GX91",
+        "date_of_service": "20260420",
+        "total_charge": "150.00",
+        "tax_id": "940443017",
+        "npi": "1940431236",
+        "workload": "94043"
+      },
+      "patient_control_number": "SYN443A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "2",
+          "vendor": "1"
+        },
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "39.20",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0",
+          "vendor": "20.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "39.20",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.80",
+          "vendor": "1.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 1,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "OA",
+          "vendor": "PR"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "23",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "60.00",
+          "vendor": "20.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "39.20",
+      "vendor": "78.40"
+    }
+  ]
+}

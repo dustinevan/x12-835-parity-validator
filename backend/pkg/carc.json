@@ -1,0 +1,2856 @@
+{
+  "_meta": {
+    "name": "Claim Adjustment Reason Codes (CARC)",
+    "maintainer": "X12 Claim Adjustment Reason Code committee",
+    "source": "https://x12.org/codes/claim-adjustment-reason-codes",
+    "fetched": "2026-09-02",
+    "count": 407
+  },
+  "codes": [
+    {
+      "code": "1",
+      "description": "Deductible Amount",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "2",
+      "description": "Coinsurance Amount",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "3",
+      "description": "Co-payment Amount",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "4",
+      "description": "The procedure code is inconsistent with the modifier used. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2020"
+    },
+    {
+      "code": "5",
+      "description": "The procedure code/type of bill is inconsistent with the place of service. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2018"
+    },
+    {
+      "code": "6",
+      "description": "The procedure/revenue code is inconsistent with the patient's age. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "7",
+      "description": "The procedure/revenue code is inconsistent with the patient's gender. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "8",
+      "description": "The procedure code is inconsistent with the provider type/specialty (taxonomy). Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "9",
+      "description": "The diagnosis is inconsistent with the patient's age. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "10",
+      "description": "The diagnosis is inconsistent with the patient's gender. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "11",
+      "description": "The diagnosis is inconsistent with the procedure. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "12",
+      "description": "The diagnosis is inconsistent with the provider type. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "13",
+      "description": "The date of death precedes the date of service.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "14",
+      "description": "The date of birth follows the date of service.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "15",
+      "description": "The authorization number is missing, invalid, or does not apply to the billed services or provider.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "05/01/2018",
+      "lastModified": "11/01/2017"
+    },
+    {
+      "code": "16",
+      "description": "Claim/service lacks information or has submission/billing error(s). Usage: Do not use this code for claims attachment(s)/other documentation. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.) Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2018"
+    },
+    {
+      "code": "17",
+      "description": "Requested information was not provided or was insufficient/incomplete. At least one Remark Code must be provided (may be comprised of either the Remittance Advice Remark Code or NCPDP Reject Reason Code.)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "07/01/2009",
+      "lastModified": "09/21/2008"
+    },
+    {
+      "code": "18",
+      "description": "Exact duplicate claim/service (Use only with Group Code OA except where state workers' compensation regulations requires CO)",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "06/02/2013"
+    },
+    {
+      "code": "19",
+      "description": "This is a work-related injury/illness and thus the liability of the Worker's Compensation Carrier.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "20",
+      "description": "This injury/illness is covered by the liability carrier.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "21",
+      "description": "This injury/illness is the liability of the no-fault carrier.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "22",
+      "description": "This care may be covered by another payer per coordination of benefits.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "23",
+      "description": "The impact of prior payer(s) adjudication including payments and/or adjustments. (Use only with Group Code OA)",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2012"
+    },
+    {
+      "code": "24",
+      "description": "Charges are covered under a capitation agreement/managed care plan.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "25",
+      "description": "Payment denied. Your Stop loss deductible has not been met.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "04/01/2008"
+    },
+    {
+      "code": "26",
+      "description": "Expenses incurred prior to coverage.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "27",
+      "description": "Expenses incurred after coverage terminated.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "28",
+      "description": "Coverage not in effect at the time the service was provided.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Redundant to codes 26&27."
+    },
+    {
+      "code": "29",
+      "description": "The time limit for filing has expired.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "30",
+      "description": "Payment adjusted because the patient has not met the required eligibility, spend down, waiting, or residency requirements.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "02/01/2006"
+    },
+    {
+      "code": "31",
+      "description": "Patient cannot be identified as our insured.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "32",
+      "description": "Our records indicate the patient is not an eligible dependent.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2018"
+    },
+    {
+      "code": "33",
+      "description": "Insured has no dependent coverage.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "34",
+      "description": "Insured has no coverage for newborns.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "35",
+      "description": "Lifetime benefit maximum has been reached.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "10/31/2002"
+    },
+    {
+      "code": "36",
+      "description": "Balance does not exceed co-payment amount.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "37",
+      "description": "Balance does not exceed deductible.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "38",
+      "description": "Services not provided or authorized by designated (network/primary care) providers.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "01/01/2013",
+      "lastModified": "06/02/2013",
+      "notes": "CARC codes 242 and 243 are replacements for this deactivated code"
+    },
+    {
+      "code": "39",
+      "description": "Services denied at the time authorization/pre-certification was requested.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "40",
+      "description": "Charges do not meet qualifications for emergent/urgent care. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "41",
+      "description": "Discount agreed to in Preferred Provider contract.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "42",
+      "description": "Charges exceed our fee schedule or maximum allowable amount. (Use CARC 45)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/01/2007",
+      "lastModified": "10/31/2006"
+    },
+    {
+      "code": "43",
+      "description": "Gramm-Rudman reduction.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "07/01/2006"
+    },
+    {
+      "code": "44",
+      "description": "Prompt-pay discount.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "45",
+      "description": "Charge exceeds fee schedule/maximum allowable or contracted/legislated fee arrangement. Usage: This adjustment amount cannot equal the total service or claim charge amount; and must not duplicate provider adjustment amounts (payments and contractual reductions) that have resulted from prior payer(s) adjudication. (Use only with Group Codes PR or CO depending upon liability)",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "46",
+      "description": "This (these) service(s) is (are) not covered.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 96."
+    },
+    {
+      "code": "47",
+      "description": "This (these) diagnosis(es) is (are) not covered, missing, or are invalid.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "02/01/2006"
+    },
+    {
+      "code": "48",
+      "description": "This (these) procedure(s) is (are) not covered.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 96."
+    },
+    {
+      "code": "49",
+      "description": "This is a non-covered service because it is a routine/preventive exam or a diagnostic/screening procedure done in conjunction with a routine/preventive exam. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "50",
+      "description": "These are non-covered services because this is not deemed a 'medical necessity' by the payer. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "51",
+      "description": "These are non-covered services because this is a pre-existing condition. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "52",
+      "description": "The referring/prescribing/rendering provider is not eligible to refer/prescribe/order/perform the service billed.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "02/01/2006"
+    },
+    {
+      "code": "53",
+      "description": "Services by an immediate relative or a member of the same household are not covered.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "54",
+      "description": "Multiple physicians/assistants are not covered in this case. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "55",
+      "description": "Procedure/treatment/drug is deemed experimental/investigational by the payer. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "56",
+      "description": "Procedure/treatment has not been deemed 'proven to be effective' by the payer. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "57",
+      "description": "Payment denied/reduced because the payer deems the information submitted does not support this level of service, this many services, this length of service, this dosage, or this day's supply.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Split into codes 150, 151, 152, 153 and 154."
+    },
+    {
+      "code": "58",
+      "description": "Treatment was deemed by the payer to have been rendered in an inappropriate or invalid place of service. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "59",
+      "description": "Processed based on multiple or concurrent procedure rules. (For example multiple surgery or diagnostic imaging, concurrent anesthesia.) Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "60",
+      "description": "Charges for outpatient services are not covered when performed within a period of time prior to or after inpatient services.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "06/01/2008"
+    },
+    {
+      "code": "61",
+      "description": "Adjusted for failure to obtain second surgical opinion",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2017",
+      "notes": "The description effective date was inadvertently published as 3/1/2016 on 7/1/2016. That has been corrected to 1/1/2017."
+    },
+    {
+      "code": "62",
+      "description": "Payment denied/reduced for absence of, or exceeded, pre-certification/authorization.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "04/01/2007",
+      "lastModified": "10/31/2006"
+    },
+    {
+      "code": "63",
+      "description": "Correction to a prior claim.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "64",
+      "description": "Denial reversed per Medical Review.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "65",
+      "description": "Procedure code was incorrect. This payment reflects the correct code.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "66",
+      "description": "Blood Deductible.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "67",
+      "description": "Lifetime reserve days. (Handled in QTY, QTY01=LA)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "68",
+      "description": "DRG weight. (Handled in CLP12)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "69",
+      "description": "Day outlier amount.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "70",
+      "description": "Cost outlier - Adjustment to compensate for additional costs.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "06/30/2001"
+    },
+    {
+      "code": "71",
+      "description": "Primary Payer amount.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2000",
+      "notes": "Use code 23."
+    },
+    {
+      "code": "72",
+      "description": "Coinsurance day. (Handled in QTY, QTY01=CD)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "73",
+      "description": "Administrative days.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "74",
+      "description": "Indirect Medical Education Adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "75",
+      "description": "Direct Medical Education Adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "76",
+      "description": "Disproportionate Share Adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "77",
+      "description": "Covered days. (Handled in QTY, QTY01=CA)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "78",
+      "description": "Non-Covered days/Room charge adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "79",
+      "description": "Cost Report days. (Handled in MIA15)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "80",
+      "description": "Outlier days. (Handled in QTY, QTY01=OU)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "81",
+      "description": "Discharges.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "82",
+      "description": "PIP days.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "83",
+      "description": "Total visits.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "84",
+      "description": "Capital Adjustment. (Handled in MIA)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "85",
+      "description": "Patient Interest Adjustment (Use Only Group code PR)",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/09/2007",
+      "notes": "Only use when the payment of interest is the responsibility of the patient."
+    },
+    {
+      "code": "86",
+      "description": "Statutory Adjustment.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Duplicative of code 45."
+    },
+    {
+      "code": "87",
+      "description": "Transfer amount.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "01/01/2012",
+      "lastModified": "09/20/2009"
+    },
+    {
+      "code": "88",
+      "description": "Adjustment amount represents collection against receivable created in prior overpayment.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007"
+    },
+    {
+      "code": "89",
+      "description": "Professional fees removed from charges.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "90",
+      "description": "Ingredient cost adjustment. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "91",
+      "description": "Dispensing fee adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "92",
+      "description": "Claim Paid in full.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "93",
+      "description": "No Claim level Adjustments.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "As of 004010, CAS at the claim level is optional."
+    },
+    {
+      "code": "94",
+      "description": "Processed in Excess of charges.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "95",
+      "description": "Plan procedures not followed.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "96",
+      "description": "Non-covered charge(s). At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.) Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "97",
+      "description": "The benefit for this service is included in the payment/allowance for another service/procedure that has already been adjudicated. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "98",
+      "description": "The hospital must file the Medicare claim for this inpatient non-physician service.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "99",
+      "description": "Medicare Secondary Payer Adjustment Amount.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "100",
+      "description": "Payment made to patient/insured/responsible party.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "05/01/2018"
+    },
+    {
+      "code": "101",
+      "description": "Predetermination: anticipated payment upon completion of services or claim adjudication.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "02/28/1999"
+    },
+    {
+      "code": "102",
+      "description": "Major Medical Adjustment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "103",
+      "description": "Provider promotional discount (e.g., Senior citizen discount).",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "06/30/2001"
+    },
+    {
+      "code": "104",
+      "description": "Managed care withholding.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "105",
+      "description": "Tax withholding.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "106",
+      "description": "Patient payment option/election not in effect.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "107",
+      "description": "The related or qualifying claim/service was not identified on this claim. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "108",
+      "description": "Rent/purchase guidelines were not met. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "109",
+      "description": "Claim/service not covered by this payer/contractor. You must send the claim/service to the correct payer/contractor.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "01/29/2012"
+    },
+    {
+      "code": "110",
+      "description": "Billing date predates service date.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "111",
+      "description": "Not covered unless the provider accepts assignment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "112",
+      "description": "Service not furnished directly to the patient and/or not documented.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "113",
+      "description": "Payment denied because service/procedure was provided outside the United States or as a result of war.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "lastModified": "02/28/2001",
+      "notes": "Use Codes 157, 158 or 159."
+    },
+    {
+      "code": "114",
+      "description": "Procedure/product not approved by the Food and Drug Administration.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "115",
+      "description": "Procedure postponed, canceled, or delayed.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "116",
+      "description": "The advance indemnification notice signed by the patient did not comply with requirements.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "117",
+      "description": "Transportation is only covered to the closest facility that can provide the necessary care.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "118",
+      "description": "ESRD network support adjustment.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "119",
+      "description": "Benefit maximum for this time period or occurrence has been reached.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "02/29/2004"
+    },
+    {
+      "code": "120",
+      "description": "Patient is covered by a managed care plan.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 24."
+    },
+    {
+      "code": "121",
+      "description": "Indemnification adjustment - compensation for outstanding member responsibility.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "122",
+      "description": "Psychiatric reduction.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "123",
+      "description": "Payer refund due to overpayment.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Refer to implementation guide for proper handling of reversals."
+    },
+    {
+      "code": "124",
+      "description": "Payer refund amount - not our patient.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "lastModified": "06/30/1999",
+      "notes": "Refer to implementation guide for proper handling of reversals."
+    },
+    {
+      "code": "125",
+      "description": "Submission/billing error(s). At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "11/01/2013",
+      "lastModified": "09/20/2009"
+    },
+    {
+      "code": "126",
+      "description": "Deductible -- Major Medical",
+      "status": "deactivated",
+      "start": "02/28/1997",
+      "stop": "04/01/2008",
+      "lastModified": "09/30/2007",
+      "notes": "Use Group Code PR and code 1."
+    },
+    {
+      "code": "127",
+      "description": "Coinsurance -- Major Medical",
+      "status": "deactivated",
+      "start": "02/28/1997",
+      "stop": "04/01/2008",
+      "lastModified": "09/30/2007",
+      "notes": "Use Group Code PR and code 2."
+    },
+    {
+      "code": "128",
+      "description": "Newborn's services are covered in the mother's Allowance.",
+      "status": "current",
+      "start": "02/28/1997"
+    },
+    {
+      "code": "129",
+      "description": "Prior processing information appears incorrect. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "02/28/1997",
+      "lastModified": "01/30/2011"
+    },
+    {
+      "code": "130",
+      "description": "Claim submission fee.",
+      "status": "current",
+      "start": "02/28/1997",
+      "lastModified": "06/30/2001"
+    },
+    {
+      "code": "131",
+      "description": "Claim specific negotiated discount.",
+      "status": "current",
+      "start": "02/28/1997"
+    },
+    {
+      "code": "132",
+      "description": "Prearranged demonstration project adjustment.",
+      "status": "current",
+      "start": "02/28/1997"
+    },
+    {
+      "code": "133",
+      "description": "The disposition of this service line is pending further review. (Use only with Group Code OA). Usage: Use of this code requires a reversal and correction when the service line is finalized (use only in Loop 2110 CAS segment of the 835 or Loop 2430 of the 837).",
+      "status": "current",
+      "start": "07/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "134",
+      "description": "Technical fees removed from charges.",
+      "status": "current",
+      "start": "10/31/1998"
+    },
+    {
+      "code": "135",
+      "description": "Interim bills cannot be processed.",
+      "status": "current",
+      "start": "10/31/1998",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "136",
+      "description": "Failure to follow prior payer's coverage rules. (Use only with Group Code OA)",
+      "status": "current",
+      "start": "10/31/1998",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "137",
+      "description": "Regulatory Surcharges, Assessments, Allowances or Health Related Taxes.",
+      "status": "current",
+      "start": "02/28/1999",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "138",
+      "description": "Appeal procedures not followed or time limits not met.",
+      "status": "deactivated",
+      "start": "06/30/1999",
+      "stop": "05/01/2018",
+      "lastModified": "11/01/2017"
+    },
+    {
+      "code": "139",
+      "description": "Contracted funding agreement - Subscriber is employed by the provider of services. Use only with Group Code CO.",
+      "status": "current",
+      "start": "06/30/1999",
+      "lastModified": "05/01/2018"
+    },
+    {
+      "code": "140",
+      "description": "Patient/Insured health identification number and name do not match.",
+      "status": "current",
+      "start": "06/30/1999"
+    },
+    {
+      "code": "141",
+      "description": "Claim spans eligible and ineligible periods of coverage.",
+      "status": "deactivated",
+      "start": "06/30/1999",
+      "stop": "07/01/2012",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "142",
+      "description": "Monthly Medicaid patient liability amount.",
+      "status": "current",
+      "start": "06/30/2000",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "143",
+      "description": "Portion of payment deferred.",
+      "status": "current",
+      "start": "02/28/2001"
+    },
+    {
+      "code": "144",
+      "description": "Incentive adjustment, e.g. preferred product/service.",
+      "status": "current",
+      "start": "06/30/2001"
+    },
+    {
+      "code": "145",
+      "description": "Premium payment withholding",
+      "status": "deactivated",
+      "start": "06/30/2002",
+      "stop": "04/01/2008",
+      "lastModified": "09/30/2007",
+      "notes": "Use Group Code CO and code 45."
+    },
+    {
+      "code": "146",
+      "description": "Diagnosis was invalid for the date(s) of service reported.",
+      "status": "current",
+      "start": "06/30/2002",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "147",
+      "description": "Provider contracted/negotiated rate expired or not on file.",
+      "status": "current",
+      "start": "06/30/2002"
+    },
+    {
+      "code": "148",
+      "description": "Information from another provider was not provided or was insufficient/incomplete. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "06/30/2002",
+      "lastModified": "09/20/2009"
+    },
+    {
+      "code": "149",
+      "description": "Lifetime benefit maximum has been reached for this service/benefit category.",
+      "status": "current",
+      "start": "10/31/2002"
+    },
+    {
+      "code": "150",
+      "description": "Payer deems the information submitted does not support this level of service.",
+      "status": "current",
+      "start": "10/31/2002",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "151",
+      "description": "Payment adjusted because the payer deems the information submitted does not support this many/frequency of services.",
+      "status": "current",
+      "start": "10/31/2002",
+      "lastModified": "01/27/2008"
+    },
+    {
+      "code": "152",
+      "description": "Payer deems the information submitted does not support this length of service. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "10/31/2002",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "153",
+      "description": "Payer deems the information submitted does not support this dosage.",
+      "status": "current",
+      "start": "10/31/2002",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "154",
+      "description": "Payer deems the information submitted does not support this day's supply.",
+      "status": "current",
+      "start": "10/31/2002",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "155",
+      "description": "Patient refused the service/procedure.",
+      "status": "current",
+      "start": "06/30/2003",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "156",
+      "description": "Flexible spending account payments. Note: Use code 187.",
+      "status": "deactivated",
+      "start": "09/30/2003",
+      "stop": "10/01/2009",
+      "lastModified": "01/25/2009"
+    },
+    {
+      "code": "157",
+      "description": "Service/procedure was provided as a result of an act of war.",
+      "status": "current",
+      "start": "09/30/2003",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "158",
+      "description": "Service/procedure was provided outside of the United States.",
+      "status": "current",
+      "start": "09/30/2003",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "159",
+      "description": "Service/procedure was provided as a result of terrorism.",
+      "status": "current",
+      "start": "09/30/2003",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "160",
+      "description": "Injury/illness was the result of an activity that is a benefit exclusion.",
+      "status": "current",
+      "start": "09/30/2003",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "161",
+      "description": "Provider performance bonus",
+      "status": "current",
+      "start": "02/29/2004"
+    },
+    {
+      "code": "162",
+      "description": "State-mandated Requirement for Property and Casualty, see Claim Payment Remarks Code for specific explanation.",
+      "status": "deactivated",
+      "start": "02/29/2004",
+      "stop": "07/01/2014",
+      "notes": "Use code P1"
+    },
+    {
+      "code": "163",
+      "description": "Attachment/other documentation referenced on the claim was not received.",
+      "status": "current",
+      "start": "06/30/2004",
+      "lastModified": "06/02/2013"
+    },
+    {
+      "code": "164",
+      "description": "Attachment/other documentation referenced on the claim was not received in a timely fashion.",
+      "status": "current",
+      "start": "06/30/2004",
+      "lastModified": "06/02/2013"
+    },
+    {
+      "code": "165",
+      "description": "Referral absent or exceeded.",
+      "status": "deactivated",
+      "start": "10/31/2004",
+      "stop": "05/01/2018",
+      "lastModified": "11/01/2017"
+    },
+    {
+      "code": "166",
+      "description": "These services were submitted after this payers responsibility for processing claims under this plan ended.",
+      "status": "current",
+      "start": "02/28/2005"
+    },
+    {
+      "code": "167",
+      "description": "This (these) diagnosis(es) is (are) not covered. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "168",
+      "description": "Service(s) have been considered under the patient's medical plan. Benefits are not available under this dental plan.",
+      "status": "deactivated",
+      "start": "06/30/2005",
+      "stop": "05/01/2018",
+      "lastModified": "11/01/2017"
+    },
+    {
+      "code": "169",
+      "description": "Alternate benefit has been provided.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "170",
+      "description": "Payment is denied when performed/billed by this type of provider. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "171",
+      "description": "Payment is denied when performed/billed by this type of provider in this type of facility. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "172",
+      "description": "Payment is adjusted when performed/billed by a provider of this specialty. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "173",
+      "description": "Service/equipment was not prescribed by a physician.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "174",
+      "description": "Service was not prescribed prior to delivery.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "175",
+      "description": "Prescription is incomplete.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "176",
+      "description": "Prescription is not current.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "177",
+      "description": "Patient has not met the required eligibility requirements.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "178",
+      "description": "Patient has not met the required spend down requirements.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "179",
+      "description": "Patient has not met the required waiting requirements. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "03/01/2017"
+    },
+    {
+      "code": "180",
+      "description": "Patient has not met the required residency requirements.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "181",
+      "description": "Procedure code was invalid on the date of service.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "182",
+      "description": "Procedure modifier was invalid on the date of service.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "183",
+      "description": "The referring provider is not eligible to refer the service billed. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "184",
+      "description": "The prescribing/ordering provider is not eligible to prescribe/order the service billed. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "185",
+      "description": "The rendering provider is not eligible to perform the service billed. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "186",
+      "description": "Level of care change adjustment.",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "187",
+      "description": "Consumer Spending Account payments (includes but is not limited to Flexible Spending Account, Health Savings Account, Health Reimbursement Account, etc.)",
+      "status": "current",
+      "start": "06/30/2005",
+      "lastModified": "01/25/2009"
+    },
+    {
+      "code": "188",
+      "description": "This product/procedure is only covered when used according to FDA recommendations.",
+      "status": "current",
+      "start": "06/30/2005"
+    },
+    {
+      "code": "189",
+      "description": "'Not otherwise classified' or 'unlisted' procedure code (CPT/HCPCS) was billed when there is a specific procedure code for this procedure/service",
+      "status": "current",
+      "start": "06/30/2005"
+    },
+    {
+      "code": "190",
+      "description": "Payment is included in the allowance for a Skilled Nursing Facility (SNF) qualified stay.",
+      "status": "current",
+      "start": "10/31/2005"
+    },
+    {
+      "code": "191",
+      "description": "Not a work related injury/illness and thus not the liability of the workers' compensation carrier Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF)",
+      "status": "deactivated",
+      "start": "10/31/2005",
+      "stop": "07/01/2014",
+      "lastModified": "10/17/2010",
+      "notes": "Use code P2"
+    },
+    {
+      "code": "192",
+      "description": "Non standard adjustment code from paper remittance. Usage: This code is to be used by providers/payers providing Coordination of Benefits information to another payer in the 837 transaction only. This code is only used when the non-standard code cannot be reasonably mapped to an existing Claims Adjustment Reason Code, specifically Deductible, Coinsurance and Co-payment.",
+      "status": "current",
+      "start": "10/31/2005",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "193",
+      "description": "Original payment decision is being maintained. Upon review, it was determined that this claim was processed properly.",
+      "status": "current",
+      "start": "02/28/2006",
+      "lastModified": "01/27/2008"
+    },
+    {
+      "code": "194",
+      "description": "Anesthesia performed by the operating physician, the assistant surgeon or the attending physician.",
+      "status": "current",
+      "start": "02/28/2006",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "195",
+      "description": "Refund issued to an erroneous priority payer for this claim/service.",
+      "status": "current",
+      "start": "02/28/2006",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "196",
+      "description": "Claim/service denied based on prior payer's coverage determination.",
+      "status": "deactivated",
+      "start": "06/30/2006",
+      "stop": "02/01/2007",
+      "notes": "Use code 136."
+    },
+    {
+      "code": "197",
+      "description": "Precertification/authorization/notification/pre-treatment absent.",
+      "status": "current",
+      "start": "10/31/2006",
+      "lastModified": "05/01/2018"
+    },
+    {
+      "code": "198",
+      "description": "Precertification/notification/authorization/pre-treatment exceeded.",
+      "status": "current",
+      "start": "10/31/2006",
+      "lastModified": "05/01/2018"
+    },
+    {
+      "code": "199",
+      "description": "Revenue code and Procedure code do not match.",
+      "status": "current",
+      "start": "10/31/2006"
+    },
+    {
+      "code": "200",
+      "description": "Expenses incurred during lapse in coverage",
+      "status": "current",
+      "start": "10/31/2006"
+    },
+    {
+      "code": "201",
+      "description": "Patient is responsible for amount of this claim/service through 'set aside arrangement' or other agreement. (Use only with Group Code PR) At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "10/31/2006",
+      "lastModified": "09/28/2014",
+      "notes": "Not for use by Workers' Compensation payers; use code P3 instead."
+    },
+    {
+      "code": "202",
+      "description": "Non-covered personal comfort or convenience services.",
+      "status": "current",
+      "start": "02/28/2007",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "203",
+      "description": "Discontinued or reduced service.",
+      "status": "current",
+      "start": "02/28/2007",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "204",
+      "description": "This service/equipment/drug is not covered under the patient's current benefit plan",
+      "status": "current",
+      "start": "02/28/2007"
+    },
+    {
+      "code": "205",
+      "description": "Pharmacy discount card processing fee",
+      "status": "current",
+      "start": "07/09/2007"
+    },
+    {
+      "code": "206",
+      "description": "National Provider Identifier - missing.",
+      "status": "current",
+      "start": "07/09/2007",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "207",
+      "description": "National Provider identifier - Invalid format",
+      "status": "current",
+      "start": "07/09/2007",
+      "lastModified": "06/01/2008"
+    },
+    {
+      "code": "208",
+      "description": "National Provider Identifier - Not matched.",
+      "status": "current",
+      "start": "07/09/2007",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "209",
+      "description": "Per regulatory or other agreement. The provider cannot collect this amount from the patient. However, this amount may be billed to subsequent payer. Refund to patient if collected. (Use only with Group code OA)",
+      "status": "current",
+      "start": "07/09/2007",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "210",
+      "description": "Payment adjusted because pre-certification/authorization not received in a timely fashion",
+      "status": "current",
+      "start": "07/09/2007"
+    },
+    {
+      "code": "211",
+      "description": "National Drug Codes (NDC) not eligible for rebate, are not covered.",
+      "status": "current",
+      "start": "07/09/2007"
+    },
+    {
+      "code": "212",
+      "description": "Administrative surcharges are not covered",
+      "status": "current",
+      "start": "11/05/2007"
+    },
+    {
+      "code": "213",
+      "description": "Non-compliance with the physician self referral prohibition legislation or payer policy.",
+      "status": "current",
+      "start": "01/27/2008"
+    },
+    {
+      "code": "214",
+      "description": "Workers' Compensation claim adjudicated as non-compensable. This Payer not liable for claim or service/treatment. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Workers' Compensation only",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "07/01/2014",
+      "lastModified": "10/17/2010",
+      "notes": "Use code P4"
+    },
+    {
+      "code": "215",
+      "description": "Based on subrogation of a third party settlement",
+      "status": "current",
+      "start": "01/27/2008"
+    },
+    {
+      "code": "216",
+      "description": "Based on the findings of a review organization or the payer's findings.",
+      "status": "current",
+      "start": "01/27/2008",
+      "lastModified": "03/01/2025"
+    },
+    {
+      "code": "217",
+      "description": "Based on payer reasonable and customary fees. No maximum allowable defined by legislated fee arrangement. (Note: To be used for Property and Casualty only)",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "07/01/2014",
+      "lastModified": "09/30/2012",
+      "notes": "Use code P5"
+    },
+    {
+      "code": "218",
+      "description": "Based on entitlement to benefits. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Workers' Compensation only",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "07/01/2014",
+      "lastModified": "10/17/2010",
+      "notes": "Use code P6"
+    },
+    {
+      "code": "219",
+      "description": "Based on extent of injury. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF).",
+      "status": "current",
+      "start": "01/27/2008",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "220",
+      "description": "The applicable fee schedule/fee database does not contain the billed code. Please resubmit a bill with the appropriate fee schedule/fee database code(s) that best describe the service(s) provided and supporting documentation if required. (Note: To be used for Property and Casualty only)",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "07/01/2014",
+      "lastModified": "09/30/2012",
+      "notes": "Use code P7"
+    },
+    {
+      "code": "221",
+      "description": "Claim is under investigation. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). (Note: To be used by Property & Casualty only)",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "07/01/2014",
+      "lastModified": "07/01/2013",
+      "notes": "Use code P8"
+    },
+    {
+      "code": "222",
+      "description": "Exceeds the contracted maximum number of hours/days/units by this provider for this period. This is not patient specific. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/01/2008",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "223",
+      "description": "Adjustment code for mandated federal, state or local law/regulation that is not already covered by another code and is mandated before a new code can be created.",
+      "status": "current",
+      "start": "06/01/2008"
+    },
+    {
+      "code": "224",
+      "description": "Patient identification compromised by identity theft. Identity verification required for processing this and future claims.",
+      "status": "current",
+      "start": "06/01/2008"
+    },
+    {
+      "code": "225",
+      "description": "Penalty or Interest Payment by Payer (Only used for plan to plan encounter reporting within the 837)",
+      "status": "current",
+      "start": "06/01/2008"
+    },
+    {
+      "code": "226",
+      "description": "Information requested from the Billing/Rendering Provider was not provided or not provided timely or was insufficient/incomplete. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "09/21/2008",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "227",
+      "description": "Information requested from the patient/insured/responsible party was not provided or was insufficient/incomplete. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "09/21/2008",
+      "lastModified": "09/20/2009"
+    },
+    {
+      "code": "228",
+      "description": "Denied for failure of this provider, another provider or the subscriber to supply requested information to a previous payer for their adjudication",
+      "status": "current",
+      "start": "09/21/2008"
+    },
+    {
+      "code": "229",
+      "description": "Partial charge amount not considered by Medicare due to the initial claim Type of Bill being 12X. Usage: This code can only be used in the 837 transaction to convey Coordination of Benefits information when the secondary payer's cost avoidance policy allows providers to bypass claim submission to a prior payer. (Use only with Group Code PR)",
+      "status": "current",
+      "start": "01/25/2009",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "230",
+      "description": "No available or correlating CPT/HCPCS code to describe this service. Note: Used only by Property and Casualty.",
+      "status": "deactivated",
+      "start": "01/25/2009",
+      "stop": "07/01/2014",
+      "notes": "Use code P9"
+    },
+    {
+      "code": "231",
+      "description": "Mutually exclusive procedures cannot be done in the same day/setting. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "07/01/2009",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "232",
+      "description": "Institutional Transfer Amount. Usage: Applies to institutional claims only and explains the DRG amount difference when the patient care crosses multiple institutions.",
+      "status": "current",
+      "start": "11/01/2009",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "233",
+      "description": "Services/charges related to the treatment of a hospital-acquired condition or preventable medical error.",
+      "status": "current",
+      "start": "01/24/2010"
+    },
+    {
+      "code": "234",
+      "description": "This procedure is not paid separately. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "01/24/2010"
+    },
+    {
+      "code": "235",
+      "description": "Sales Tax",
+      "status": "current",
+      "start": "06/06/2010"
+    },
+    {
+      "code": "236",
+      "description": "This procedure or procedure/modifier combination is not compatible with another procedure or procedure/modifier combination provided on the same day according to the National Correct Coding Initiative or workers compensation state regulations/ fee schedule requirements.",
+      "status": "current",
+      "start": "01/30/2011",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "237",
+      "description": "Legislated/Regulatory Penalty. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "06/05/2011"
+    },
+    {
+      "code": "238",
+      "description": "Claim spans eligible and ineligible periods of coverage, this is the reduction for the ineligible period. (Use only with Group Code PR)",
+      "status": "current",
+      "start": "03/01/2012",
+      "lastModified": "07/01/2013"
+    },
+    {
+      "code": "239",
+      "description": "Claim spans eligible and ineligible periods of coverage. Rebill separate claims.",
+      "status": "current",
+      "start": "03/01/2012",
+      "lastModified": "01/29/2012"
+    },
+    {
+      "code": "240",
+      "description": "The diagnosis is inconsistent with the patient's birth weight. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "06/03/2012",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "241",
+      "description": "Low Income Subsidy (LIS) Co-payment Amount",
+      "status": "current",
+      "start": "06/03/2012"
+    },
+    {
+      "code": "242",
+      "description": "Services not provided by network/primary care providers.",
+      "status": "current",
+      "start": "06/03/2012",
+      "lastModified": "06/02/2013",
+      "notes": "This code replaces deactivated code 38"
+    },
+    {
+      "code": "243",
+      "description": "Services not authorized by network/primary care providers.",
+      "status": "current",
+      "start": "06/03/2012",
+      "lastModified": "06/02/2013",
+      "notes": "This code replaces deactivated code 38"
+    },
+    {
+      "code": "244",
+      "description": "Payment reduced to zero due to litigation. Additional information will be sent following the conclusion of litigation. To be used for Property & Casualty only.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "notes": "Use code P10"
+    },
+    {
+      "code": "245",
+      "description": "Provider performance program withhold.",
+      "status": "current",
+      "start": "09/30/2012"
+    },
+    {
+      "code": "246",
+      "description": "This non-payable code is for required reporting only.",
+      "status": "current",
+      "start": "09/30/2012"
+    },
+    {
+      "code": "247",
+      "description": "Deductible for Professional service rendered in an Institutional setting and billed on an Institutional claim.",
+      "status": "current",
+      "start": "09/30/2012",
+      "notes": "For Medicare Bundled Payment use only, under the Patient Protection and Affordable Care Act (PPACA)."
+    },
+    {
+      "code": "248",
+      "description": "Coinsurance for Professional service rendered in an Institutional setting and billed on an Institutional claim.",
+      "status": "current",
+      "start": "09/30/2012",
+      "notes": "For Medicare Bundled Payment use only, under the Patient Protection and Affordable Care Act (PPACA)."
+    },
+    {
+      "code": "249",
+      "description": "This claim has been identified as a readmission. (Use only with Group Code CO)",
+      "status": "current",
+      "start": "09/30/2012"
+    },
+    {
+      "code": "250",
+      "description": "The attachment/other documentation that was received was the incorrect attachment/document. The expected attachment/document is still missing. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT).",
+      "status": "current",
+      "start": "09/30/2012",
+      "lastModified": "06/01/2014"
+    },
+    {
+      "code": "251",
+      "description": "The attachment/other documentation that was received was incomplete or deficient. The necessary information is still needed to process the claim. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT).",
+      "status": "current",
+      "start": "09/30/2012",
+      "lastModified": "06/01/2014"
+    },
+    {
+      "code": "252",
+      "description": "An attachment/other documentation is required to adjudicate this claim/service. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT).",
+      "status": "current",
+      "start": "09/30/2012",
+      "lastModified": "06/02/2013"
+    },
+    {
+      "code": "253",
+      "description": "Sequestration - reduction in federal payment",
+      "status": "current",
+      "start": "06/02/2013",
+      "lastModified": "11/01/2013"
+    },
+    {
+      "code": "254",
+      "description": "Claim received by the dental plan, but benefits not available under this plan. Submit these services to the patient's medical plan for further consideration.",
+      "status": "current",
+      "start": "06/02/2013",
+      "lastModified": "11/01/2017",
+      "notes": "Use CARC 290 if the claim was forwarded."
+    },
+    {
+      "code": "255",
+      "description": "The disposition of the related Property & Casualty claim (injury or illness) is pending due to litigation. (Use only with Group Code OA)",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P11"
+    },
+    {
+      "code": "256",
+      "description": "Service not payable per managed care contract.",
+      "status": "current",
+      "start": "06/02/2013"
+    },
+    {
+      "code": "257",
+      "description": "The disposition of the claim/service is undetermined during the premium payment grace period, per Health Insurance Exchange requirements. This claim/service will be reversed and corrected when the grace period ends (due to premium payment or lack of premium payment). (Use only with Group Code OA)",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "06/01/2014",
+      "notes": "To be used after the first month of the grace period."
+    },
+    {
+      "code": "258",
+      "description": "Claim/service not covered when patient is in custody/incarcerated. Applicable federal, state or local authority may cover the claim/service.",
+      "status": "current",
+      "start": "11/01/2013"
+    },
+    {
+      "code": "259",
+      "description": "Additional payment for Dental/Vision service utilization.",
+      "status": "current",
+      "start": "01/26/2014"
+    },
+    {
+      "code": "260",
+      "description": "Processed under Medicaid ACA Enhanced Fee Schedule",
+      "status": "current",
+      "start": "01/26/2014"
+    },
+    {
+      "code": "261",
+      "description": "The procedure or service is inconsistent with the patient's history.",
+      "status": "current",
+      "start": "06/01/2014"
+    },
+    {
+      "code": "262",
+      "description": "Adjustment for delivery cost. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "263",
+      "description": "Adjustment for shipping cost. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "264",
+      "description": "Adjustment for postage cost. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "265",
+      "description": "Adjustment for administrative cost. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "266",
+      "description": "Adjustment for compound preparation cost. Usage: To be used for pharmaceuticals only.",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "267",
+      "description": "Claim/service spans multiple months. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "current",
+      "start": "11/01/2014",
+      "lastModified": "04/01/2015"
+    },
+    {
+      "code": "268",
+      "description": "The Claim spans two calendar years. Please resubmit one claim per calendar year.",
+      "status": "current",
+      "start": "11/01/2014"
+    },
+    {
+      "code": "269",
+      "description": "Anesthesia not covered for this service/procedure. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "03/01/2015",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "270",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Submit these services to the patient's dental plan for further consideration.",
+      "status": "current",
+      "start": "07/01/2015",
+      "lastModified": "11/01/2017",
+      "notes": "Use CARC 291 if the claim was forwarded."
+    },
+    {
+      "code": "271",
+      "description": "Prior contractual reductions related to a current periodic payment as part of a contractual payment schedule when deferred amounts have been previously reported. (Use only with Group Code OA)",
+      "status": "current",
+      "start": "11/01/2015",
+      "lastModified": "03/01/2018"
+    },
+    {
+      "code": "272",
+      "description": "Coverage/program guidelines were not met.",
+      "status": "current",
+      "start": "11/01/2015"
+    },
+    {
+      "code": "273",
+      "description": "Coverage/program guidelines were exceeded.",
+      "status": "current",
+      "start": "11/01/2015"
+    },
+    {
+      "code": "274",
+      "description": "Fee/Service not payable per patient Care Coordination arrangement.",
+      "status": "current",
+      "start": "11/01/2015"
+    },
+    {
+      "code": "275",
+      "description": "Prior payer's (or payers') patient responsibility (deductible, coinsurance, co-payment) not covered. (Use only with Group Code PR)",
+      "status": "current",
+      "start": "11/01/2015"
+    },
+    {
+      "code": "276",
+      "description": "Services denied by the prior payer(s) are not covered by this payer.",
+      "status": "current",
+      "start": "11/01/2015"
+    },
+    {
+      "code": "277",
+      "description": "The disposition of the claim/service is undetermined during the premium payment grace period, per Health Insurance SHOP Exchange requirements. This claim/service will be reversed and corrected when the grace period ends (due to premium payment or lack of premium payment). (Use only with Group Code OA)",
+      "status": "current",
+      "start": "11/01/2015",
+      "notes": "To be used during 31 day SHOP grace period."
+    },
+    {
+      "code": "278",
+      "description": "Performance program proficiency requirements not met. (Use only with Group Codes CO or PI) Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "07/01/2016",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "279",
+      "description": "Services not provided by Preferred network providers. Usage: Use this code when there are member network limitations. For example, using contracted providers not in the member's 'narrow' network.",
+      "status": "current",
+      "start": "11/01/2016",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "280",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Submit these services to the patient's Pharmacy plan for further consideration.",
+      "status": "current",
+      "start": "03/01/2017",
+      "lastModified": "11/01/2017",
+      "notes": "Use CARC 292 if the claim was forwarded."
+    },
+    {
+      "code": "281",
+      "description": "Deductible waived per contractual agreement. Use only with Group Code CO.",
+      "status": "current",
+      "start": "07/01/2017"
+    },
+    {
+      "code": "282",
+      "description": "The procedure/revenue code is inconsistent with the type of bill. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "07/01/2017"
+    },
+    {
+      "code": "283",
+      "description": "Attending provider is not eligible to provide direction of care.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "284",
+      "description": "Precertification/authorization/notification/pre-treatment number may be valid but does not apply to the billed services.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "285",
+      "description": "Appeal procedures not followed",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "286",
+      "description": "Appeal time limits not met",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "287",
+      "description": "Referral exceeded",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "288",
+      "description": "Referral absent",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "289",
+      "description": "Services considered under the dental and medical plans, benefits not available.",
+      "status": "current",
+      "start": "11/01/2017",
+      "notes": "Also see CARCs 254, 270 and 280."
+    },
+    {
+      "code": "290",
+      "description": "Claim received by the dental plan, but benefits not available under this plan. Claim has been forwarded to the patient's medical plan for further consideration.",
+      "status": "current",
+      "start": "11/01/2017",
+      "notes": "Use CARC 254 if the claim was not forwarded."
+    },
+    {
+      "code": "291",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Claim has been forwarded to the patient's dental plan for further consideration.",
+      "status": "current",
+      "start": "11/01/2017",
+      "notes": "Use CARC 270 if the claim was not forwarded."
+    },
+    {
+      "code": "292",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Claim has been forwarded to the patient's pharmacy plan for further consideration.",
+      "status": "current",
+      "start": "11/01/2017",
+      "notes": "Use CARC 280 if the claim was not forwarded."
+    },
+    {
+      "code": "293",
+      "description": "Payment made to employer.",
+      "status": "current",
+      "start": "05/01/2018"
+    },
+    {
+      "code": "294",
+      "description": "Payment made to attorney.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "295",
+      "description": "Pharmacy Direct/Indirect Remuneration (DIR)",
+      "status": "current",
+      "start": "03/01/2018"
+    },
+    {
+      "code": "296",
+      "description": "Precertification/authorization/notification/pre-treatment number may be valid but does not apply to the provider.",
+      "status": "current",
+      "start": "07/01/2018"
+    },
+    {
+      "code": "297",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Submit these services to the patient's vision plan for further consideration.",
+      "status": "current",
+      "start": "03/01/2019"
+    },
+    {
+      "code": "298",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Claim has been forwarded to the patient's vision plan for further consideration.",
+      "status": "current",
+      "start": "03/01/2019"
+    },
+    {
+      "code": "299",
+      "description": "The billing provider is not eligible to receive payment for the service billed.",
+      "status": "current",
+      "start": "07/01/2019"
+    },
+    {
+      "code": "300",
+      "description": "Claim received by the Medical Plan, but benefits not available under this plan. Claim has been forwarded to the patient's Behavioral Health Plan for further consideration.",
+      "status": "current",
+      "start": "07/01/2019"
+    },
+    {
+      "code": "301",
+      "description": "Claim received by the Medical Plan, but benefits not available under this plan. Submit these services to the patient's Behavioral Health Plan for further consideration.",
+      "status": "current",
+      "start": "07/01/2019"
+    },
+    {
+      "code": "302",
+      "description": "Precertification/notification/authorization/pre-treatment time limit has expired.",
+      "status": "current",
+      "start": "11/01/2020"
+    },
+    {
+      "code": "303",
+      "description": "Prior payer's (or payers') patient responsibility (deductible, coinsurance, co-payment) not covered for Qualified Medicare and Medicaid Beneficiaries. (Use only with Group Code CO)",
+      "status": "current",
+      "start": "07/01/2021"
+    },
+    {
+      "code": "304",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Submit these services to the patient's hearing plan for further consideration.",
+      "status": "current",
+      "start": "03/01/2022"
+    },
+    {
+      "code": "305",
+      "description": "Claim received by the medical plan, but benefits not available under this plan. Claim has been forwarded to the patient's hearing plan for further consideration.",
+      "status": "current",
+      "start": "03/01/2022"
+    },
+    {
+      "code": "306",
+      "description": "Type of bill is inconsistent with the patient status. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "11/01/2023"
+    },
+    {
+      "code": "307",
+      "description": "Medicare Maximum Fair Price Standard Default Refund Amount Adjustment. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.) Usage: To be used only for the Medicare Drug Price Negotiation Program.",
+      "status": "current",
+      "start": "03/01/2025"
+    },
+    {
+      "code": "308",
+      "description": "Payment is adjusted due to contracted funding agreement between the payer and provider.",
+      "status": "current",
+      "start": "11/01/2025"
+    },
+    {
+      "code": "A0",
+      "description": "Patient refund amount.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "A1",
+      "description": "Claim/Service denied. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.) Usage: Use this code only when a more specific Claim Adjustment Reason Code is not available.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "11/16/2022"
+    },
+    {
+      "code": "A2",
+      "description": "Contractual adjustment.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "01/01/2008",
+      "lastModified": "02/28/2007",
+      "notes": "Use Code 45 with Group Code 'CO' or use another appropriate specific adjustment code."
+    },
+    {
+      "code": "A3",
+      "description": "Medicare Secondary Payer liability met.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "A4",
+      "description": "Medicare Claim PPS Capital Day Outlier Amount.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "04/01/2008",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "A5",
+      "description": "Medicare Claim PPS Capital Cost Outlier Amount.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "A6",
+      "description": "Prior hospitalization or 30 day transfer requirement not met.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "A7",
+      "description": "Presumptive Payment Adjustment",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "07/01/2015"
+    },
+    {
+      "code": "A8",
+      "description": "Ungroupable DRG.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "B1",
+      "description": "Non-covered visits.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "B2",
+      "description": "Covered visits.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "B3",
+      "description": "Covered charges.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "B4",
+      "description": "Late filing penalty.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "B5",
+      "description": "Coverage/program guidelines were not met or were exceeded.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "05/01/2016",
+      "lastModified": "11/01/2015",
+      "notes": "This code has been replaced by 272 and 273."
+    },
+    {
+      "code": "B6",
+      "description": "This payment is adjusted when performed/billed by this type of provider, by this type of provider in this type of facility, or by a provider of this specialty.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "02/01/2006"
+    },
+    {
+      "code": "B7",
+      "description": "This provider was not certified/eligible to be paid for this procedure/service on this date of service. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "B8",
+      "description": "Alternative services were available, and should have been utilized. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "B9",
+      "description": "Patient is enrolled in a Hospice.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "B10",
+      "description": "Allowed amount has been reduced because a component of the basic procedure/test was paid. The beneficiary is not liable for more than the charge limit for the basic procedure/test.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "B11",
+      "description": "The claim/service has been transferred to the proper payer/processor for processing. Claim/service not covered by this payer/processor.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "B12",
+      "description": "Services not documented in patient's medical records.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "03/01/2018"
+    },
+    {
+      "code": "B13",
+      "description": "Previously paid. Payment for this claim/service may have been provided in a previous payment.",
+      "status": "current",
+      "start": "01/01/1995"
+    },
+    {
+      "code": "B14",
+      "description": "Only one visit or consultation per physician per day is covered.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "B15",
+      "description": "This service/procedure requires that a qualifying service/procedure be received and covered. The qualifying other service/procedure has not been received/adjudicated. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "07/01/2017"
+    },
+    {
+      "code": "B16",
+      "description": "'New Patient' qualifications were not met.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "B17",
+      "description": "Payment adjusted because this service was not prescribed by a physician, not prescribed prior to delivery, the prescription is incomplete, or the prescription is not current.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "02/01/2006"
+    },
+    {
+      "code": "B18",
+      "description": "This procedure code and modifier were invalid on the date of service.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "03/01/2009",
+      "lastModified": "09/21/2008"
+    },
+    {
+      "code": "B19",
+      "description": "Claim/service adjusted because of the finding of a Review Organization.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "B20",
+      "description": "Procedure/service was partially or fully furnished by another provider.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "B21",
+      "description": "The charges were reduced because the service/care was partially furnished by another physician.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003"
+    },
+    {
+      "code": "B22",
+      "description": "This payment is adjusted based on the diagnosis.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "02/28/2001"
+    },
+    {
+      "code": "B23",
+      "description": "Procedure billed is not authorized per your Clinical Laboratory Improvement Amendment (CLIA) proficiency test.",
+      "status": "current",
+      "start": "01/01/1995",
+      "lastModified": "09/30/2007"
+    },
+    {
+      "code": "D1",
+      "description": "Claim/service denied. Level of subluxation is missing or inadequate.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D2",
+      "description": "Claim lacks the name, strength, or dosage of the drug furnished.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D3",
+      "description": "Claim/service denied because information to indicate if the patient owns the equipment that requires the part or supply was missing.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D4",
+      "description": "Claim/service does not indicate the period of time for which this will be needed.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D5",
+      "description": "Claim/service denied. Claim lacks individual lab codes included in the test.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D6",
+      "description": "Claim/service denied. Claim did not include patient's medical record for the service.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D7",
+      "description": "Claim/service denied. Claim lacks date of patient's most recent physician visit.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D8",
+      "description": "Claim/service denied. Claim lacks indicator that 'x-ray is available for review.'",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D9",
+      "description": "Claim/service denied. Claim lacks invoice or statement certifying the actual cost of the lens, less discounts or the type of intraocular lens used.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 16 and remark codes if necessary."
+    },
+    {
+      "code": "D10",
+      "description": "Claim/service denied. Completed physician financial relationship form not on file.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D11",
+      "description": "Claim lacks completed pacemaker registration form.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D12",
+      "description": "Claim/service denied. Claim does not identify who performed the purchased diagnostic test or the amount you were charged for the test.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D13",
+      "description": "Claim/service denied. Performed by a facility/supplier in which the ordering/referring physician has a financial interest.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D14",
+      "description": "Claim lacks indication that plan of treatment is on file.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D15",
+      "description": "Claim lacks indication that service was supervised or evaluated by a physician.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "10/16/2003",
+      "notes": "Use code 17."
+    },
+    {
+      "code": "D16",
+      "description": "Claim lacks prior payer payment information.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 16 with appropriate claim payment remark code [N4]."
+    },
+    {
+      "code": "D17",
+      "description": "Claim/Service has invalid non-covered days.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 16 with appropriate claim payment remark code."
+    },
+    {
+      "code": "D18",
+      "description": "Claim/Service has missing diagnosis information.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 16 with appropriate claim payment remark code."
+    },
+    {
+      "code": "D19",
+      "description": "Claim/Service lacks Physician/Operative or other supporting documentation",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 16 with appropriate claim payment remark code."
+    },
+    {
+      "code": "D20",
+      "description": "Claim/Service missing service/product information.",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007",
+      "notes": "Use code 16 with appropriate claim payment remark code."
+    },
+    {
+      "code": "D21",
+      "description": "This (these) diagnosis(es) is (are) missing or are invalid",
+      "status": "deactivated",
+      "start": "01/01/1995",
+      "stop": "06/30/2007"
+    },
+    {
+      "code": "D22",
+      "description": "Reimbursement was adjusted for the reasons to be provided in separate correspondence. (Note: To be used for Workers' Compensation only) - Temporary code to be added for timeframe only until 01/01/2009. Another code to be established and/or for 06/2008 meeting for a revised code to replace or strategy to use another existing code",
+      "status": "deactivated",
+      "start": "01/27/2008",
+      "stop": "01/01/2009"
+    },
+    {
+      "code": "D23",
+      "description": "This dual eligible patient is covered by Medicare Part D per Medicare Retro-Eligibility. At least one Remark Code must be provided (may be comprised of either the NCPDP Reject Reason Code, or Remittance Advice Remark Code that is not an ALERT.)",
+      "status": "deactivated",
+      "start": "11/01/2009",
+      "stop": "01/01/2012"
+    },
+    {
+      "code": "P1",
+      "description": "State-mandated Requirement for Property and Casualty, see Claim Payment Remarks Code for specific explanation. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 162"
+    },
+    {
+      "code": "P2",
+      "description": "Not a work related injury/illness and thus not the liability of the workers' compensation carrier Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Workers' Compensation only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code 191"
+    },
+    {
+      "code": "P3",
+      "description": "Workers' Compensation case settled. Patient is responsible for amount of this claim/service through WC 'Medicare set aside arrangement' or other agreement. To be used for Workers' Compensation only. (Use only with Group Code PR)",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 201"
+    },
+    {
+      "code": "P4",
+      "description": "Workers' Compensation claim adjudicated as non-compensable. This Payer not liable for claim or service/treatment. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Workers' Compensation only",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code 214"
+    },
+    {
+      "code": "P5",
+      "description": "Based on payer reasonable and customary fees. No maximum allowable defined by legislated fee arrangement. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 217"
+    },
+    {
+      "code": "P6",
+      "description": "Based on entitlement to benefits. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code 218"
+    },
+    {
+      "code": "P7",
+      "description": "The applicable fee schedule/fee database does not contain the billed code. Please resubmit a bill with the appropriate fee schedule/fee database code(s) that best describe the service(s) provided and supporting documentation if required. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 220"
+    },
+    {
+      "code": "P8",
+      "description": "Claim is under investigation. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') for the jurisdictional regulation. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF). To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code 221"
+    },
+    {
+      "code": "P9",
+      "description": "No available or correlating CPT/HCPCS code to describe this service. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 230"
+    },
+    {
+      "code": "P10",
+      "description": "Payment reduced to zero due to litigation. Additional information will be sent following the conclusion of litigation. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 244"
+    },
+    {
+      "code": "P11",
+      "description": "The disposition of the related Property & Casualty claim (injury or illness) is pending due to litigation. To be used for Property and Casualty only. (Use only with Group Code OA)",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code 255"
+    },
+    {
+      "code": "P12",
+      "description": "Workers' compensation jurisdictional fee schedule adjustment. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Workers' Compensation only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code W1"
+    },
+    {
+      "code": "P13",
+      "description": "Payment reduced or denied based on workers' compensation jurisdictional regulations or payment policies, use only if no other code is applicable. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Workers' Compensation only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code W2"
+    },
+    {
+      "code": "P14",
+      "description": "The Benefit for this Service is included in the payment/allowance for another service/procedure that has been performed on the same day. Usage: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code W3"
+    },
+    {
+      "code": "P15",
+      "description": "Workers' Compensation Medical Treatment Guideline Adjustment. To be used for Workers' Compensation only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W4"
+    },
+    {
+      "code": "P16",
+      "description": "Medical provider not authorized/certified to provide treatment to injured workers in this jurisdiction. To be used for Workers' Compensation only. (Use with Group Code CO or OA)",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W5"
+    },
+    {
+      "code": "P17",
+      "description": "Referral not authorized by attending physician per regulatory requirement. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W6"
+    },
+    {
+      "code": "P18",
+      "description": "Procedure is not listed in the jurisdiction fee schedule. An allowance has been made for a comparable service. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W7"
+    },
+    {
+      "code": "P19",
+      "description": "Procedure has a relative value of zero in the jurisdiction fee schedule, therefore no payment is due. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W8"
+    },
+    {
+      "code": "P20",
+      "description": "Service not paid under jurisdiction allowed outpatient facility fee schedule. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "notes": "This code replaces deactivated code W9"
+    },
+    {
+      "code": "P21",
+      "description": "Payment denied based on the Medical Payments Coverage (MPC) and/or Personal Injury Protection (PIP) Benefits jurisdictional regulations, or payment policies. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "03/01/2018",
+      "notes": "This code replaces deactivated code Y1"
+    },
+    {
+      "code": "P22",
+      "description": "Payment adjusted based on the Medical Payments Coverage (MPC) and/or Personal Injury Protection (PIP) Benefits jurisdictional regulations, or payment policies. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "03/01/2018",
+      "notes": "This code replaces deactivated code Y2"
+    },
+    {
+      "code": "P23",
+      "description": "Medical Payments Coverage (MPC) or Personal Injury Protection (PIP) Benefits jurisdictional fee schedule adjustment. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2013",
+      "lastModified": "07/01/2017",
+      "notes": "This code replaces deactivated code Y3"
+    },
+    {
+      "code": "P24",
+      "description": "Payment adjusted based on Preferred Provider Organization (PPO). Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty only. Use only with Group Code CO.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P25",
+      "description": "Payment adjusted based on Medical Provider Network (MPN). Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty only. (Use only with Group Code CO).",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P26",
+      "description": "Payment adjusted based on Voluntary Provider network (VPN). Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty only. (Use only with Group Code CO).",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P27",
+      "description": "Payment denied based on the Liability Coverage Benefits jurisdictional regulations and/or payment policies. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P28",
+      "description": "Payment adjusted based on the Liability Coverage Benefits jurisdictional regulations and/or payment policies. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P29",
+      "description": "Liability Benefits jurisdictional fee schedule adjustment. Usage: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Property and Casualty Auto only.",
+      "status": "current",
+      "start": "11/01/2017"
+    },
+    {
+      "code": "P30",
+      "description": "Payment denied for exacerbation when supporting documentation was not complete. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2020"
+    },
+    {
+      "code": "P31",
+      "description": "Payment denied for exacerbation when treatment exceeds time allowed. To be used for Property and Casualty only.",
+      "status": "current",
+      "start": "11/01/2020"
+    },
+    {
+      "code": "P32",
+      "description": "Payment adjusted due to Apportionment.",
+      "status": "current",
+      "start": "08/01/2022"
+    },
+    {
+      "code": "W1",
+      "description": "Workers' compensation jurisdictional fee schedule adjustment. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply.",
+      "status": "deactivated",
+      "start": "02/29/2000",
+      "stop": "07/01/2014",
+      "lastModified": "06/02/2013",
+      "notes": "Use code P12"
+    },
+    {
+      "code": "W2",
+      "description": "Payment reduced or denied based on workers' compensation jurisdictional regulations or payment policies, use only if no other code is applicable. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for Workers' Compensation only.",
+      "status": "deactivated",
+      "start": "10/17/2010",
+      "stop": "07/01/2014",
+      "lastModified": "06/02/2013",
+      "notes": "Use code P13"
+    },
+    {
+      "code": "W3",
+      "description": "The Benefit for this Service is included in the payment/allowance for another service/procedure that has been performed on the same day. Note: Refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment Information REF), if present. For use by Property and Casualty only.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "notes": "Use code P14"
+    },
+    {
+      "code": "W4",
+      "description": "Workers' Compensation Medical Treatment Guideline Adjustment.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "notes": "Use code P15"
+    },
+    {
+      "code": "W5",
+      "description": "Medical provider not authorized/certified to provide treatment to injured workers in this jurisdiction. (Use with Group Code CO or OA)",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P16"
+    },
+    {
+      "code": "W6",
+      "description": "Referral not authorized by attending physician per regulatory requirement.",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P17"
+    },
+    {
+      "code": "W7",
+      "description": "Procedure is not listed in the jurisdiction fee schedule. An allowance has been made for a comparable service.",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P18"
+    },
+    {
+      "code": "W8",
+      "description": "Procedure has a relative value of zero in the jurisdiction fee schedule, therefore no payment is due.",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P19"
+    },
+    {
+      "code": "W9",
+      "description": "Service not paid under jurisdiction allowed outpatient facility fee schedule.",
+      "status": "deactivated",
+      "start": "06/02/2013",
+      "stop": "07/01/2014",
+      "notes": "Use code P20"
+    },
+    {
+      "code": "Y1",
+      "description": "Payment denied based on Medical Payments Coverage (MPC) or Personal Injury Protection (PIP) Benefits jurisdictional regulations or payment policies, use only if no other code is applicable. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for P&C Auto only.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "lastModified": "06/02/2013",
+      "notes": "Use code P21"
+    },
+    {
+      "code": "Y2",
+      "description": "Payment adjusted based on Medical Payments Coverage (MPC) or Personal Injury Protection (PIP) Benefits jurisdictional regulations or payment policies, use only if no other code is applicable. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Insurance Policy Number Segment (Loop 2100 Other Claim Related Information REF qualifier 'IG') if the jurisdictional regulation applies. If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for P&C Auto only.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "lastModified": "06/02/2013",
+      "notes": "Use code P22"
+    },
+    {
+      "code": "Y3",
+      "description": "Medical Payments Coverage (MPC) or Personal Injury Protection (PIP) Benefits jurisdictional fee schedule adjustment. Note: If adjustment is at the Claim Level, the payer must send and the provider should refer to the 835 Class of Contract Code Identification Segment (Loop 2100 Other Claim Related Information REF). If adjustment is at the Line Level, the payer must send and the provider should refer to the 835 Healthcare Policy Identification Segment (loop 2110 Service Payment information REF) if the regulations apply. To be used for P&C Auto only.",
+      "status": "deactivated",
+      "start": "09/30/2012",
+      "stop": "07/01/2014",
+      "lastModified": "06/02/2013",
+      "notes": "Use code P23"
+    }
+  ]
+}

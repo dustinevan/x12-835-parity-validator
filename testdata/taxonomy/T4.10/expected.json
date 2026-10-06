@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T4.10",
+  "title": "SVC06 original procedure present on one side only",
+  "representable": true,
+  "notes": "The adjudicated code equals the submitted code; the vendor side echoes it in SVC06 anyway and the MAC side omits SVC06. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4NT1P00QU70",
+        "date_of_service": "20260317",
+        "total_charge": "150.00",
+        "tax_id": "940410017",
+        "npi": "1940101235",
+        "workload": "94010"
+      },
+      "patient_control_number": "SYN410A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "HC:99214"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,92 @@
+{
+  "taxonomy_id": "T5.12",
+  "title": "Payee name or identifier differs",
+  "representable": true,
+  "notes": "The 837 bills under the group NPI with the practitioner as rendering provider. The MAC side pays the group; the vendor side pays the rendering practitioner. Because payee NPI is part of the matching key, each claim is missing on one side and extra on the other. Follows the rule-gap cause (rendering paid instead of billing).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4Q11W21MX23",
+        "date_of_service": "20260225",
+        "total_charge": "2612.00",
+        "tax_id": "851210444",
+        "npi": "1120037365",
+        "workload": "51201"
+      },
+      "patient_control_number": "SYN51201",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4Q21X22VE24",
+        "date_of_service": "20260226",
+        "total_charge": "362.40",
+        "tax_id": "851210444",
+        "npi": "1120037365",
+        "workload": "51201"
+      },
+      "patient_control_number": "SYN51202",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4Q11W21MX23",
+        "date_of_service": "20260225",
+        "total_charge": "2612.00",
+        "tax_id": "851210444",
+        "npi": "1120137371",
+        "workload": "51201"
+      },
+      "patient_control_number": "SYN51201",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "4Q21X22VE24",
+        "date_of_service": "20260226",
+        "total_charge": "362.40",
+        "tax_id": "851210444",
+        "npi": "1120137371",
+        "workload": "51201"
+      },
+      "patient_control_number": "SYN51202",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "N1",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "SYNTHETIC CLINIC GROUP",
+      "vendor": "SYNTHETIC PRACTITIONER"
+    },
+    {
+      "segment": "N1",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "1120037365",
+      "vendor": "1120137371"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T3.38",
+  "title": "The group, reason, and remark combination is not in the industry's required set",
+  "representable": true,
+  "notes": "Both sides deny PR-96 65.00; MAC pairs it with N425 (statutorily excluded), vendor with the alert-only N59, a group/reason/remark combination the CAQH CORE list may not include (verify against the current list). Follows the rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3XH8F37YM34",
+        "date_of_service": "20260612",
+        "total_charge": "65.00",
+        "tax_id": "933384417",
+        "npi": "1338456738",
+        "workload": "33817"
+      },
+      "patient_control_number": "SYN338A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "LQ",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "N425",
+          "vendor": "N59"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

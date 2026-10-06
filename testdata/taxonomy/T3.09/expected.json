@@ -1,0 +1,173 @@
+{
+  "taxonomy_id": "T3.09",
+  "title": "Deductible and coinsurance shift because the deductible was met on a different claim",
+  "representable": true,
+  "notes": "Two claims for one beneficiary with the 2026 Part B deductible of 283.00. MAC applied claim A (allowed 100.00) first: A PR-1 100.00, B PR-1 183.00/PR-2 43.40. Vendor applied B first: B PR-1 283.00/PR-2 23.40, A PR-2 20.00. Both sides total 283.00 PR-1 across the claims; follows the processing-order cause. Payment-scope differences are listed under the first claim. Sequestration (CO-253, 2%) is added on paid lines for realism where the example omits it.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3ME9E07QA37",
+        "date_of_service": "20260105",
+        "total_charge": "150.00",
+        "tax_id": "933094417",
+        "npi": "1309456733",
+        "workload": "30917"
+      },
+      "patient_control_number": "SYN309A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "100.00",
+          "vendor": "20.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.00",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "253"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "1.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "100.00",
+          "vendor": "20.00"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "3ME9E07QA37",
+        "date_of_service": "20260112",
+        "total_charge": "600.00",
+        "tax_id": "933094417",
+        "npi": "1309456733",
+        "workload": "30917"
+      },
+      "patient_control_number": "SYN309B",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "170.13",
+          "vendor": "91.73"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "226.40",
+          "vendor": "306.40"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "170.13",
+          "vendor": "91.73"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "3.47",
+          "vendor": "1.87"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "183.00",
+          "vendor": "283.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "43.40",
+          "vendor": "23.40"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

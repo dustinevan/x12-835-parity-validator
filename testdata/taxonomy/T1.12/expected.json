@@ -1,0 +1,83 @@
+{
+  "taxonomy_id": "T1.12",
+  "title": "Chain reported in a different order, file, or payment cycle",
+  "representable": true,
+  "notes": "Both files carry the same reversal (-88.08) and correction (75.58), in the order reversal-correction on the MAC side and correction-reversal on the vendor side; with key pairing the only recorded differences are the claim positions. Follows the representation cause (order within a file has no business meaning); positional pairing would instead pair the reversal with the correction.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02",
+    "REF02 (qualifier F8): cites each system's own CLP07"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4WY0H62EE12",
+        "date_of_service": "20260302",
+        "total_charge": "-184.60",
+        "tax_id": "970120001",
+        "npi": "1901200018",
+        "workload": "90120"
+      },
+      "patient_control_number": "CH7720512",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "kind": "order",
+          "mac": "position 1",
+          "vendor": "position 2"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "4WY0H62EE12",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970120001",
+        "npi": "1901200018",
+        "workload": "90120"
+      },
+      "patient_control_number": "CH7720512",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "kind": "order",
+          "mac": "position 2",
+          "vendor": "position 1"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "4WY5P17EK12",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970120001",
+        "npi": "1901200018",
+        "workload": "90120"
+      },
+      "patient_control_number": "CP0120001",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,47 @@
+{
+  "taxonomy_id": "T4.09",
+  "title": "Modifier set differs",
+  "representable": true,
+  "notes": "Submitted 20610-RT-59; the MAC side echoes both modifiers and the vendor side reports only RT, with equal payment. Follows the representation cause (vendor echoes only modifiers that affected payment).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4JT0F90PF33",
+        "date_of_service": "20260316",
+        "total_charge": "180.00",
+        "tax_id": "940409017",
+        "npi": "1940091238",
+        "workload": "94009"
+      },
+      "patient_control_number": "SYN409A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "SVC",
+          "element": 1,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "HC:20610:RT:59",
+          "vendor": "HC:20610:RT"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

@@ -1,0 +1,100 @@
+{
+  "taxonomy_id": "T4.37",
+  "title": "Cost-sharing exemption applied to a line on one side only",
+  "representable": true,
+  "notes": "Laboratory panel 80053 allowed 14.39 on both sides: the MAC side pays 14.10 (sequestration only), the vendor side applies PR-2 coinsurance 2.88 and pays 11.28. Follows the rule-gap cause (laboratory exemption not applied).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4PT3A70YQ69",
+        "date_of_service": "20260414",
+        "total_charge": "60.00",
+        "tax_id": "940437017",
+        "npi": "1940371234",
+        "workload": "94037"
+      },
+      "patient_control_number": "SYN437A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "14.10",
+          "vendor": "11.28"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0",
+          "vendor": "2.88"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "14.10",
+          "vendor": "11.28"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.29",
+          "vendor": "0.23"
+        },
+        {
+          "segment": "CAS",
+          "element": 0,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": null,
+          "vendor": "CAS*PR*2*2.88"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "14.10",
+      "vendor": "11.28"
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "21",
+      "vendor": "22"
+    }
+  ]
+}

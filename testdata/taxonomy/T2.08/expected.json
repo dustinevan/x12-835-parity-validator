@@ -1,0 +1,71 @@
+{
+  "taxonomy_id": "T2.08",
+  "title": "Submitted charge differs",
+  "representable": true,
+  "notes": "The vendor side splits the three-line 900.00 claim into two claims (600.00 and 300.00) with MA15; line payments are identical. Because total charge is part of the match key, the MAC claim is missing and both vendor parts are extra, so no field-level CLP03 difference is produced; follows the matching-artifact (split claim) cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW0Y98XK01",
+        "date_of_service": "20260812",
+        "total_charge": "900.00",
+        "tax_id": "920084417",
+        "npi": "1920080714",
+        "workload": "92008"
+      },
+      "patient_control_number": "PCN20801",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2TW0Y98XK01",
+        "date_of_service": "20260812",
+        "total_charge": "600.00",
+        "tax_id": "920084417",
+        "npi": "1920080714",
+        "workload": "92008"
+      },
+      "patient_control_number": "PCN20801",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2TW0Y98XK01",
+        "date_of_service": "20260812",
+        "total_charge": "300.00",
+        "tax_id": "920084417",
+        "npi": "1920080714",
+        "workload": "92008"
+      },
+      "patient_control_number": "PCN20801",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "36",
+      "vendor": "40"
+    }
+  ]
+}

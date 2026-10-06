@@ -1,0 +1,112 @@
+{
+  "taxonomy_id": "T4.28",
+  "title": "Fee schedule adjusted by modifier percentage on one side only",
+  "representable": true,
+  "notes": "27447-50 with a synthetic fee of 1,350.00: the MAC side allows 2,025.00 (150 percent) and the vendor side 2,700.00 (200 percent). Follows the rule-gap cause (bilateral percentage).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4FT2W80NR36",
+        "date_of_service": "20260407",
+        "total_charge": "4000.00",
+        "tax_id": "940428017",
+        "npi": "1940281235",
+        "workload": "94028"
+      },
+      "patient_control_number": "SYN428A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "1587.60",
+          "vendor": "2116.80"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "405.00",
+          "vendor": "540.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1587.60",
+          "vendor": "2116.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1975.00",
+          "vendor": "1300.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "32.40",
+          "vendor": "43.20"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "405.00",
+          "vendor": "540.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2025.00",
+          "vendor": "2700.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "1587.60",
+      "vendor": "2116.80"
+    }
+  ]
+}

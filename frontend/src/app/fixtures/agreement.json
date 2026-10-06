@@ -1,0 +1,21 @@
+{
+  "v1": { "prefix": "vendor-1/2026-10-01", "side": "vendor", "label": "Vendor 1", "submitted_on": "2026-10-01", "status": "summarized", "claim_count": 980 },
+  "v2": { "prefix": "vendor-2/2026-10-01", "side": "vendor", "label": "Vendor 2", "submitted_on": "2026-10-01", "status": "summarized", "claim_count": 965 },
+  "cells": [
+    { "v1": "equal", "v2": "equal", "claims": 600, "same_tags": 0 },
+    { "v1": "equal", "v2": "different", "claims": 80, "same_tags": 0 },
+    { "v1": "equal", "v2": "missing", "claims": 18, "same_tags": 0 },
+    { "v1": "equal", "v2": "duplicated", "claims": 2, "same_tags": 0 },
+    { "v1": "different", "v2": "equal", "claims": 40, "same_tags": 0 },
+    { "v1": "different", "v2": "different", "claims": 140, "same_tags": 95 },
+    { "v1": "different", "v2": "missing", "claims": 18, "same_tags": 0 },
+    { "v1": "different", "v2": "duplicated", "claims": 2, "same_tags": 0 },
+    { "v1": "missing", "v2": "equal", "claims": 8, "same_tags": 0 },
+    { "v1": "missing", "v2": "different", "claims": 15, "same_tags": 0 },
+    { "v1": "missing", "v2": "missing", "claims": 16, "same_tags": 0 },
+    { "v1": "missing", "v2": "duplicated", "claims": 1, "same_tags": 0 },
+    { "v1": "duplicated", "v2": "equal", "claims": 2, "same_tags": 0 },
+    { "v1": "duplicated", "v2": "different", "claims": 5, "same_tags": 0 },
+    { "v1": "duplicated", "v2": "missing", "claims": 3, "same_tags": 0 }
+  ]
+}

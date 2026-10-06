@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T2.31",
+  "title": "Claim coverage (allowed) amount differs",
+  "representable": true,
+  "notes": "AMT*AU is 212.40 on the MAC side (includes the non-covered line 2 charge of 14.40) and 198.00 on the vendor side (covered line only); CLP04 agrees. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2TW3Y91XK01",
+        "date_of_service": "20260812",
+        "total_charge": "274.40",
+        "tax_id": "920314417",
+        "npi": "1920310715",
+        "workload": "92031"
+      },
+      "patient_control_number": "PCN23101",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "212.40",
+          "vendor": "198.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

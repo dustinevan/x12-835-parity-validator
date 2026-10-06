@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T5.15",
+  "title": "Receiver, version, or delivery-method records differ",
+  "representable": true,
+  "notes": "REF*F2 (version identification) carries each system's own version string. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7U11H51MC56",
+        "date_of_service": "20260225",
+        "total_charge": "2615.00",
+        "tax_id": "851510555",
+        "npi": "1150037459",
+        "workload": "51501"
+      },
+      "patient_control_number": "SYN51501",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "7U21J52VH57",
+        "date_of_service": "20260226",
+        "total_charge": "363.00",
+        "tax_id": "851510555",
+        "npi": "1150037459",
+        "workload": "51501"
+      },
+      "patient_control_number": "SYN51502",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "REF",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "5010A1R26",
+      "vendor": "1.4.0"
+    }
+  ]
+}

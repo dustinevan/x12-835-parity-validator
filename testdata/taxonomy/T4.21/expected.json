@@ -1,0 +1,56 @@
+{
+  "taxonomy_id": "T4.21",
+  "title": "AMT*B6 present on one side only",
+  "representable": true,
+  "notes": "Line 2 is denied (CO-50) on both sides; the MAC side reports AMT*B6*0 and the vendor side omits the allowed amount. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4ET2K10EV77",
+        "date_of_service": "20260331",
+        "total_charge": "190.00",
+        "tax_id": "940421017",
+        "npi": "1940211232",
+        "workload": "94021"
+      },
+      "patient_control_number": "SYN421A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "AMT",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "AMT*B6*0",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "26",
+      "vendor": "25"
+    }
+  ]
+}

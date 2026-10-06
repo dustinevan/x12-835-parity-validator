@@ -1,0 +1,45 @@
+{
+  "taxonomy_id": "T5.17",
+  "title": "Provider summary identity fields differ",
+  "representable": true,
+  "notes": "The provider summary TS303 fiscal period date is 20261231 on the MAC side and 20260930 on the vendor side. Follows the input-or-environment cause (provider fiscal year end not furnished).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "9W11Q71ME78",
+        "date_of_service": "20260304",
+        "total_charge": "3765.00",
+        "tax_id": "851710629",
+        "npi": "1170037513",
+        "workload": "51701"
+      },
+      "patient_control_number": "SYN51701",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "TS3",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "20261231",
+      "vendor": "20260930"
+    }
+  ]
+}

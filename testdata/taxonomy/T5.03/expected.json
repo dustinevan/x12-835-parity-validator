@@ -1,0 +1,165 @@
+{
+  "taxonomy_id": "T5.03",
+  "title": "Credit or debit flag differs",
+  "representable": true,
+  "notes": "Claim paid 75.00 on both sides against a 200.00 overpayment recovery. The MAC side carries the 125.00 shortfall forward (PLB FB -125.00) and pays 0 (NON); the vendor side sends BPR*I*125.00*D*ACH. The vendor file balances only when BPR03 = D is read as a negative BPR02. Follows the rule-gap cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4E10N31MM34",
+        "date_of_service": "20260225",
+        "total_charge": "135.00",
+        "tax_id": "850310111",
+        "npi": "1030037091",
+        "workload": "50301"
+      },
+      "patient_control_number": "SYN50301",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "H",
+      "vendor": "I"
+    },
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "0",
+      "vendor": "125.00"
+    },
+    {
+      "segment": "BPR",
+      "element": 3,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "C",
+      "vendor": "D"
+    },
+    {
+      "segment": "BPR",
+      "element": 4,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "NON",
+      "vendor": "ACH"
+    },
+    {
+      "segment": "BPR",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "CCP"
+    },
+    {
+      "segment": "BPR",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 7,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "990000001"
+    },
+    {
+      "segment": "BPR",
+      "element": 8,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 9,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "000123456"
+    },
+    {
+      "segment": "BPR",
+      "element": 10,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "1999999999"
+    },
+    {
+      "segment": "BPR",
+      "element": 12,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "01"
+    },
+    {
+      "segment": "BPR",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "990001003"
+    },
+    {
+      "segment": "BPR",
+      "element": 14,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "DA"
+    },
+    {
+      "segment": "BPR",
+      "element": 15,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": null,
+      "vendor": "40000533"
+    },
+    {
+      "segment": "PLB",
+      "element": 5,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "FB:FCN0000030001",
+      "vendor": null
+    },
+    {
+      "segment": "PLB",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "-125.00",
+      "vendor": null
+    }
+  ]
+}

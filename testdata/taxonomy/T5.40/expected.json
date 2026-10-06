@@ -1,0 +1,104 @@
+{
+  "taxonomy_id": "T5.40",
+  "title": "Control numbers differ",
+  "representable": true,
+  "notes": "Only system-assigned control numbers differ (legacy ISA13 in YJJJ00000 form, 2026 day 075; vendor a plain counter), and each file's pairs agree internally. A comparison that ignores system-assigned fields reports none.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5A14C01MH01",
+        "date_of_service": "20260225",
+        "total_charge": "2640.00",
+        "tax_id": "854011480",
+        "npi": "1400038208",
+        "workload": "54001"
+      },
+      "patient_control_number": "SYN54001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5A24D02VP02",
+        "date_of_service": "20260226",
+        "total_charge": "368.00",
+        "tax_id": "854011480",
+        "npi": "1400038208",
+        "workload": "54001"
+      },
+      "patient_control_number": "SYN54002",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "ISA",
+      "element": 13,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "607500001",
+      "vendor": "000000417"
+    },
+    {
+      "segment": "IEA",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "607500001",
+      "vendor": "000000417"
+    },
+    {
+      "segment": "GS",
+      "element": 6,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "40",
+      "vendor": "940"
+    },
+    {
+      "segment": "GE",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "40",
+      "vendor": "940"
+    },
+    {
+      "segment": "ST",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "0001",
+      "vendor": "007400"
+    },
+    {
+      "segment": "SE",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "envelope",
+      "system_assigned": true,
+      "mac": "0001",
+      "vendor": "007400"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "taxonomy_id": "T1.10",
+  "title": "Reversal present on one side only",
+  "representable": true,
+  "notes": "The MAC-processed file carries a reversal (CLP02 22, -88.08, REF*F8 to the MAC's original) and a correction paying 75.58 with MA67; the vendor-processed file has only the original paying 88.08. The negated reversal has its own key (charge -184.60) and is missing; the correction pairs with the vendor original. Follows the cause of a MAC-initiated adjustment after a fee schedule correction.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02",
+    "REF02 (qualifier F8): cites each system's own CLP07"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2PW0Q00CR10",
+        "date_of_service": "20260302",
+        "total_charge": "-184.60",
+        "tax_id": "970100001",
+        "npi": "1901000012",
+        "workload": "90100"
+      },
+      "patient_control_number": "RV4820310",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2PW0Q00CR10",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970100001",
+        "npi": "1901000012",
+        "workload": "90100"
+      },
+      "patient_control_number": "RV4820310",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "75.58",
+          "vendor": "88.08"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "19.28",
+          "vendor": "22.47"
+        },
+        {
+          "segment": "MOA",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "MOA***MA67",
+          "vendor": null
+        },
+        {
+          "segment": "DTM",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "20260408",
+          "vendor": "20260305"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "75.58",
+          "vendor": "88.08"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "88.20",
+          "vendor": "72.25"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "1.54",
+          "vendor": "1.80"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "19.28",
+          "vendor": "22.47"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "96.40",
+          "vendor": "112.35"
+        }
+      ]
+    },
+    {
+      "key": {
+        "mbi": "2PW5W55CX10",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970100001",
+        "npi": "1901000012",
+        "workload": "90100"
+      },
+      "patient_control_number": "CP0100001",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "63.08",
+      "vendor": "163.66"
+    }
+  ]
+}

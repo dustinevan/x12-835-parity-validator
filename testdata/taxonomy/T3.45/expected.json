@@ -1,0 +1,95 @@
+{
+  "taxonomy_id": "T3.45",
+  "title": "The charge above the allowed amount is split differently on a non-assigned claim",
+  "representable": true,
+  "notes": "Non-assigned claim (LX01 0; 837 CLM07 C). Non-participating allowed 95.00, limiting charge 109.25, charge 130.00. MAC splits the gap as CO-45 20.75 and PR-45 14.25; vendor carries CO-45 35.00. Payment agrees; CLP05 differs. Follows the limiting-charge rule-gap cause; Medicare's reporting convention and CLP04 on non-assigned claims are unverified.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3GU5G47AV35",
+        "date_of_service": "20260619",
+        "total_charge": "130.00",
+        "tax_id": "933454417",
+        "npi": "1345456739",
+        "workload": "34517"
+      },
+      "patient_control_number": "SYN345A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "33.25",
+          "vendor": "19.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "20.75",
+          "vendor": "35.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "45",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "14.25",
+          "vendor": "19.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 5,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "2",
+          "vendor": null
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "19.00",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

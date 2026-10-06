@@ -1,0 +1,56 @@
+{
+  "taxonomy_id": "T3.39",
+  "title": "Adjustment-context remarks differ on corrected or recovered claims",
+  "representable": true,
+  "notes": "Correction claim (frequency 7) with identical money. MAC states the reprocessing context with MOA MA67 and LQ N432 (Recovery Audit adjustment); vendor gives MOA MA67 only. Follows the missing audit-event input cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3YR9F37DN37",
+        "date_of_service": "20260613",
+        "total_charge": "125.00",
+        "tax_id": "933394417",
+        "npi": "1339456737",
+        "workload": "33917"
+      },
+      "patient_control_number": "SYN339A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "LQ",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "LQ*HE*N432",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "25",
+      "vendor": "24"
+    }
+  ]
+}

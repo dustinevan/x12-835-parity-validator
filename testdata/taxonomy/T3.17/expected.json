@@ -1,0 +1,132 @@
+{
+  "taxonomy_id": "T3.17",
+  "title": "Prior-payer adjustments differ on a Medicare secondary claim",
+  "representable": true,
+  "notes": "Medicare-secondary claim; the 837 shows a primary payer paid 120.00 on a 200.00 charge. MAC reports OA-23 120.00 and pays 36.00; vendor ignores the primary payment and pays 78.40 as if Medicare were primary. Follows the missing-MSP-record input cause; the MAC-side CO-45 43.27 and CO-253 0.73 are invented to balance the example.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "3WY7E17VK31",
+        "date_of_service": "20260618",
+        "total_charge": "200.00",
+        "tax_id": "933174417",
+        "npi": "1317456733",
+        "workload": "31717"
+      },
+      "patient_control_number": "SYN317A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "CLP",
+          "element": 4,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "36.00",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CLP",
+          "element": 5,
+          "occurrence": 1,
+          "scope": "claim",
+          "mac": "0.00",
+          "vendor": "20.00"
+        },
+        {
+          "segment": "SVC",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "36.00",
+          "vendor": "78.40"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "43.27",
+          "vendor": "100.00"
+        },
+        {
+          "segment": "CAS",
+          "element": 6,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "0.73",
+          "vendor": "1.60"
+        },
+        {
+          "segment": "CAS",
+          "element": 1,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "OA",
+          "vendor": "PR"
+        },
+        {
+          "segment": "CAS",
+          "element": 2,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "23",
+          "vendor": "2"
+        },
+        {
+          "segment": "CAS",
+          "element": 3,
+          "occurrence": 2,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "120.00",
+          "vendor": "20.00"
+        },
+        {
+          "segment": "AMT",
+          "element": 2,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "156.73",
+          "vendor": "100.00"
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "36.00",
+      "vendor": "78.40"
+    }
+  ]
+}

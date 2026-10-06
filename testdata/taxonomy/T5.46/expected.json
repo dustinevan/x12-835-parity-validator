@@ -1,0 +1,62 @@
+{
+  "taxonomy_id": "T5.46",
+  "title": "Payment or remittance present on one side only",
+  "representable": true,
+  "notes": "No mac.835 by design: the vendor side issues a zero-payment remittance (BPR*H*0*C*NON) for three denied claims, and no MAC-processed 835 exists for that payee and cycle. All three claims are extra. Follows the input-or-environment cause (legacy remittance not furnished).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2H14Y61MQ67",
+        "date_of_service": "20260224",
+        "total_charge": "469.00",
+        "tax_id": "854611702",
+        "npi": "1460038387",
+        "workload": "54601"
+      },
+      "patient_control_number": "SYN54601",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2H24A62VW68",
+        "date_of_service": "20260224",
+        "total_charge": "482.00",
+        "tax_id": "854611702",
+        "npi": "1460038387",
+        "workload": "54601"
+      },
+      "patient_control_number": "SYN54602",
+      "outcome": "extra",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2H34C63ED69",
+        "date_of_service": "20260224",
+        "total_charge": "495.00",
+        "tax_id": "854611702",
+        "npi": "1460038387",
+        "workload": "54601"
+      },
+      "patient_control_number": "SYN54603",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

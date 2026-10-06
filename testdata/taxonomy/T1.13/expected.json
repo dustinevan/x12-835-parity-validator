@@ -1,0 +1,72 @@
+{
+  "taxonomy_id": "T1.13",
+  "title": "Different chain shape: void, replacement, or chain length",
+  "representable": true,
+  "notes": "The provider sent a frequency-7 replacement (99214 changed to 99213). The MAC-processed file reports reversal (-88.08) and correction (75.58); the vendor-processed file reports the reversal only, as if the replacement were a void. The reversals pair; the correction is missing. Follows the cause where the vendor treats a replacement as a void.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02",
+    "REF02 (qualifier F8): cites each system's own CLP07"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5AA0R93FK13",
+        "date_of_service": "20260302",
+        "total_charge": "-184.60",
+        "tax_id": "970130001",
+        "npi": "1901300016",
+        "workload": "90130"
+      },
+      "patient_control_number": "VR3310713",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5AA0R93FK13",
+        "date_of_service": "20260302",
+        "total_charge": "184.60",
+        "tax_id": "970130001",
+        "npi": "1901300016",
+        "workload": "90130"
+      },
+      "patient_control_number": "VR3310713",
+      "outcome": "missing",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "5AA5X48FR13",
+        "date_of_service": "20260303",
+        "total_charge": "260.00",
+        "tax_id": "970130001",
+        "npi": "1901300016",
+        "workload": "90130"
+      },
+      "patient_control_number": "CP0130001",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "105.10",
+      "vendor": "29.52"
+    }
+  ]
+}

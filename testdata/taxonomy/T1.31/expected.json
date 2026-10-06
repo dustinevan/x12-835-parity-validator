@@ -1,0 +1,57 @@
+{
+  "taxonomy_id": "T1.31",
+  "title": "Line item control number (REF*6R) absent, altered, or repeated on one side",
+  "representable": true,
+  "notes": "The submitted lines carry REF*6R L00004201 and L00004202; the MAC-processed file echoes them and the vendor-processed file echoes none. Lines pair by position as a fallback, and the only differences are the missing REF*6R segments. Follows the representation cause (never echoing 6R).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "5TX0Y31DX31",
+        "date_of_service": "20260302",
+        "total_charge": "150.00",
+        "tax_id": "970310001",
+        "npi": "1903100018",
+        "workload": "90310"
+      },
+      "patient_control_number": "LI3340631",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "REF*6R*L00004201",
+          "vendor": null
+        },
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 2,
+          "vendor_line": 2,
+          "mac": "REF*6R*L00004202",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": []
+}

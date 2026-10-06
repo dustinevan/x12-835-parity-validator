@@ -1,0 +1,56 @@
+{
+  "taxonomy_id": "T4.50",
+  "title": "Line rendering provider reference differs",
+  "representable": true,
+  "notes": "Both sides carry the same claim-level rendering provider (NM1*82); the MAC side repeats it on the line as REF*HPI and the vendor side does not. Follows the representation cause.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "IEA02",
+    "GE02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "4NT5P00QU50",
+        "date_of_service": "20260427",
+        "total_charge": "110.00",
+        "tax_id": "940450017",
+        "npi": "1940501236",
+        "workload": "94050"
+      },
+      "patient_control_number": "SYN450A",
+      "outcome": "matched",
+      "differences": [
+        {
+          "segment": "REF",
+          "element": 0,
+          "occurrence": 1,
+          "scope": "line",
+          "line": 1,
+          "vendor_line": 1,
+          "mac": "REF*HPI*1940504560",
+          "vendor": null
+        }
+      ]
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "24",
+      "vendor": "23"
+    }
+  ]
+}

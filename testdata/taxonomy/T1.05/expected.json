@@ -1,0 +1,49 @@
+{
+  "taxonomy_id": "T1.05",
+  "title": "Unprocessable claim reported on a remittance by one side only",
+  "representable": true,
+  "notes": "The MAC-processed file reports the claim as unprocessable (CLP02 4, CO*16 on the line, MOA MA130); the vendor-processed file omits it because the vendor returned it without an 835. This reverses the entry's example direction (the entry allows either side) and follows the representation cause: same determination, different channel.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "6VQ5D00VR05",
+        "date_of_service": "20260303",
+        "total_charge": "140.00",
+        "tax_id": "970050001",
+        "npi": "1900500012",
+        "workload": "90050"
+      },
+      "patient_control_number": "CP0050001",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "6VQ0W55VK05",
+        "date_of_service": "20260302",
+        "total_charge": "92.40",
+        "tax_id": "970050001",
+        "npi": "1900500012",
+        "workload": "90050"
+      },
+      "patient_control_number": "UP3390512",
+      "outcome": "missing",
+      "differences": []
+    }
+  ],
+  "file_differences": []
+}

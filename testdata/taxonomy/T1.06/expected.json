@@ -1,0 +1,58 @@
+{
+  "taxonomy_id": "T1.06",
+  "title": "Different number of occurrences of the same claim",
+  "representable": true,
+  "notes": "The key occurs once in the MAC-processed file and twice in the vendor-processed file, each vendor occurrence paying 75.58 with no duplicate adjustment; the first vendor occurrence pairs and the second is extra, and BPR02 differs by 75.58. Follows the cause where the vendor emitted the same adjudication twice.",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "7YR0F86WR06",
+        "date_of_service": "20260302",
+        "total_charge": "130.00",
+        "tax_id": "970060001",
+        "npi": "1900600010",
+        "workload": "90060"
+      },
+      "patient_control_number": "DU6620191",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "7YR0F86WR06",
+        "date_of_service": "20260302",
+        "total_charge": "130.00",
+        "tax_id": "970060001",
+        "npi": "1900600010",
+        "workload": "90060"
+      },
+      "patient_control_number": "DU6620191",
+      "outcome": "extra",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "75.58",
+      "vendor": "151.16"
+    }
+  ]
+}

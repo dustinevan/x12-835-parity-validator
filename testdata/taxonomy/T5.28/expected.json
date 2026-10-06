@@ -1,0 +1,87 @@
+{
+  "taxonomy_id": "T5.28",
+  "title": "Accelerated or advance payment recoupment differs",
+  "representable": true,
+  "notes": "The MAC side recoups 25% of 4220.22 in claim payments (1055.06, PLB AP) toward an advance payment; the vendor side has no advance balance. Follows the history-or-timing cause (advance predates the test window).",
+  "system_assigned_differences_ignored": [
+    "ISA13",
+    "GS06",
+    "ST02",
+    "SE02",
+    "TRN02",
+    "CLP07",
+    "ISA09",
+    "ISA10",
+    "GS04",
+    "GS05",
+    "GE02",
+    "IEA02"
+  ],
+  "claims": [
+    {
+      "key": {
+        "mbi": "2K12G81MT89",
+        "date_of_service": "20260226",
+        "total_charge": "4228.00",
+        "tax_id": "852811036",
+        "npi": "1280037841",
+        "workload": "52801"
+      },
+      "patient_control_number": "SYN52801",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2K22H82VY80",
+        "date_of_service": "20260227",
+        "total_charge": "2628.00",
+        "tax_id": "852811036",
+        "npi": "1280037841",
+        "workload": "52801"
+      },
+      "patient_control_number": "SYN52802",
+      "outcome": "matched",
+      "differences": []
+    },
+    {
+      "key": {
+        "mbi": "2K32J83EF81",
+        "date_of_service": "20260225",
+        "total_charge": "5228.00",
+        "tax_id": "852811036",
+        "npi": "1280037841",
+        "workload": "52801"
+      },
+      "patient_control_number": "SYN52803",
+      "outcome": "matched",
+      "differences": []
+    }
+  ],
+  "file_differences": [
+    {
+      "segment": "BPR",
+      "element": 2,
+      "occurrence": 1,
+      "scope": "payment",
+      "mac": "3165.16",
+      "vendor": "4220.22"
+    },
+    {
+      "segment": "PLB",
+      "element": 0,
+      "occurrence": 1,
+      "scope": "provider",
+      "mac": "PLB*1280037841*20261231*AP:ADV0000028001*1055.06",
+      "vendor": null
+    },
+    {
+      "segment": "SE",
+      "element": 1,
+      "occurrence": 1,
+      "scope": "envelope",
+      "mac": "43",
+      "vendor": "42"
+    }
+  ]
+}
